@@ -13,6 +13,7 @@ from openprocurement.tender.arma.procedure.models.award import (
     PatchAward,
     PostAward,
 )
+from openprocurement.tender.arma.procedure.state.award import AwardState
 from openprocurement.tender.core.procedure.validation import (
     validate_award_with_lot_cancellation_in_pending,
     validate_create_award_not_in_allowed_period,
@@ -22,7 +23,6 @@ from openprocurement.tender.core.procedure.validation import (
     validate_update_award_status_before_milestone_due_date,
 )
 from openprocurement.tender.core.procedure.views.award import TenderAwardResource
-from openprocurement.tender.openua.procedure.state.award import AwardState
 
 
 @resource(

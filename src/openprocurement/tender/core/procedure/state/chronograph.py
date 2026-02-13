@@ -276,16 +276,17 @@ class ChronographEventsMixing:
                             for i in a.get("complaints", "")
                         )
                         if not pending_complaints and not pending_award_complaints:
+                            now = get_request_now().isoformat()
                             stand_still_ends = [
                                 a.get("complaintPeriod").get("endDate")
                                 for a in lot_awards
                                 if a.get("complaintPeriod", {}).get("endDate")
                             ]
-                            if stand_still_ends:
-                                yield (
-                                    max(stand_still_ends),
-                                    self.awarded_complaint_handler,
-                                )
+                            stand_still_end = max(stand_still_ends) if stand_still_ends else now
+                            yield (
+                                stand_still_end,
+                                self.awarded_complaint_handler,
+                            )
 
             # This is not expected to happen in normal flow
             # Fixes bug when tender status switch to complete was missed
