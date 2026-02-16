@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/0122f7569ef34718a69b5de8643cccfd?acc_token=e179e7123ebc4555bde66499540f5ee6 HTTP/1.0
+GET /api/2.5/tenders/16ed9c73a8f34ed89787edcf423f4267?acc_token=e179e7123ebc4555bde66499540f5ee6 HTTP/1.0
 Authorization: Bearer broker
 Host: public-api-sandbox.prozorro.gov.ua
 
@@ -92,7 +92,7 @@ Content-Type: application/json
         "sequenceNumber": 1
       },
       {
-        "id": "f155cdadf79f417b9c605880f41d94fb",
+        "id": "df3a38bf0a854f24b0c783b100db5aa3",
         "title": "deliveryOfGoods",
         "type": "financing",
         "code": "postpayment",
@@ -160,7 +160,7 @@ Content-Type: application/json
     "status": "active.pre-qualification",
     "items": [
       {
-        "id": "0e078f21edb14004adbc8fd8f746b15a",
+        "id": "141bfe7e6fa84c98b337b3334873cfef",
         "description": "Послуги шкільних їдалень",
         "unit": {
           "name": "кілограм",
@@ -184,7 +184,7 @@ Content-Type: application/json
             "description": "Послуги шкільних їдалень"
           }
         ],
-        "relatedLot": "176e6033e7af4efc95f6a5c290a3311d",
+        "relatedLot": "d1f58c0ba35f44a9aa2176f9213056b9",
         "deliveryDate": {
           "startDate": "2023-10-30T00:00:00+02:00",
           "endDate": "2023-11-29T00:00:00+02:00"
@@ -199,7 +199,7 @@ Content-Type: application/json
         "description_en": "Services in school canteens"
       },
       {
-        "id": "c472d4bf00ea4079b38a832aafc02dfb",
+        "id": "b6b00d6cf5b94e7d8ed3ba07ab36cb5f",
         "description": "Послуги шкільних їдалень",
         "unit": {
           "name": "упаковка",
@@ -223,7 +223,7 @@ Content-Type: application/json
             "description": "Послуги шкільних їдалень"
           }
         ],
-        "relatedLot": "cdab28eeafd5467e935a8a62fb9d0f21",
+        "relatedLot": "ab754f91fa1a4efdb9b978d10a93e1b3",
         "deliveryDate": {
           "startDate": "2023-10-30T00:00:00+02:00",
           "endDate": "2023-11-29T00:00:00+02:00"
@@ -243,7 +243,7 @@ Content-Type: application/json
         "title": "Лот №1",
         "description": "Опис Лот №1",
         "status": "active",
-        "id": "176e6033e7af4efc95f6a5c290a3311d",
+        "id": "d1f58c0ba35f44a9aa2176f9213056b9",
         "date": "2023-10-10T01:00:00+03:00",
         "value": {
           "currency": "UAH",
@@ -260,7 +260,7 @@ Content-Type: application/json
         "title": "Лот №2",
         "description": "Опис Лот №2",
         "status": "active",
-        "id": "cdab28eeafd5467e935a8a62fb9d0f21",
+        "id": "ab754f91fa1a4efdb9b978d10a93e1b3",
         "date": "2023-10-10T01:00:00+03:00",
         "value": {
           "currency": "UAH",
@@ -276,7 +276,7 @@ Content-Type: application/json
     ],
     "bids": [
       {
-        "id": "67eb57fa061f47b9836630fd4f90122a",
+        "id": "b936dea48982483fa0dca16cbbabd262",
         "tenderers": [
           {
             "name": "ДКП «Школяр»",
@@ -311,7 +311,7 @@ Content-Type: application/json
         ],
         "lotValues": [
           {
-            "relatedLot": "176e6033e7af4efc95f6a5c290a3311d",
+            "relatedLot": "d1f58c0ba35f44a9aa2176f9213056b9",
             "status": "pending"
           }
         ],
@@ -319,7 +319,7 @@ Content-Type: application/json
           {
             "confidentiality": "public",
             "documentType": "proposal",
-            "id": "3c5544a57b084d7aaddbf1034ba963aa",
+            "id": "0b17f63be39e4e11a82c96161059d0f4",
             "datePublished": "2023-10-10T01:00:00+03:00",
             "hash": "md5:00000000000000000000000000000000",
             "title": "sign.p7s",
@@ -333,7 +333,7 @@ Content-Type: application/json
           {
             "confidentiality": "public",
             "documentType": "proposal",
-            "id": "3c5544a57b084d7aaddbf1034ba963aa",
+            "id": "0b17f63be39e4e11a82c96161059d0f4",
             "datePublished": "2023-10-10T01:01:00+03:00",
             "hash": "md5:00000000000000000000000000000000",
             "title": "sign.p7s",
@@ -348,7 +348,7 @@ Content-Type: application/json
         "status": "pending"
       },
       {
-        "id": "110e51882d0f47e5a0c6168c89e9595a",
+        "id": "95f91577d82e445b9aff9338e0d5c97a",
         "tenderers": [
           {
             "name": "ДКП «Книга»",
@@ -383,11 +383,11 @@ Content-Type: application/json
         ],
         "lotValues": [
           {
-            "relatedLot": "176e6033e7af4efc95f6a5c290a3311d",
+            "relatedLot": "d1f58c0ba35f44a9aa2176f9213056b9",
             "status": "pending"
           },
           {
-            "relatedLot": "cdab28eeafd5467e935a8a62fb9d0f21",
+            "relatedLot": "ab754f91fa1a4efdb9b978d10a93e1b3",
             "status": "pending"
           }
         ],
@@ -395,7 +395,7 @@ Content-Type: application/json
           {
             "confidentiality": "public",
             "documentType": "proposal",
-            "id": "fd724124e6d3478cbd8a24c73ecb0b00",
+            "id": "fdbf77ae9d634732bf386887079a8393",
             "datePublished": "2023-10-10T01:00:00+03:00",
             "hash": "md5:00000000000000000000000000000000",
             "title": "sign.p7s",
@@ -409,7 +409,7 @@ Content-Type: application/json
           {
             "confidentiality": "public",
             "documentType": "proposal",
-            "id": "fd724124e6d3478cbd8a24c73ecb0b00",
+            "id": "fdbf77ae9d634732bf386887079a8393",
             "datePublished": "2023-10-10T01:01:00+03:00",
             "hash": "md5:00000000000000000000000000000000",
             "title": "sign.p7s",
@@ -424,7 +424,7 @@ Content-Type: application/json
         "status": "pending"
       },
       {
-        "id": "8f1f20c9676f4c51b1e41855982f5629",
+        "id": "fbcde53fd1f94b558c1111bc3303f29c",
         "tenderers": [
           {
             "name": "«Снігур»",
@@ -458,11 +458,11 @@ Content-Type: application/json
         ],
         "lotValues": [
           {
-            "relatedLot": "cdab28eeafd5467e935a8a62fb9d0f21",
+            "relatedLot": "ab754f91fa1a4efdb9b978d10a93e1b3",
             "status": "pending"
           },
           {
-            "relatedLot": "176e6033e7af4efc95f6a5c290a3311d",
+            "relatedLot": "d1f58c0ba35f44a9aa2176f9213056b9",
             "status": "pending"
           }
         ],
@@ -470,7 +470,7 @@ Content-Type: application/json
           {
             "confidentiality": "public",
             "documentType": "proposal",
-            "id": "92b1918ea2394d55a2d73f9d123e22ed",
+            "id": "fa97d12c407545ef8ffc2e4921539b6f",
             "datePublished": "2023-10-10T01:00:00+03:00",
             "hash": "md5:00000000000000000000000000000000",
             "title": "sign.p7s",
@@ -484,7 +484,7 @@ Content-Type: application/json
           {
             "confidentiality": "public",
             "documentType": "proposal",
-            "id": "92b1918ea2394d55a2d73f9d123e22ed",
+            "id": "fa97d12c407545ef8ffc2e4921539b6f",
             "datePublished": "2023-10-10T01:01:00+03:00",
             "hash": "md5:00000000000000000000000000000000",
             "title": "sign.p7s",
@@ -499,7 +499,7 @@ Content-Type: application/json
         "status": "pending"
       },
       {
-        "id": "7a25aec16c274693a9a03af1dcc05f32",
+        "id": "322f88a05b5740bd836496aa6b9bb8f7",
         "tenderers": [
           {
             "name": "«Кенгуру»",
@@ -533,7 +533,7 @@ Content-Type: application/json
         ],
         "lotValues": [
           {
-            "relatedLot": "cdab28eeafd5467e935a8a62fb9d0f21",
+            "relatedLot": "ab754f91fa1a4efdb9b978d10a93e1b3",
             "status": "pending"
           }
         ],
@@ -541,7 +541,7 @@ Content-Type: application/json
           {
             "confidentiality": "public",
             "documentType": "proposal",
-            "id": "d4ec2f63c02246dd80911e9f7217352c",
+            "id": "760e4c1b0b4640c8a1113865e545555e",
             "datePublished": "2023-10-10T01:01:00+03:00",
             "hash": "md5:00000000000000000000000000000000",
             "title": "sign.p7s",
@@ -559,8 +559,8 @@ Content-Type: application/json
     "qualifications": [
       {
         "id": "c78f038b5a7c4dc29bf750f702884c3f",
-        "bidID": "67eb57fa061f47b9836630fd4f90122a",
-        "lotID": "176e6033e7af4efc95f6a5c290a3311d",
+        "bidID": "b936dea48982483fa0dca16cbbabd262",
+        "lotID": "d1f58c0ba35f44a9aa2176f9213056b9",
         "status": "pending",
         "date": "2023-10-10T01:01:00+03:00",
         "qualified": false,
@@ -568,8 +568,8 @@ Content-Type: application/json
       },
       {
         "id": "7c53b3bb5af34776ad687e076aafebb4",
-        "bidID": "110e51882d0f47e5a0c6168c89e9595a",
-        "lotID": "176e6033e7af4efc95f6a5c290a3311d",
+        "bidID": "95f91577d82e445b9aff9338e0d5c97a",
+        "lotID": "d1f58c0ba35f44a9aa2176f9213056b9",
         "status": "pending",
         "date": "2023-10-10T01:01:00+03:00",
         "qualified": false,
@@ -577,8 +577,8 @@ Content-Type: application/json
       },
       {
         "id": "6ecdff1511a54a4182cb0edb47026f1f",
-        "bidID": "110e51882d0f47e5a0c6168c89e9595a",
-        "lotID": "cdab28eeafd5467e935a8a62fb9d0f21",
+        "bidID": "95f91577d82e445b9aff9338e0d5c97a",
+        "lotID": "ab754f91fa1a4efdb9b978d10a93e1b3",
         "status": "pending",
         "date": "2023-10-10T01:01:00+03:00",
         "qualified": false,
@@ -586,8 +586,8 @@ Content-Type: application/json
       },
       {
         "id": "455696660eab4eb8ae27233295975477",
-        "bidID": "8f1f20c9676f4c51b1e41855982f5629",
-        "lotID": "cdab28eeafd5467e935a8a62fb9d0f21",
+        "bidID": "fbcde53fd1f94b558c1111bc3303f29c",
+        "lotID": "ab754f91fa1a4efdb9b978d10a93e1b3",
         "status": "pending",
         "date": "2023-10-10T01:01:00+03:00",
         "qualified": false,
@@ -595,8 +595,8 @@ Content-Type: application/json
       },
       {
         "id": "b407d317f8d649eb8048697239f81486",
-        "bidID": "8f1f20c9676f4c51b1e41855982f5629",
-        "lotID": "176e6033e7af4efc95f6a5c290a3311d",
+        "bidID": "fbcde53fd1f94b558c1111bc3303f29c",
+        "lotID": "d1f58c0ba35f44a9aa2176f9213056b9",
         "status": "pending",
         "date": "2023-10-10T01:01:00+03:00",
         "qualified": false,
@@ -604,15 +604,15 @@ Content-Type: application/json
       },
       {
         "id": "aa5974d7117a420e8997eca59822f426",
-        "bidID": "7a25aec16c274693a9a03af1dcc05f32",
-        "lotID": "cdab28eeafd5467e935a8a62fb9d0f21",
+        "bidID": "322f88a05b5740bd836496aa6b9bb8f7",
+        "lotID": "ab754f91fa1a4efdb9b978d10a93e1b3",
         "status": "pending",
         "date": "2023-10-10T01:01:00+03:00",
         "qualified": false,
         "eligible": false
       }
     ],
-    "id": "0122f7569ef34718a69b5de8643cccfd"
+    "id": "16ed9c73a8f34ed89787edcf423f4267"
   },
   "config": {
     "hasAuction": false,

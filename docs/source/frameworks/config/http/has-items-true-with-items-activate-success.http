@@ -1,4 +1,4 @@
-PATCH /api/2.5/frameworks/573e34dc17634e8a878ffb25d61fbcea?acc_token=0f2f2fe38721429aa3306518dd9dd942 HTTP/1.0
+PATCH /api/2.5/frameworks/e2c427b62ce74eb0a3aad129279e9cb8?acc_token=0f2f2fe38721429aa3306518dd9dd942 HTTP/1.0
 Authorization: Bearer brokerr
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -21,7 +21,7 @@ Content-Type: application/json
     "status": "active",
     "items": [
       {
-        "id": "4610db24a3d84e08be1e500c631b05be",
+        "id": "283029253de8403eba22f14443f421e4",
         "description": "футляри до державних нагород",
         "quantity": 5.0,
         "classification": {
@@ -110,7 +110,7 @@ Content-Type: application/json
       "endDate": "2024-10-14T00:00:00+03:00"
     },
     "next_check": "2023-10-26T00:00:00+03:00",
-    "id": "573e34dc17634e8a878ffb25d61fbcea"
+    "id": "e2c427b62ce74eb0a3aad129279e9cb8"
   },
   "config": {
     "restrictedDerivatives": false,

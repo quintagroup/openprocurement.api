@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/016911f3f3d341618c9844a1087e857e/bids HTTP/1.0
+POST /api/2.5/tenders/c9af88586ead48b4a27d83f9322001b0/bids HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -43,7 +43,7 @@ Host: lb-api-sandbox.prozorro.gov.ua
     "requirementResponses": [
       {
         "requirement": {
-          "id": "3d7bd9da05614ac4bb8566e268590160"
+          "id": "794bcb50495d499287d10aeb9836370a"
         },
         "values": [
           "Розчин для інфузій"
@@ -51,13 +51,13 @@ Host: lb-api-sandbox.prozorro.gov.ua
       },
       {
         "requirement": {
-          "id": "02cc402d17c246aab7bc883c4f91666f"
+          "id": "48ada825a8244e1c882f50d74b7366b3"
         },
         "value": 5
       },
       {
         "requirement": {
-          "id": "ea9f9be22eb04f8791fc97c5c55d08ef"
+          "id": "3e9eb97901a149e7854ca9bc20922d74"
         },
         "values": [
           "Відповідь1",
@@ -101,7 +101,7 @@ Host: lb-api-sandbox.prozorro.gov.ua
 
 HTTP/1.0 201 Created
 Content-Type: application/json
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/016911f3f3d341618c9844a1087e857e/bids/87a857e2ceb8455e9bf83fcc6abd38a7
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/c9af88586ead48b4a27d83f9322001b0/bids/c416d337e8294a699d8ae66702aed98a
 
 {
   "data": {
@@ -144,13 +144,13 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/016911f3f3d34161
     "requirementResponses": [
       {
         "requirement": {
-          "id": "3d7bd9da05614ac4bb8566e268590160",
+          "id": "794bcb50495d499287d10aeb9836370a",
           "title": "Форма випуску"
         },
         "values": [
           "Розчин для інфузій"
         ],
-        "id": "05f7f97d9c9e4d03aee04a2f7ff2da9e",
+        "id": "f3c159838f4343c483f279fc2c858101",
         "classification": {
           "scheme": "ESPD211",
           "id": "CRITERION.OTHER.SUBJECT_OF_PROCUREMENT.TECHNICAL_FEATURES"
@@ -158,11 +158,11 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/016911f3f3d34161
       },
       {
         "requirement": {
-          "id": "02cc402d17c246aab7bc883c4f91666f",
+          "id": "48ada825a8244e1c882f50d74b7366b3",
           "title": "Доза діючої речовини"
         },
         "value": 5,
-        "id": "533e7f5f79f64ba9b630edb0dbdbefe0",
+        "id": "fff8e561c1da493a96d7a2ee9d258938",
         "unit": {
           "code": "KGM",
           "name": "кілограми"
@@ -174,14 +174,14 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/016911f3f3d34161
       },
       {
         "requirement": {
-          "id": "ea9f9be22eb04f8791fc97c5c55d08ef",
+          "id": "3e9eb97901a149e7854ca9bc20922d74",
           "title": "Форма випуску 1"
         },
         "values": [
           "Відповідь1",
           "Відповідь2"
         ],
-        "id": "082aa4e993bf44d3854e4745c0e901bf",
+        "id": "e847124e0f5142ce9f9533c232bf208d",
         "classification": {
           "scheme": "ESPD211",
           "id": "CRITERION.OTHER.SUBJECT_OF_PROCUREMENT.TECHNICAL_FEATURES"
@@ -221,7 +221,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/016911f3f3d34161
         "product": "11111111111111111111111111111111"
       }
     ],
-    "id": "87a857e2ceb8455e9bf83fcc6abd38a7",
+    "id": "c416d337e8294a699d8ae66702aed98a",
     "date": "2023-10-10T01:00:00+03:00"
   },
   "access": {

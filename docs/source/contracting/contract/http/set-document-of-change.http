@@ -1,4 +1,4 @@
-PATCH /api/2.5/contracts/78fd8d7877d74b0dbc9c605462545e1c/documents/bd7168ca198e414a8c27f8511d95e9d3?acc_token=05e4dac70d1f462296b4d441345fbc83 HTTP/1.0
+PATCH /api/2.5/contracts/78fd8d7877d74b0dbc9c605462545e1c/documents/8287e847137047e982ef13a48b3d8807?acc_token=05e4dac70d1f462296b4d441345fbc83 HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -6,7 +6,7 @@ Host: lb-api-sandbox.prozorro.gov.ua
 {
   "data": {
     "documentOf": "change",
-    "relatedItem": "68c208e991674fcfb5853d81817fd6e9"
+    "relatedItem": "eb794cf51a174e5ab8caa0dd717624a5"
   }
 }
 
@@ -17,8 +17,8 @@ Content-Type: application/json
 {
   "data": {
     "confidentiality": "public",
-    "relatedItem": "68c208e991674fcfb5853d81817fd6e9",
-    "id": "bd7168ca198e414a8c27f8511d95e9d3",
+    "relatedItem": "eb794cf51a174e5ab8caa0dd717624a5",
+    "id": "8287e847137047e982ef13a48b3d8807",
     "hash": "md5:00000000000000000000000000000000",
     "title": "contract_changes.doc",
     "format": "application/msword",

@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/3f38940af1314712ac29867b3e4eced4/bids HTTP/1.0
+POST /api/2.5/tenders/2874d5c2acd649bbb8679e9439621113/bids HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -44,13 +44,13 @@ Host: lb-api-sandbox.prozorro.gov.ua
     "requirementResponses": [
       {
         "requirement": {
-          "id": "8cac9e406b954b80b22aec9a77e63593"
+          "id": "143eb8ba1ad8447b89fdf984e8550cdd"
         },
         "value": 23.8
       },
       {
         "requirement": {
-          "id": "17d57e334aed49d19de4fd5b27b3b314"
+          "id": "b3bc205afbb246fa9049119cdec737df"
         },
         "values": [
           "1920x1080"
@@ -58,7 +58,7 @@ Host: lb-api-sandbox.prozorro.gov.ua
       },
       {
         "requirement": {
-          "id": "08ac3b62c1114ed1918bbde211047916"
+          "id": "05ee5b8bd46c4f2dbda8fc5c140f6420"
         },
         "values": [
           "16:9"
@@ -66,13 +66,13 @@ Host: lb-api-sandbox.prozorro.gov.ua
       },
       {
         "requirement": {
-          "id": "0cbbfa2735324fe8bd172bfe98510c39"
+          "id": "3b6af92914a047b2bd2c1bfd714adcf6"
         },
         "value": 0
       },
       {
         "requirement": {
-          "id": "6b78fd178786471ebff1faf01277c285"
+          "id": "383761af47964f29a6ed2754b88dd4d1"
         },
         "values": [
           "1000:1"
@@ -80,19 +80,19 @@ Host: lb-api-sandbox.prozorro.gov.ua
       },
       {
         "requirement": {
-          "id": "6d027700fb9646968fed97d3291e487a"
+          "id": "1949b1aac38b41e99615052120f9c4a1"
         },
         "value": 1
       },
       {
         "requirement": {
-          "id": "ce5247fff13a4a5bb8cc27b5c9edc972"
+          "id": "7a4f29925a8f430fb6094b40cd1c171f"
         },
         "value": 1
       },
       {
         "requirement": {
-          "id": "3a028e0e6ea34ccebfcd214944fb439a"
+          "id": "622b7a53db2d4b76b9b48643fc1f65ec"
         },
         "values": [
           "HDMI"
@@ -100,7 +100,7 @@ Host: lb-api-sandbox.prozorro.gov.ua
       },
       {
         "requirement": {
-          "id": "68f8023f5da1456789a9b355f67022f9"
+          "id": "c5675ebbd1164923b2c8ca8dbc158258"
         },
         "value": 36
       }

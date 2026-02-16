@@ -20,7 +20,7 @@ Content-Type: application/json
     },
     "items": [
       {
-        "id": "bff94f5ed31d45638537e5b84a41df3a",
+        "id": "991761a10cb14c239cf05842c4cfa729",
         "description": "папір",
         "quantity": 5.0,
         "classification": {
@@ -54,7 +54,7 @@ Content-Type: application/json
           "startDate": "2023-10-30T00:00:00+02:00",
           "endDate": "2023-11-29T00:00:00+02:00"
         },
-        "relatedLot": "a1b71828e35f4f83b5bc1754af3856c1"
+        "relatedLot": "e932e2282dd44ca38478282c9b65d683"
       }
     ],
     "buyer": {
@@ -109,7 +109,7 @@ Content-Type: application/json
       }
     ],
     "owner": "broker",
-    "tender_id": "a2c51926819e43aea0de24b309bde8f9",
+    "tender_id": "73862f0482bd4d22a4bf40cd491a2b20",
     "contractTemplateName": "00000000.0002.01",
     "milestones": [
       {
@@ -126,7 +126,7 @@ Content-Type: application/json
         "status": "scheduled"
       },
       {
-        "id": "a67245d10a444533a2a7da072ff0937a",
+        "id": "c61b9a778f4f4f84bbbedf8e93686609",
         "title": "deliveryOfGoods",
         "type": "financing",
         "code": "postpayment",

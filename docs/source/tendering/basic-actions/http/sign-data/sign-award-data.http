@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/4b4ed03227c24f43b34f74183e3e0ca2/awards/8850d78aa8a94c148d6d245907f40d3e?opt_context=true HTTP/1.0
+GET /api/2.5/tenders/4a2a576c85d54712935397876296f0d9/awards/8850d78aa8a94c148d6d245907f40d3e?opt_context=true HTTP/1.0
 Authorization: Bearer broker
 Host: public-api-sandbox.prozorro.gov.ua
 
@@ -48,8 +48,8 @@ Content-Type: application/json
         }
       }
     ],
-    "bid_id": "a5bf718ab7f14f40bef4ad334f3c936a",
-    "lotID": "c94486b261084c09ac0c731b74d35c85",
+    "bid_id": "103392b1764c41fd86ea8723e67f203d",
+    "lotID": "5b0412bd862347cfb29c8de0b4736b58",
     "period": {
       "startDate": "2023-10-10T01:00:00+03:00",
       "endDate": "2023-10-18T00:00:00+03:00"
@@ -99,7 +99,7 @@ Content-Type: application/json
           ],
           "status": "active",
           "subcontractingDetails": "ДКП «Орфей», Україна",
-          "id": "4a15bf967949413fa361b33448f58d7c",
+          "id": "3088275f136046dab34594e16227bb54",
           "date": "2023-10-10T01:00:00+03:00",
           "lotValues": [
             {
@@ -108,7 +108,7 @@ Content-Type: application/json
                 "currency": "UAH",
                 "valueAddedTaxIncluded": true
               },
-              "relatedLot": "c94486b261084c09ac0c731b74d35c85",
+              "relatedLot": "5b0412bd862347cfb29c8de0b4736b58",
               "status": "active",
               "date": "2023-10-10T01:00:00+03:00",
               "initialValue": {
@@ -122,7 +122,7 @@ Content-Type: application/json
             {
               "confidentiality": "public",
               "documentType": "proposal",
-              "id": "02bede37b7ea4648a12686900b5e8421",
+              "id": "2606f14d4d5345b486c3f42881f68eb3",
               "datePublished": "2023-10-10T01:00:00+03:00",
               "hash": "md5:00000000000000000000000000000000",
               "title": "sign.p7s",
@@ -170,11 +170,11 @@ Content-Type: application/json
             }
           ],
           "status": "active",
-          "id": "a5bf718ab7f14f40bef4ad334f3c936a",
+          "id": "103392b1764c41fd86ea8723e67f203d",
           "date": "2023-10-10T01:00:00+03:00",
           "items": [
             {
-              "id": "8840f90710624691b182d38026bbbe44",
+              "id": "2b4bbbc0e9d34d9995677a3f38081ed1",
               "description": "футляри до державних нагород",
               "unit": {
                 "name": "кг",
@@ -188,7 +188,7 @@ Content-Type: application/json
               "quantity": 4.0
             },
             {
-              "id": "ff7b47fdbdf04d5692cdb738f54c20bb",
+              "id": "d34a8337b82c4e46a16379ba280df117",
               "description": "футляри до державних нагород",
               "unit": {
                 "name": "кг",
@@ -209,7 +209,7 @@ Content-Type: application/json
                 "currency": "UAH",
                 "valueAddedTaxIncluded": true
               },
-              "relatedLot": "c94486b261084c09ac0c731b74d35c85",
+              "relatedLot": "5b0412bd862347cfb29c8de0b4736b58",
               "status": "active",
               "date": "2023-10-10T01:00:00+03:00",
               "initialValue": {
@@ -227,7 +227,7 @@ Content-Type: application/json
         {
           "confidentiality": "public",
           "documentType": "evaluationReports",
-          "id": "74597fecddea4dbea0d3cdd6048e226d",
+          "id": "a5d2756b23a74bb9b9fac44e7329baa5",
           "datePublished": "2023-10-10T01:00:00+03:00",
           "hash": "md5:00000000000000000000000000000000",
           "title": "sign.p7s",
@@ -311,7 +311,7 @@ Content-Type: application/json
           "title": "Лот №1",
           "description": "Опис Лот №1",
           "status": "active",
-          "id": "c94486b261084c09ac0c731b74d35c85",
+          "id": "5b0412bd862347cfb29c8de0b4736b58",
           "date": "2023-10-10T01:00:00+03:00",
           "value": {
             "currency": "UAH",
@@ -343,7 +343,7 @@ Content-Type: application/json
           "sequenceNumber": 1
         },
         {
-          "id": "0007bee0722047b5bf70f5cd38c052c5",
+          "id": "d389aa729e1445ff84e659c731b6eaf2",
           "title": "deliveryOfGoods",
           "type": "financing",
           "code": "postpayment",
@@ -363,8 +363,8 @@ Content-Type: application/json
       "qualifications": [
         {
           "id": "063cd6d3b836451785d7ad5954080796",
-          "bidID": "4a15bf967949413fa361b33448f58d7c",
-          "lotID": "c94486b261084c09ac0c731b74d35c85",
+          "bidID": "3088275f136046dab34594e16227bb54",
+          "lotID": "5b0412bd862347cfb29c8de0b4736b58",
           "status": "active",
           "date": "2023-10-10T01:00:00+03:00",
           "qualified": true,
@@ -376,8 +376,8 @@ Content-Type: application/json
         },
         {
           "id": "089cdf2c9a9b409589e0df274088f454",
-          "bidID": "a5bf718ab7f14f40bef4ad334f3c936a",
-          "lotID": "c94486b261084c09ac0c731b74d35c85",
+          "bidID": "103392b1764c41fd86ea8723e67f203d",
+          "lotID": "5b0412bd862347cfb29c8de0b4736b58",
           "status": "active",
           "date": "2023-10-10T01:00:00+03:00",
           "qualified": true,
@@ -434,7 +434,7 @@ Content-Type: application/json
       },
       "items": [
         {
-          "id": "8840f90710624691b182d38026bbbe44",
+          "id": "2b4bbbc0e9d34d9995677a3f38081ed1",
           "description": "Послуги шкільних їдалень",
           "unit": {
             "name": "кілограм",
@@ -458,7 +458,7 @@ Content-Type: application/json
               "description": "Послуги шкільних їдалень"
             }
           ],
-          "relatedLot": "c94486b261084c09ac0c731b74d35c85",
+          "relatedLot": "5b0412bd862347cfb29c8de0b4736b58",
           "deliveryDate": {
             "startDate": "2023-10-30T00:00:00+02:00",
             "endDate": "2023-11-29T00:00:00+02:00"
@@ -473,7 +473,7 @@ Content-Type: application/json
           "description_en": "Services in school canteens"
         },
         {
-          "id": "ff7b47fdbdf04d5692cdb738f54c20bb",
+          "id": "d34a8337b82c4e46a16379ba280df117",
           "description": "Послуги шкільних їдалень",
           "unit": {
             "name": "упаковка",
@@ -497,7 +497,7 @@ Content-Type: application/json
               "description": "Послуги шкільних їдалень"
             }
           ],
-          "relatedLot": "c94486b261084c09ac0c731b74d35c85",
+          "relatedLot": "5b0412bd862347cfb29c8de0b4736b58",
           "deliveryDate": {
             "startDate": "2023-10-30T00:00:00+02:00",
             "endDate": "2023-11-29T00:00:00+02:00"
@@ -562,15 +562,15 @@ Content-Type: application/json
               }
             }
           ],
-          "bid_id": "a5bf718ab7f14f40bef4ad334f3c936a",
-          "lotID": "c94486b261084c09ac0c731b74d35c85",
+          "bid_id": "103392b1764c41fd86ea8723e67f203d",
+          "lotID": "5b0412bd862347cfb29c8de0b4736b58",
           "period": {
             "startDate": "2023-10-10T01:00:00+03:00",
             "endDate": "2023-10-18T00:00:00+03:00"
           }
         }
       ],
-      "id": "4b4ed03227c24f43b34f74183e3e0ca2"
+      "id": "4a2a576c85d54712935397876296f0d9"
     }
   }
 }

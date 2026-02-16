@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/3f38940af1314712ac29867b3e4eced4/awards/b1c41ec4a4d84cdb82270c0795928bfd?acc_token=3f07ab10456e4f519a3cf51c24d19c80 HTTP/1.0
+PATCH /api/2.5/tenders/2874d5c2acd649bbb8679e9439621113/awards/b1c41ec4a4d84cdb82270c0795928bfd?acc_token=3f07ab10456e4f519a3cf51c24d19c80 HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -12,7 +12,7 @@ Host: lb-api-sandbox.prozorro.gov.ua
 
 HTTP/1.0 200 OK
 Content-Type: application/json
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/3f38940af1314712ac29867b3e4eced4/awards/a6c7b280a49c4f7788e5768c3ce3464b
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/2874d5c2acd649bbb8679e9439621113/awards/a6c7b280a49c4f7788e5768c3ce3464b
 
 {
   "data": {
@@ -54,12 +54,12 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/3f38940af1314712
         }
       }
     ],
-    "bid_id": "0e3de0a7af624bd294b409456dee24e6",
+    "bid_id": "d948edc4cb6e40fda39035b61fd70ac6",
     "documents": [
       {
         "confidentiality": "public",
         "documentType": "notice",
-        "id": "025740c4c0d645d4bcf8604296106a88",
+        "id": "178255de5ed44cabbf6cfd00f616e715",
         "datePublished": "2024-01-01T00:00:01+02:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "sign.p7s",

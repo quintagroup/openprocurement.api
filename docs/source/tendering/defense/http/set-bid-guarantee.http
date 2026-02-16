@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/5fd17b367a75453582bffe24ae83b896?acc_token=0686dbcd3079442fb4777eee185e6cd7 HTTP/1.0
+PATCH /api/2.5/tenders/b2ccf978cbbe4d5998adc7057db41ca4?acc_token=0686dbcd3079442fb4777eee185e6cd7 HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -117,7 +117,7 @@ Content-Type: application/json
         "sequenceNumber": 1
       },
       {
-        "id": "0bd49482bdbd47d4b6d552b848f4ccbd",
+        "id": "b8170cdb4a8e4f39ac6d7a5870529179",
         "title": "deliveryOfGoods",
         "type": "financing",
         "code": "postpayment",
@@ -177,7 +177,7 @@ Content-Type: application/json
     },
     "items": [
       {
-        "id": "a2c01d547823435c9b45f7498a146caa",
+        "id": "24af3e11746b401f9910c26651847959",
         "description": "Послуги шкільних їдалень",
         "unit": {
           "name": "папір",
@@ -214,7 +214,7 @@ Content-Type: application/json
         }
       }
     ],
-    "id": "5fd17b367a75453582bffe24ae83b896"
+    "id": "b2ccf978cbbe4d5998adc7057db41ca4"
   },
   "config": {
     "hasAuction": true,

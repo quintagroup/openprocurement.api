@@ -400,7 +400,15 @@ def test_fail_update_complete_or_cancelled_plan(app, status):
     }
 
     # tender creation
-    response = app.post_json("/plans/{}/tenders".format(plan_id), {"data": {}}, status=422)
+    response = app.post_json(
+        "/plans/{}/tenders".format(plan_id),
+        {
+            "data": {
+                "procuringEntity": test_plan_data["procuringEntity"],
+            }
+        },
+        status=422,
+    )
     assert response.json == {
         "status": "error",
         "errors": [

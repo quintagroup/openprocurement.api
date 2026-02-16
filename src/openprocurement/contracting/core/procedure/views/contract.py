@@ -20,7 +20,7 @@ from openprocurement.contracting.core.procedure.state.contract import ContractSt
 from openprocurement.contracting.core.procedure.views.base import ContractBaseResource
 
 
-def conditional_contract_model(data):
+def conditional_contract_model(data, *args, **kwargs):
     request = get_request()
     contract_status = request.validated["contract"]["status"]
     if request.authenticated_role == "Administrator":

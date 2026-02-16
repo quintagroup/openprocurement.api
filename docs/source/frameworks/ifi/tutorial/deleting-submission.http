@@ -1,4 +1,4 @@
-PATCH /api/2.5/submissions/995d8a97b6c24a0cbe9ed82fe2cd8e8b?acc_token=2cac1d46cb17481595607b2d32aef48f HTTP/1.0
+PATCH /api/2.5/submissions/9c1ec0cf104142db84d35398c609cd4b?acc_token=2cac1d46cb17481595607b2d32aef48f HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -41,7 +41,7 @@ Content-Type: application/json
     ],
     "documents": [
       {
-        "id": "8ee0bc18cff7439586d611936ba513a5",
+        "id": "3c54826fd7094702be0dda50a229e372",
         "datePublished": "2023-10-26T01:00:00+03:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "submission_docs.doc",
@@ -53,25 +53,25 @@ Content-Type: application/json
       },
       {
         "documentType": "technicalSpecifications",
-        "id": "0892dd79961a4b7e876f5542ed89ad17",
+        "id": "a4316bb364aa4dc293ec34b88166e417",
         "datePublished": "2023-10-26T01:00:00+03:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "specs.doc",
         "format": "application/msword",
-        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/submissions/995d8a97b6c24a0cbe9ed82fe2cd8e8b/documents/0892dd79961a4b7e876f5542ed89ad17?download=7f19dbc3120f4fb7b70d566828100d5c",
+        "url": "http://lb-api-sandbox.prozorro.gov.ua/api/2.5/submissions/9c1ec0cf104142db84d35398c609cd4b/documents/a4316bb364aa4dc293ec34b88166e417?download=7f19dbc3120f4fb7b70d566828100d5c",
         "dateModified": "2023-10-26T01:00:00+03:00",
         "language": "uk",
         "confidentiality": "buyerOnly",
         "confidentialityRationale": "Дуже конфіденційний файл, треба приховати"
       }
     ],
-    "frameworkID": "89208a5c9d04455eaa4c41e2b5f0d70a",
+    "frameworkID": "932c7023588f40f4aec26aef109f4998",
     "status": "deleted",
     "dateModified": "2023-10-26T01:00:00+03:00",
     "date": "2023-10-26T01:00:00+03:00",
     "owner": "broker",
     "submissionType": "internationalFinancialInstitutions",
-    "id": "995d8a97b6c24a0cbe9ed82fe2cd8e8b"
+    "id": "9c1ec0cf104142db84d35398c609cd4b"
   },
   "config": {
     "restricted": false

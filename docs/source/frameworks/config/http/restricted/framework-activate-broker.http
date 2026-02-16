@@ -1,4 +1,4 @@
-PATCH /api/2.5/frameworks/08238232b095420687b4e273ae56d878?acc_token=e8b68517319b4d4699c42692c138e6a0 HTTP/1.0
+PATCH /api/2.5/frameworks/928167e4da604e73a055125a4616babe?acc_token=e8b68517319b4d4699c42692c138e6a0 HTTP/1.0
 Authorization: Bearer brokerr
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -71,7 +71,7 @@ Content-Type: application/json
       "endDate": "2024-10-14T00:00:00+03:00"
     },
     "next_check": "2023-10-26T00:00:00+03:00",
-    "id": "08238232b095420687b4e273ae56d878"
+    "id": "928167e4da604e73a055125a4616babe"
   },
   "config": {
     "restrictedDerivatives": true,

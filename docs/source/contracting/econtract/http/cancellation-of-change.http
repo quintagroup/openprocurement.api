@@ -1,4 +1,4 @@
-GET /api/2.5/contracts/38891909c9274c02b0bdca60fa5d2260/changes/e3b63c3aac354f6db3fbc8f25d03cc7d HTTP/1.0
+GET /api/2.5/contracts/38891909c9274c02b0bdca60fa5d2260/changes/9fb8feb2bc8f48ffa5d277c93f044523 HTTP/1.0
 Authorization: Bearer broker6
 Host: public-api-sandbox.prozorro.gov.ua
 
@@ -19,7 +19,7 @@ Content-Type: application/json
         "startDate": "2023-10-15T00:00:00+03:00"
       }
     },
-    "id": "e3b63c3aac354f6db3fbc8f25d03cc7d",
+    "id": "9fb8feb2bc8f48ffa5d277c93f044523",
     "status": "cancelled",
     "date": "2023-10-10T01:00:00+03:00",
     "author": "supplier",
@@ -29,7 +29,7 @@ Content-Type: application/json
         "hash": "md5:00000000000000000000000000000000",
         "title": "contract_change.pdf",
         "format": "application/pdf",
-        "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/contracts/38891909c9274c02b0bdca60fa5d2260/changes/e3b63c3aac354f6db3fbc8f25d03cc7d/documents/9471624212664412824822e912a743df?download=33830e473a1348d6a5a7e4eb3379672d",
+        "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/contracts/38891909c9274c02b0bdca60fa5d2260/changes/9fb8feb2bc8f48ffa5d277c93f044523/documents/9471624212664412824822e912a743df?download=33830e473a1348d6a5a7e4eb3379672d",
         "documentOf": "change",
         "id": "9471624212664412824822e912a743df",
         "datePublished": "2023-10-10T01:00:00+03:00",
@@ -41,7 +41,7 @@ Content-Type: application/json
       {
         "reason": "not actual change",
         "reasonType": "requiresChanges",
-        "id": "4f8c5f34f0e34e2fad07dce1798124e2",
+        "id": "c60fd04537794da283c535f92a149297",
         "dateCreated": "2023-10-10T01:00:00+03:00",
         "status": "active",
         "author": "supplier"

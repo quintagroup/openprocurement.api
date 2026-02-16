@@ -159,7 +159,7 @@ Host: lb-api-sandbox.prozorro.gov.ua
 
 HTTP/1.0 201 Created
 Content-Type: application/json
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/a0f809509dd54bfe812871d67c440661
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/afc408f9dd524cafbbd160c36ccd47b2
 
 {
   "data": {
@@ -219,7 +219,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/a0f809509dd54bfe
         "sequenceNumber": 1
       },
       {
-        "id": "1e512a55ae3f4fddbc0bfddf1548106c",
+        "id": "2118956de64a40c1984beb9ba61aeb25",
         "title": "deliveryOfGoods",
         "type": "financing",
         "code": "postpayment",
@@ -364,7 +364,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/a0f809509dd54bfe
     },
     "dateCreated": "2023-10-10T01:00:00+03:00",
     "dateModified": "2023-10-10T01:00:00+03:00",
-    "id": "a0f809509dd54bfe812871d67c440661"
+    "id": "afc408f9dd524cafbbd160c36ccd47b2"
   },
   "config": {
     "hasAuction": true,

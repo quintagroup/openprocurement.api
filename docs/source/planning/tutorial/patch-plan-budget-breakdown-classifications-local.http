@@ -1,4 +1,4 @@
-PATCH /api/2.5/plans/41dd1a57d4074913838107cf156a4f5f?acc_token=80859e574f134c2293a68741f9752cb3 HTTP/1.0
+PATCH /api/2.5/plans/cccb8928810c4bda97b1eabb9c4c4f9b?acc_token=80859e574f134c2293a68741f9752cb3 HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -57,7 +57,7 @@ Content-Type: application/json
   "data": {
     "status": "scheduled",
     "procuringEntity": {
-      "id": "88b1bac11a154af28d39a636d067680a",
+      "id": "019119a10d54454c87160a4ef37ee2d4",
       "name": "ДУС",
       "identifier": {
         "scheme": "UA-EDR",
@@ -105,7 +105,7 @@ Content-Type: application/json
       },
       "breakdown": [
         {
-          "id": "a274bbff989845ab890f65beecb1426d",
+          "id": "79900bc220ad42e0b5aed4a95015c1ff",
           "title": "local",
           "description": "Breakdown other description.",
           "value": {
@@ -145,7 +145,7 @@ Content-Type: application/json
     "planID": "UA-P-2023-10-10-000001-a",
     "items": [
       {
-        "id": "6357797639c344369e5948778ade25b6",
+        "id": "72406d30465d4a66b6c2867545edd942",
         "classification": {
           "description": "Vegetable seeds",
           "scheme": "ДК021",
@@ -171,7 +171,7 @@ Content-Type: application/json
     ],
     "buyers": [
       {
-        "id": "983235c9a84e41128bba17109da5e414",
+        "id": "a24fc4de512141d294ae3ccab128061d",
         "name": "ДУС",
         "identifier": {
           "scheme": "UA-EDR",
@@ -208,7 +208,7 @@ Content-Type: application/json
     "dateCreated": "2023-10-10T01:00:00+03:00",
     "dateModified": "2023-10-10T01:00:00+03:00",
     "datePublished": "2023-10-10T01:00:00+03:00",
-    "id": "41dd1a57d4074913838107cf156a4f5f"
+    "id": "cccb8928810c4bda97b1eabb9c4c4f9b"
   }
 }
 

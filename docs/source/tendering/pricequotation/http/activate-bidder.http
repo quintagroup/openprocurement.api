@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/3f38940af1314712ac29867b3e4eced4/bids/0e3de0a7af624bd294b409456dee24e6?acc_token=0484ed15231c4703bd9ddf87eb9575e8 HTTP/1.0
+PATCH /api/2.5/tenders/2874d5c2acd649bbb8679e9439621113/bids/d948edc4cb6e40fda39035b61fd70ac6?acc_token=0484ed15231c4703bd9ddf87eb9575e8 HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -15,7 +15,7 @@ Content-Type: application/json
 
 {
   "data": {
-    "id": "0e3de0a7af624bd294b409456dee24e6",
+    "id": "d948edc4cb6e40fda39035b61fd70ac6",
     "date": "2024-01-01T00:00:01+02:00",
     "tenderers": [
       {
@@ -55,11 +55,11 @@ Content-Type: application/json
     "requirementResponses": [
       {
         "requirement": {
-          "id": "8cac9e406b954b80b22aec9a77e63593",
+          "id": "143eb8ba1ad8447b89fdf984e8550cdd",
           "title": "Діагональ екрану"
         },
         "value": 23.8,
-        "id": "be170b878344470180d33b0c11a0943e",
+        "id": "bb00c016c4cc460cb18fbf59da676525",
         "unit": {
           "code": "INH",
           "name": "дюйм"
@@ -71,13 +71,13 @@ Content-Type: application/json
       },
       {
         "requirement": {
-          "id": "17d57e334aed49d19de4fd5b27b3b314",
+          "id": "b3bc205afbb246fa9049119cdec737df",
           "title": "Роздільна здатність"
         },
         "values": [
           "1920x1080"
         ],
-        "id": "487bed9ad7cb42a581753d0a70d4fc3a",
+        "id": "6fbb8ed38855448db53299b6e612af77",
         "classification": {
           "scheme": "ESPD211",
           "id": "CRITERION.OTHER.SUBJECT_OF_PROCUREMENT.TECHNICAL_FEATURES"
@@ -85,13 +85,13 @@ Content-Type: application/json
       },
       {
         "requirement": {
-          "id": "08ac3b62c1114ed1918bbde211047916",
+          "id": "05ee5b8bd46c4f2dbda8fc5c140f6420",
           "title": "Співвідношення сторін"
         },
         "values": [
           "16:9"
         ],
-        "id": "54b62b2a50ef40cbbc820b2f5f5297af",
+        "id": "bc9cb2f23a8749ea9f656166f60dd413",
         "classification": {
           "scheme": "ESPD211",
           "id": "CRITERION.OTHER.SUBJECT_OF_PROCUREMENT.TECHNICAL_FEATURES"
@@ -99,11 +99,11 @@ Content-Type: application/json
       },
       {
         "requirement": {
-          "id": "0cbbfa2735324fe8bd172bfe98510c39",
+          "id": "3b6af92914a047b2bd2c1bfd714adcf6",
           "title": "Яскравість дисплея"
         },
         "value": 0,
-        "id": "67aa1163fe6041baa2723655c670ac72",
+        "id": "af27f64a7f144d7782b309eb9a39c82e",
         "unit": {
           "code": "A24",
           "name": "кд/м²"
@@ -115,13 +115,13 @@ Content-Type: application/json
       },
       {
         "requirement": {
-          "id": "6b78fd178786471ebff1faf01277c285",
+          "id": "383761af47964f29a6ed2754b88dd4d1",
           "title": "Контрастність (статична)"
         },
         "values": [
           "1000:1"
         ],
-        "id": "a077bd0f0f4d4994b461d7f9b5a6aefd",
+        "id": "b352e5e3c11f483596953570a3554342",
         "classification": {
           "scheme": "ESPD211",
           "id": "CRITERION.OTHER.SUBJECT_OF_PROCUREMENT.TECHNICAL_FEATURES"
@@ -129,11 +129,11 @@ Content-Type: application/json
       },
       {
         "requirement": {
-          "id": "6d027700fb9646968fed97d3291e487a",
+          "id": "1949b1aac38b41e99615052120f9c4a1",
           "title": "Кількість портів HDMI"
         },
         "value": 1,
-        "id": "099093502c0f43d7b8cca99960147c15",
+        "id": "3d98a1df5e3d4d83910aaa1523b3a8b0",
         "unit": {
           "code": "H87",
           "name": "штук"
@@ -145,11 +145,11 @@ Content-Type: application/json
       },
       {
         "requirement": {
-          "id": "ce5247fff13a4a5bb8cc27b5c9edc972",
+          "id": "7a4f29925a8f430fb6094b40cd1c171f",
           "title": "Кількість портів D-sub"
         },
         "value": 1,
-        "id": "9555a5c3e5184c05b7bb2a28e6d0fdce",
+        "id": "d62ec2a653de4cf793c92a227a18e865",
         "unit": {
           "code": "H87",
           "name": "штук"
@@ -161,13 +161,13 @@ Content-Type: application/json
       },
       {
         "requirement": {
-          "id": "3a028e0e6ea34ccebfcd214944fb439a",
+          "id": "622b7a53db2d4b76b9b48643fc1f65ec",
           "title": "Кабель для під’єднання"
         },
         "values": [
           "HDMI"
         ],
-        "id": "8101956340e44e0fb6a7a9835b672b8b",
+        "id": "c4f74b5d2fe34933af4849d846e3a171",
         "classification": {
           "scheme": "ESPD211",
           "id": "CRITERION.OTHER.SUBJECT_OF_PROCUREMENT.TECHNICAL_FEATURES"
@@ -175,11 +175,11 @@ Content-Type: application/json
       },
       {
         "requirement": {
-          "id": "68f8023f5da1456789a9b355f67022f9",
+          "id": "c5675ebbd1164923b2c8ca8dbc158258",
           "title": "Гарантія"
         },
         "value": 36,
-        "id": "d2561440b9c2420b958fd8d1cb50f71e",
+        "id": "400be1b441524e9abdfe0d0a50afea94",
         "unit": {
           "code": "MON",
           "name": "місяців"

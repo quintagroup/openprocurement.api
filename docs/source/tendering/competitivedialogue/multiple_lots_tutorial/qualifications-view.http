@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/0122f7569ef34718a69b5de8643cccfd/qualifications?acc_token=e179e7123ebc4555bde66499540f5ee6 HTTP/1.0
+GET /api/2.5/tenders/16ed9c73a8f34ed89787edcf423f4267/qualifications?acc_token=e179e7123ebc4555bde66499540f5ee6 HTTP/1.0
 Authorization: Bearer broker
 Host: public-api-sandbox.prozorro.gov.ua
 
@@ -10,8 +10,8 @@ Content-Type: application/json
   "data": [
     {
       "id": "c78f038b5a7c4dc29bf750f702884c3f",
-      "bidID": "67eb57fa061f47b9836630fd4f90122a",
-      "lotID": "176e6033e7af4efc95f6a5c290a3311d",
+      "bidID": "b936dea48982483fa0dca16cbbabd262",
+      "lotID": "d1f58c0ba35f44a9aa2176f9213056b9",
       "status": "pending",
       "date": "2023-10-10T01:01:00+03:00",
       "qualified": false,
@@ -19,8 +19,8 @@ Content-Type: application/json
     },
     {
       "id": "7c53b3bb5af34776ad687e076aafebb4",
-      "bidID": "110e51882d0f47e5a0c6168c89e9595a",
-      "lotID": "176e6033e7af4efc95f6a5c290a3311d",
+      "bidID": "95f91577d82e445b9aff9338e0d5c97a",
+      "lotID": "d1f58c0ba35f44a9aa2176f9213056b9",
       "status": "pending",
       "date": "2023-10-10T01:01:00+03:00",
       "qualified": false,
@@ -28,8 +28,8 @@ Content-Type: application/json
     },
     {
       "id": "6ecdff1511a54a4182cb0edb47026f1f",
-      "bidID": "110e51882d0f47e5a0c6168c89e9595a",
-      "lotID": "cdab28eeafd5467e935a8a62fb9d0f21",
+      "bidID": "95f91577d82e445b9aff9338e0d5c97a",
+      "lotID": "ab754f91fa1a4efdb9b978d10a93e1b3",
       "status": "pending",
       "date": "2023-10-10T01:01:00+03:00",
       "qualified": false,
@@ -37,8 +37,8 @@ Content-Type: application/json
     },
     {
       "id": "455696660eab4eb8ae27233295975477",
-      "bidID": "8f1f20c9676f4c51b1e41855982f5629",
-      "lotID": "cdab28eeafd5467e935a8a62fb9d0f21",
+      "bidID": "fbcde53fd1f94b558c1111bc3303f29c",
+      "lotID": "ab754f91fa1a4efdb9b978d10a93e1b3",
       "status": "pending",
       "date": "2023-10-10T01:01:00+03:00",
       "qualified": false,
@@ -46,8 +46,8 @@ Content-Type: application/json
     },
     {
       "id": "b407d317f8d649eb8048697239f81486",
-      "bidID": "8f1f20c9676f4c51b1e41855982f5629",
-      "lotID": "176e6033e7af4efc95f6a5c290a3311d",
+      "bidID": "fbcde53fd1f94b558c1111bc3303f29c",
+      "lotID": "d1f58c0ba35f44a9aa2176f9213056b9",
       "status": "pending",
       "date": "2023-10-10T01:01:00+03:00",
       "qualified": false,
@@ -55,8 +55,8 @@ Content-Type: application/json
     },
     {
       "id": "aa5974d7117a420e8997eca59822f426",
-      "bidID": "7a25aec16c274693a9a03af1dcc05f32",
-      "lotID": "cdab28eeafd5467e935a8a62fb9d0f21",
+      "bidID": "322f88a05b5740bd836496aa6b9bb8f7",
+      "lotID": "ab754f91fa1a4efdb9b978d10a93e1b3",
       "status": "pending",
       "date": "2023-10-10T01:01:00+03:00",
       "qualified": false,

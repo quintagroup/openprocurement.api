@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/30730028a07b4aee97ed094ebd250c58/agreements/9ed77f9be3594c058f334504330db2a0?acc_token=216c4c5722b74bbbaaaf1498070dc772 HTTP/1.0
+GET /api/2.5/tenders/ae2274f0782747918bb1e96f34787c24/agreements/9ed77f9be3594c058f334504330db2a0?acc_token=216c4c5722b74bbbaaaf1498070dc772 HTTP/1.0
 Authorization: Bearer broker
 Host: public-api-sandbox.prozorro.gov.ua
 
@@ -11,7 +11,7 @@ Content-Type: application/json
     "id": "9ed77f9be3594c058f334504330db2a0",
     "items": [
       {
-        "id": "d7b3fb7152ec4af88ec6210d2be36685",
+        "id": "413de2ea9c9c44b9828522f05507c3bd",
         "description": "футляри до державних нагород",
         "unit": {
           "name": "item",
@@ -45,7 +45,7 @@ Content-Type: application/json
         "description_en": "Cases for state awards"
       },
       {
-        "id": "238026bfe5c1443e91d205578eac6419",
+        "id": "d7915d4dfbbf43cd86d72c88c3bbf136",
         "description": "футляри до державних нагород",
         "unit": {
           "name": "item",
@@ -110,7 +110,7 @@ Content-Type: application/json
         ],
         "unitPrices": [
           {
-            "relatedItem": "d7b3fb7152ec4af88ec6210d2be36685",
+            "relatedItem": "413de2ea9c9c44b9828522f05507c3bd",
             "value": {
               "currency": "UAH",
               "amount": 0.5,
@@ -118,7 +118,7 @@ Content-Type: application/json
             }
           },
           {
-            "relatedItem": "238026bfe5c1443e91d205578eac6419",
+            "relatedItem": "d7915d4dfbbf43cd86d72c88c3bbf136",
             "value": {
               "currency": "UAH",
               "amount": 0.5,
@@ -127,7 +127,7 @@ Content-Type: application/json
           }
         ],
         "awardID": "38b196e95ad147f9aa09040a36a54964",
-        "bidID": "704ce27d8af84133be0e67b6e00cd665",
+        "bidID": "9b8db91e489f4dfd90e93f54c20c2ae1",
         "date": "2023-10-10T01:02:01+03:00"
       },
       {
@@ -159,7 +159,7 @@ Content-Type: application/json
         ],
         "unitPrices": [
           {
-            "relatedItem": "d7b3fb7152ec4af88ec6210d2be36685",
+            "relatedItem": "413de2ea9c9c44b9828522f05507c3bd",
             "value": {
               "currency": "UAH",
               "amount": 0.5,
@@ -167,7 +167,7 @@ Content-Type: application/json
             }
           },
           {
-            "relatedItem": "238026bfe5c1443e91d205578eac6419",
+            "relatedItem": "d7915d4dfbbf43cd86d72c88c3bbf136",
             "value": {
               "currency": "UAH",
               "amount": 0.5,
@@ -176,7 +176,7 @@ Content-Type: application/json
           }
         ],
         "awardID": "36b9fc7fa38d41d9990670956f8f12f8",
-        "bidID": "9b7bc233b5b9426ba47f63ae0070dc79",
+        "bidID": "361b9178e1fa4f8ba3c51630af9771b6",
         "date": "2023-10-10T01:02:01+03:00"
       },
       {
@@ -208,7 +208,7 @@ Content-Type: application/json
         ],
         "unitPrices": [
           {
-            "relatedItem": "d7b3fb7152ec4af88ec6210d2be36685",
+            "relatedItem": "413de2ea9c9c44b9828522f05507c3bd",
             "value": {
               "currency": "UAH",
               "amount": 0.5,
@@ -216,7 +216,7 @@ Content-Type: application/json
             }
           },
           {
-            "relatedItem": "238026bfe5c1443e91d205578eac6419",
+            "relatedItem": "d7915d4dfbbf43cd86d72c88c3bbf136",
             "value": {
               "currency": "UAH",
               "amount": 0.5,
@@ -225,7 +225,7 @@ Content-Type: application/json
           }
         ],
         "awardID": "afa433c494e44739930128fe436e711d",
-        "bidID": "95db393211474a7c930f5c3df7f52b56",
+        "bidID": "91c7aa33638e4680980085954fdc33a8",
         "date": "2023-10-10T01:02:01+03:00"
       }
     ],
@@ -239,7 +239,7 @@ Content-Type: application/json
         "url": "http://public-docs-sandbox.prozorro.gov.ua/get/40137a4b174840698ca8b3aaf28eeb5b?Signature=tCeyLe%2B3DjDDTG4vsAwydgsKxHNLxjB5dIhwG%2FonMKXaabEh2Q1Wv7BJgorwI%2BNr4GLZ2vQ3JJCzhznoFUT%2BAw%3D%3D&KeyID=a8968c46",
         "documentOf": "tender",
         "language": "uk",
-        "id": "423f7bf339ec4ae7a2ba951d261b20c8",
+        "id": "30bb1b7847a048dd89e0c78d77a9ab2d",
         "datePublished": "2023-10-10T01:02:01+03:00",
         "dateModified": "2023-10-10T01:02:01+03:00"
       },
@@ -247,7 +247,7 @@ Content-Type: application/json
         "confidentiality": "public",
         "title_en": "Title of Document",
         "description_en": "Description of Document",
-        "id": "ca39088c239d4dfeb6e2d5849bb499ce",
+        "id": "65fcf9dfd3104b80adcced87180bc3c5",
         "datePublished": "2023-10-10T01:02:01+03:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "agreement_second_document.doc",

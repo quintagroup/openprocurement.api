@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/4b4ed03227c24f43b34f74183e3e0ca2/awards/8850d78aa8a94c148d6d245907f40d3e/milestones?acc_token=5a55c72486d8489d95277757843eee3c HTTP/1.0
+POST /api/2.5/tenders/4a2a576c85d54712935397876296f0d9/awards/8850d78aa8a94c148d6d245907f40d3e/milestones?acc_token=5a55c72486d8489d95277757843eee3c HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -13,13 +13,13 @@ Host: lb-api-sandbox.prozorro.gov.ua
 
 HTTP/1.0 201 Created
 Content-Type: application/json
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4b4ed03227c24f43b34f74183e3e0ca2/awards/8850d78aa8a94c148d6d245907f40d3e/milestones/c23f1e6c8b8541679f85e57083e7e7ca
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4a2a576c85d54712935397876296f0d9/awards/8850d78aa8a94c148d6d245907f40d3e/milestones/7237e58915b949df9c07a98cfc4bdcd4
 
 {
   "data": {
     "description": "Обгрунтування продовження строків розгляду",
     "code": "extensionPeriod",
-    "id": "c23f1e6c8b8541679f85e57083e7e7ca",
+    "id": "7237e58915b949df9c07a98cfc4bdcd4",
     "dueDate": "2023-11-08T00:00:00+02:00",
     "date": "2023-10-10T01:00:00+03:00"
   }

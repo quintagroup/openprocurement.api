@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/137bba901398466a9aa1880da2ade9a6?acc_token=76e7037e0a9a445f8bfe44a967308c41 HTTP/1.0
+PATCH /api/2.5/tenders/513a5729b98b4078a5e0c1ffb39e3c9a?acc_token=76e7037e0a9a445f8bfe44a967308c41 HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -52,7 +52,7 @@ Content-Type: application/json
     "tenderID": "UA-2023-10-10-000001-a",
     "questions": [
       {
-        "id": "18aed6d02f154d56b9784733349f80f0",
+        "id": "1d89d93355e44ffab8ae3545109d7bd1",
         "author": {
           "hash": "0008badd6aa9dd04675d471581d21e5f"
         },
@@ -71,7 +71,7 @@ Content-Type: application/json
         "description": "змінений опис документа",
         "description_en": "document description modified",
         "relatedItem": "ffffffffffffffffffffffffffffffff",
-        "id": "0eb8412a31bf4fb495e2d50c6a0876d5",
+        "id": "6a7a9cebe2704f2ab6258c8d8a7789e2",
         "datePublished": "2023-10-10T01:00:01+03:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "Notice.doc",
@@ -84,7 +84,7 @@ Content-Type: application/json
       },
       {
         "confidentiality": "public",
-        "id": "fc20014ad6434b7b93c655c13b2f699a",
+        "id": "ecd7f9a7032e454e92e48ae5d882cfaa",
         "datePublished": "2023-10-10T01:06:04+03:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "AwardCriteria.pdf",
@@ -99,7 +99,7 @@ Content-Type: application/json
         "confidentiality": "public",
         "description": "Нова версія AwardCriteria документу",
         "description_en": "new version of the AwardCriteria document",
-        "id": "fc20014ad6434b7b93c655c13b2f699a",
+        "id": "ecd7f9a7032e454e92e48ae5d882cfaa",
         "datePublished": "2023-10-10T01:10:05+03:00",
         "hash": "md5:11111111111111111111111111111111",
         "title": "AwardCriteria.pdf",
@@ -227,7 +227,7 @@ Content-Type: application/json
         "title": "lot title",
         "description": "lot description",
         "status": "active",
-        "id": "880b8274983b40cfa8455e8e3d82bb70",
+        "id": "31ec05e9aa3b44eeae2a94279b1e3040",
         "date": "2023-10-10T01:00:00+03:00",
         "value": {
           "currency": "UAH",
@@ -259,7 +259,7 @@ Content-Type: application/json
         "sequenceNumber": 1
       },
       {
-        "id": "4b7d2866ae0e4de7b1ccffded4f891fc",
+        "id": "dae3f9b68e6b48dbbe95bed92af203ca",
         "title": "deliveryOfGoods",
         "type": "financing",
         "code": "postpayment",
@@ -306,10 +306,10 @@ Content-Type: application/json
             "description": "папір і картон гофровані, паперова й картонна тара"
           }
         ],
-        "relatedLot": "880b8274983b40cfa8455e8e3d82bb70"
+        "relatedLot": "31ec05e9aa3b44eeae2a94279b1e3040"
       }
     ],
-    "id": "137bba901398466a9aa1880da2ade9a6"
+    "id": "513a5729b98b4078a5e0c1ffb39e3c9a"
   },
   "config": {
     "hasAuction": true,

@@ -1,4 +1,4 @@
-PUT /api/2.5/tenders/24e919a50e8d4a8a9e6c934dcbd04af2/criteria/2c882107c3df4accb409505309fc598d/requirement_groups/c3bd4e33d8f548db973c4a48df01a298/requirements/bb11c06fbd5545ccb0284ff39aa2d6cc?acc_token=eb6b48c2dc7d4861892c0a5b340af985 HTTP/1.0
+PUT /api/2.5/tenders/7e0cabc0e0554ae1a8dfb85f7d43849c/criteria/57dc524c79d647b991c2d6277279a9aa/requirement_groups/ba78529a8aa54561a664e809b133b327/requirements/cd22373e1d0741728b2dde371094a3da?acc_token=eb6b48c2dc7d4861892c0a5b340af985 HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -22,7 +22,7 @@ Content-Type: application/json
 {
   "data": [
     {
-      "id": "bb11c06fbd5545ccb0284ff39aa2d6cc",
+      "id": "cd22373e1d0741728b2dde371094a3da",
       "title": "Updated title",
       "dataType": "boolean",
       "eligibleEvidences": [
@@ -30,7 +30,7 @@ Content-Type: application/json
           "title": "Документальне підтвердження",
           "description": "Довідка в довільній формі",
           "type": "document",
-          "id": "2da609e556044832b40ee0980665ddb5"
+          "id": "0e0a2f1fe84f43849b3d0484562e3e43"
         }
       ],
       "expectedValue": false,
@@ -38,7 +38,7 @@ Content-Type: application/json
       "status": "active"
     },
     {
-      "id": "bb11c06fbd5545ccb0284ff39aa2d6cc",
+      "id": "cd22373e1d0741728b2dde371094a3da",
       "datePublished": "2023-10-10T01:00:00+03:00",
       "status": "cancelled",
       "dateModified": "2023-10-10T01:00:00+03:00"

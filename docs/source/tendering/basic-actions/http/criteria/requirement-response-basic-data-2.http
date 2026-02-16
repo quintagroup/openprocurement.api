@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/4a3291de67c44ca298a872ca8c9c0485/bids/efa54ab538e14be9b43ded50b821455f?acc_token=4da99b9899a34292a6c75627a95f3d93 HTTP/1.0
+PATCH /api/2.5/tenders/b25aeafd54e1487bb077be93668f3c21/bids/5abe81cd14f742cb8d4cf0903585d320?acc_token=4da99b9899a34292a6c75627a95f3d93 HTTP/1.0
 Authorization: Bearer token
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -8,13 +8,13 @@ Host: lb-api-sandbox.prozorro.gov.ua
     "requirementResponses": [
       {
         "requirement": {
-          "id": "563124eafd7a483da4fa9dc6c4eca0b8"
+          "id": "74b1c241611b4b08b23cd74e4f392ec9"
         },
         "evidences": [
           {
             "title": "Requirement response",
             "relatedDocument": {
-              "id": "ed166e26753444678ed95a3ebd151434",
+              "id": "b4d31b1e52b24a019beb89f0a43f9c9a",
               "title": "name.doc"
             },
             "type": "document"
@@ -24,13 +24,13 @@ Host: lb-api-sandbox.prozorro.gov.ua
       },
       {
         "requirement": {
-          "id": "ffe317de413e48ae97db78b9e602da60"
+          "id": "2562e6f3f0b74c308cdc1b42a341cacd"
         },
         "evidences": [
           {
             "title": "Requirement response",
             "relatedDocument": {
-              "id": "ed166e26753444678ed95a3ebd151434",
+              "id": "b4d31b1e52b24a019beb89f0a43f9c9a",
               "title": "name.doc"
             },
             "type": "document"
@@ -40,13 +40,13 @@ Host: lb-api-sandbox.prozorro.gov.ua
       },
       {
         "requirement": {
-          "id": "65672e4864a645a78981f701191ff6e2"
+          "id": "9a7c4b1804d3404989b663f980b3af1d"
         },
         "evidences": [
           {
             "title": "Requirement response",
             "relatedDocument": {
-              "id": "ed166e26753444678ed95a3ebd151434",
+              "id": "b4d31b1e52b24a019beb89f0a43f9c9a",
               "title": "name.doc"
             },
             "type": "document"
@@ -67,7 +67,7 @@ Content-Type: application/json
     "requirementResponses": [
       {
         "requirement": {
-          "id": "563124eafd7a483da4fa9dc6c4eca0b8",
+          "id": "74b1c241611b4b08b23cd74e4f392ec9",
           "title": "Учасник процедури закупівлі протягом останніх трьох років не притягувався до відповідальності за порушення у вигляді вчинення антиконкурентних узгоджених дій, що стосуються спотворення результатів торгів, аукціонів, конкурсів, тендерів"
         },
         "evidences": [
@@ -75,14 +75,14 @@ Content-Type: application/json
             "title": "Requirement response",
             "type": "document",
             "relatedDocument": {
-              "id": "ed166e26753444678ed95a3ebd151434",
+              "id": "b4d31b1e52b24a019beb89f0a43f9c9a",
               "title": "name.doc"
             },
-            "id": "32d580234b5941d5a0676730c6a67801"
+            "id": "1960377a30964940b66f68859b4bdbf9"
           }
         ],
         "value": true,
-        "id": "a0d92461190647889cd23fef400e80f6",
+        "id": "693f4be811d74ffda4a25b91e49c07d9",
         "classification": {
           "scheme": "ESPD211",
           "id": "CRITERION.EXCLUSION.CONVICTIONS.FRAUD"
@@ -90,7 +90,7 @@ Content-Type: application/json
       },
       {
         "requirement": {
-          "id": "ffe317de413e48ae97db78b9e602da60",
+          "id": "2562e6f3f0b74c308cdc1b42a341cacd",
           "title": "Учасник процедури закупівлі є нерезидентом"
         },
         "evidences": [
@@ -98,14 +98,14 @@ Content-Type: application/json
             "title": "Requirement response",
             "type": "document",
             "relatedDocument": {
-              "id": "ed166e26753444678ed95a3ebd151434",
+              "id": "b4d31b1e52b24a019beb89f0a43f9c9a",
               "title": "name.doc"
             },
-            "id": "d9213e53844c42b7bfad7135f5af8d9f"
+            "id": "7e7715f488354d5a81dd2395c47c52d8"
           }
         ],
         "value": true,
-        "id": "34f5edd3973f4fc096a799d9d70a3ebf",
+        "id": "30ba61f34bc84e1c875bf6702c243fab",
         "classification": {
           "scheme": "ESPD211",
           "id": "CRITERION.EXCLUSION.NATIONAL.ANTI-CORRUPTION"
@@ -113,7 +113,7 @@ Content-Type: application/json
       },
       {
         "requirement": {
-          "id": "65672e4864a645a78981f701191ff6e2",
+          "id": "9a7c4b1804d3404989b663f980b3af1d",
           "title": "Учасник процедури закупівлі має антикорупційну програму чи уповноваженого з реалізації антикорупційної програми"
         },
         "evidences": [
@@ -121,14 +121,14 @@ Content-Type: application/json
             "title": "Requirement response",
             "type": "document",
             "relatedDocument": {
-              "id": "ed166e26753444678ed95a3ebd151434",
+              "id": "b4d31b1e52b24a019beb89f0a43f9c9a",
               "title": "name.doc"
             },
-            "id": "73737d3658d747a8919f8ace49a5f647"
+            "id": "aa36ed17156a440dbb0bff2e1e45b329"
           }
         ],
         "value": true,
-        "id": "a2e4f64ad89a4cb690a58326773158b0",
+        "id": "413c71e08ce84a37bf4bf2007d7d65e8",
         "classification": {
           "scheme": "ESPD211",
           "id": "CRITERION.EXCLUSION.NATIONAL.ANTI-CORRUPTION"
@@ -169,7 +169,7 @@ Content-Type: application/json
     ],
     "status": "draft",
     "subcontractingDetails": "ДКП «Орфей», Україна",
-    "id": "efa54ab538e14be9b43ded50b821455f",
+    "id": "5abe81cd14f742cb8d4cf0903585d320",
     "date": "2023-10-10T01:00:00+03:00",
     "lotValues": [
       {
@@ -178,7 +178,7 @@ Content-Type: application/json
           "currency": "UAH",
           "valueAddedTaxIncluded": true
         },
-        "relatedLot": "251405ab88ff4e62806566f189709a65",
+        "relatedLot": "1d0c518aa10648b596d5bb3ed6731476",
         "status": "pending",
         "date": "2023-10-10T01:00:00+03:00"
       }
@@ -186,7 +186,7 @@ Content-Type: application/json
     "documents": [
       {
         "confidentiality": "public",
-        "id": "ed166e26753444678ed95a3ebd151434",
+        "id": "b4d31b1e52b24a019beb89f0a43f9c9a",
         "datePublished": "2023-10-10T01:00:00+03:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "name.doc",

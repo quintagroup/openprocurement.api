@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/2a71069de9654c5ca67c8db208720fe2/complaints HTTP/1.0
+GET /api/2.5/tenders/e3ba356ffdb04f32b1864a591633a385/complaints HTTP/1.0
 Host: public-api-sandbox.prozorro.gov.ua
 
 
@@ -22,14 +22,14 @@ Content-Type: application/json
       "type": "claim"
     },
     {
-      "id": "6df7d5abe3524dcfba3f705071ca1ddf",
+      "id": "92b6e0e14e6e487f89a03734052877b5",
       "complaintID": "UA-2023-10-10-000001-a.2",
       "date": "2023-10-10T01:00:00+03:00",
       "status": "declined",
       "documents": [
         {
           "confidentiality": "public",
-          "id": "f1772556a53043f78f600eea868406bc",
+          "id": "51a22fb261fe4e789fc381030f959fbb",
           "datePublished": "2023-10-10T01:00:00+03:00",
           "hash": "md5:00000000000000000000000000000000",
           "title": "Complaint_Attachment.pdf",
@@ -68,11 +68,11 @@ Content-Type: application/json
       "dateSubmitted": "2023-10-10T01:00:00+03:00",
       "objections": [
         {
-          "id": "e0931d4c79b74864ba80302215758011",
+          "id": "8e00d15ba8384a5f8f94a65ada538194",
           "title": "My objection",
           "description": "Test objection",
           "relatesTo": "tender",
-          "relatedItem": "2a71069de9654c5ca67c8db208720fe2",
+          "relatedItem": "e3ba356ffdb04f32b1864a591633a385",
           "classification": {
             "scheme": "violation_amcu",
             "id": "corruptionDescription",
@@ -80,14 +80,14 @@ Content-Type: application/json
           },
           "requestedRemedies": [
             {
-              "id": "f590bada0f9c42f18d66de72bd4c9c01",
+              "id": "5c6012fe715b4a22a50cf61edc0794a5",
               "type": "setAsideAward",
               "description": "test"
             }
           ],
           "arguments": [
             {
-              "id": "7c69d72c715c4783ab9383857c0ef196",
+              "id": "aa11747c8df6417aa7e1702ba5191960",
               "description": "test argument"
             }
           ],
@@ -118,14 +118,14 @@ Content-Type: application/json
       "dateAnswered": "2023-10-10T01:00:00+03:00"
     },
     {
-      "id": "57beae6aab6a4915819883d4b2105814",
+      "id": "df7c7ebd3f064715a685f19964eecb85",
       "complaintID": "UA-2023-10-10-000001-a.4",
       "date": "2023-10-10T01:00:00+03:00",
       "status": "resolved",
       "documents": [
         {
           "confidentiality": "public",
-          "id": "501ae710d5614f1fb8fecf797762fbf9",
+          "id": "ff8a8df5883b46f4a5f6b1bc871990ad",
           "datePublished": "2023-10-10T01:00:00+03:00",
           "hash": "md5:00000000000000000000000000000000",
           "title": "ComplaintResolution.pdf",
@@ -164,11 +164,11 @@ Content-Type: application/json
       "dateSubmitted": "2023-10-10T01:00:00+03:00",
       "objections": [
         {
-          "id": "deddb6f4d5504594b687f7ba975eee02",
+          "id": "4535cc9979e74546a393378b54d16556",
           "title": "My objection",
           "description": "Test objection",
           "relatesTo": "tender",
-          "relatedItem": "2a71069de9654c5ca67c8db208720fe2",
+          "relatedItem": "e3ba356ffdb04f32b1864a591633a385",
           "classification": {
             "scheme": "violation_amcu",
             "id": "corruptionDescription",
@@ -176,14 +176,14 @@ Content-Type: application/json
           },
           "requestedRemedies": [
             {
-              "id": "80585a74b7304daea188afe55d5a825e",
+              "id": "d26fa9f476a6458ba1426cce0d634e95",
               "type": "setAsideAward",
               "description": "test"
             }
           ],
           "arguments": [
             {
-              "id": "8c00fed81f5b49afa7faa5d3432b1219",
+              "id": "fce8a65501784167b15ac90dd31ba4a6",
               "description": "test argument"
             }
           ],
@@ -203,7 +203,7 @@ Content-Type: application/json
       "tendererActionDate": "2023-10-10T01:00:00+03:00"
     },
     {
-      "id": "cd2a784c50d54e89944fb36a581a8d41",
+      "id": "45bc84a248274517b799f411816e05b0",
       "complaintID": "UA-2023-10-10-000001-a.5",
       "date": "2023-10-10T01:00:00+03:00",
       "status": "stopped",
@@ -234,11 +234,11 @@ Content-Type: application/json
       "dateSubmitted": "2023-10-10T01:00:00+03:00",
       "objections": [
         {
-          "id": "6a843265a805491a98844faed73b059c",
+          "id": "2cc62588dbe34a3586d606074058cc9a",
           "title": "My objection",
           "description": "Test objection",
           "relatesTo": "tender",
-          "relatedItem": "2a71069de9654c5ca67c8db208720fe2",
+          "relatedItem": "e3ba356ffdb04f32b1864a591633a385",
           "classification": {
             "scheme": "violation_amcu",
             "id": "corruptionDescription",
@@ -246,14 +246,14 @@ Content-Type: application/json
           },
           "requestedRemedies": [
             {
-              "id": "bac9ffdc1c1c46a2b294c32b5916e832",
+              "id": "a0d6917d529a4ebabbf73e2d7d360919",
               "type": "setAsideAward",
               "description": "test"
             }
           ],
           "arguments": [
             {
-              "id": "51d8d6c8867a46a0962560e3a75bbe16",
+              "id": "ad15d3ac13624448a2a21dfb41df4601",
               "description": "test argument"
             }
           ],
@@ -274,7 +274,7 @@ Content-Type: application/json
       "dateCanceled": "2023-10-10T01:00:00+03:00"
     },
     {
-      "id": "ab69304a77b24e94852d8fdf9d71a19c",
+      "id": "4728a3c579784e62ab51566e30f9bc10",
       "complaintID": "UA-2023-10-10-000001-a.6",
       "date": "2023-10-10T01:00:00+03:00",
       "status": "accepted",
@@ -305,11 +305,11 @@ Content-Type: application/json
       "dateSubmitted": "2023-10-10T01:00:00+03:00",
       "objections": [
         {
-          "id": "38b190c858314b95bcb179501f015f1f",
+          "id": "f403719c71a04926879f6f1df446e552",
           "title": "My objection",
           "description": "Test objection",
           "relatesTo": "tender",
-          "relatedItem": "2a71069de9654c5ca67c8db208720fe2",
+          "relatedItem": "e3ba356ffdb04f32b1864a591633a385",
           "classification": {
             "scheme": "violation_amcu",
             "id": "corruptionDescription",
@@ -317,14 +317,14 @@ Content-Type: application/json
           },
           "requestedRemedies": [
             {
-              "id": "1a8b2bab53c44580a584976bf8536528",
+              "id": "edf53b2621d4447ebfe56ab27dc469fd",
               "type": "setAsideAward",
               "description": "test"
             }
           ],
           "arguments": [
             {
-              "id": "5ed2fc9a41b14bbd82a0c7fd429b3151",
+              "id": "54b71c769ce5416c802433dea5ecb4b5",
               "description": "test argument"
             }
           ],
@@ -341,7 +341,7 @@ Content-Type: application/json
       "acceptance": true
     },
     {
-      "id": "f9d00a0ce0c0465ebf78a30d2cc101ae",
+      "id": "a4a856276f2f489fa0f0a6b5518025e6",
       "complaintID": "UA-2023-10-10-000001-a.7",
       "date": "2023-10-10T01:00:00+03:00",
       "status": "invalid",
@@ -372,11 +372,11 @@ Content-Type: application/json
       "dateSubmitted": "2023-10-10T01:00:00+03:00",
       "objections": [
         {
-          "id": "e996be4f426c47569c41d05eae5ff0ea",
+          "id": "635810a8209e4824ad6322bc3ca971e5",
           "title": "My objection",
           "description": "Test objection",
           "relatesTo": "tender",
-          "relatedItem": "2a71069de9654c5ca67c8db208720fe2",
+          "relatedItem": "e3ba356ffdb04f32b1864a591633a385",
           "classification": {
             "scheme": "violation_amcu",
             "id": "corruptionDescription",
@@ -384,14 +384,14 @@ Content-Type: application/json
           },
           "requestedRemedies": [
             {
-              "id": "a68608200df74ef48a37c8fe87fa9462",
+              "id": "9655c44fc95e4f4d9e55b8091db397c7",
               "type": "setAsideAward",
               "description": "test"
             }
           ],
           "arguments": [
             {
-              "id": "7933c533cefa42238991b69290c915e7",
+              "id": "8f48e982243e4302b8732289354e444e",
               "description": "test argument"
             }
           ],
@@ -407,7 +407,7 @@ Content-Type: application/json
       "acceptance": false
     },
     {
-      "id": "71f597a6b81d43a09b84a9e3bed6047d",
+      "id": "662d27197e774cb28ac705b27e0ace01",
       "complaintID": "UA-2023-10-10-000001-a.8",
       "date": "2023-10-10T01:00:00+03:00",
       "status": "mistaken",
@@ -437,11 +437,11 @@ Content-Type: application/json
       "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.",
       "objections": [
         {
-          "id": "29036652446845bda42275235de80570",
+          "id": "a8aa8a1b9bf44dc786a0fb2d0be82e35",
           "title": "My objection",
           "description": "Test objection",
           "relatesTo": "tender",
-          "relatedItem": "2a71069de9654c5ca67c8db208720fe2",
+          "relatedItem": "e3ba356ffdb04f32b1864a591633a385",
           "classification": {
             "scheme": "violation_amcu",
             "id": "corruptionDescription",
@@ -449,14 +449,14 @@ Content-Type: application/json
           },
           "requestedRemedies": [
             {
-              "id": "484b9d13503247c6a47ad3414d8fd109",
+              "id": "c5165bbdee5f45a583ab8e21ac384dc2",
               "type": "setAsideAward",
               "description": "test"
             }
           ],
           "arguments": [
             {
-              "id": "87ac5e9370d14b91b77893a57431f923",
+              "id": "11b45d4f58be4a48a64a170a5d753fc9",
               "description": "test argument"
             }
           ],
@@ -470,7 +470,7 @@ Content-Type: application/json
       "rejectReason": "cancelledByComplainant"
     },
     {
-      "id": "3131116986bb4f24a6bc60bd8b2b0b24",
+      "id": "87323fb969f9439a8921fdd9bb6e1c26",
       "complaintID": "UA-2023-10-10-000001-a.9",
       "date": "2023-10-10T01:00:00+03:00",
       "status": "pending",
@@ -500,11 +500,11 @@ Content-Type: application/json
       "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.",
       "objections": [
         {
-          "id": "fbe76ae3525548ddb11afcd4321636b6",
+          "id": "21fd7cec213743589b967e42ed0752bd",
           "title": "My objection",
           "description": "Test objection",
           "relatesTo": "tender",
-          "relatedItem": "2a71069de9654c5ca67c8db208720fe2",
+          "relatedItem": "e3ba356ffdb04f32b1864a591633a385",
           "classification": {
             "scheme": "violation_amcu",
             "id": "corruptionDescription",
@@ -512,14 +512,14 @@ Content-Type: application/json
           },
           "requestedRemedies": [
             {
-              "id": "1e75b1a4523040b497a3503c83b22c04",
+              "id": "8ddf3dda344a43a48717876cff60ddd8",
               "type": "setAsideAward",
               "description": "test"
             }
           ],
           "arguments": [
             {
-              "id": "9f653207722a49ff988f0f0856bda988",
+              "id": "7ddf917997b14e16b015c4fab42f7cec",
               "description": "test argument"
             }
           ],
@@ -536,8 +536,8 @@ Content-Type: application/json
           "title": "Уточнення по вимозі",
           "description": "Відсутній документ",
           "recipient": "complaint_owner",
-          "relatedObjection": "fbe76ae3525548ddb11afcd4321636b6",
-          "id": "1464868655a9403ca945d3d6c748cb22",
+          "relatedObjection": "21fd7cec213743589b967e42ed0752bd",
+          "id": "cf8f6fd6279a43799826dfeb75fde9c3",
           "datePublished": "2023-10-10T01:00:00+03:00",
           "author": "aboveThresholdReviewers"
         },
@@ -545,9 +545,9 @@ Content-Type: application/json
           "title": "Уточнення по вимозі",
           "description": "Додано документ",
           "recipient": "aboveThresholdReviewers",
-          "relatedPost": "1464868655a9403ca945d3d6c748cb22",
-          "relatedObjection": "fbe76ae3525548ddb11afcd4321636b6",
-          "id": "13b1c47a2ae74e1ab7ab8c07b96b9f0c",
+          "relatedPost": "cf8f6fd6279a43799826dfeb75fde9c3",
+          "relatedObjection": "21fd7cec213743589b967e42ed0752bd",
+          "id": "7d58a8cca29444598c401bec4464d3d7",
           "datePublished": "2023-10-10T01:00:00+03:00",
           "author": "complaint_owner"
         },
@@ -555,8 +555,8 @@ Content-Type: application/json
           "title": "Уточнення по вимозі",
           "description": "Відсутній документ",
           "recipient": "tender_owner",
-          "relatedObjection": "fbe76ae3525548ddb11afcd4321636b6",
-          "id": "83d9848c51594e758f9f0b771200bbf0",
+          "relatedObjection": "21fd7cec213743589b967e42ed0752bd",
+          "id": "559eca2d2a25403f80d3f02c83d7d4f9",
           "datePublished": "2023-10-10T01:00:00+03:00",
           "author": "aboveThresholdReviewers"
         },
@@ -564,17 +564,17 @@ Content-Type: application/json
           "title": "Уточнення по вимозі",
           "description": "Додано документ",
           "recipient": "aboveThresholdReviewers",
-          "relatedPost": "83d9848c51594e758f9f0b771200bbf0",
-          "relatedObjection": "fbe76ae3525548ddb11afcd4321636b6",
-          "id": "53ba68c7dbde471bb0f2e2a445e87077",
+          "relatedPost": "559eca2d2a25403f80d3f02c83d7d4f9",
+          "relatedObjection": "21fd7cec213743589b967e42ed0752bd",
+          "id": "293df18ec6e440398224e82c519744b2",
           "datePublished": "2023-10-10T01:00:00+03:00",
           "author": "tender_owner"
         },
         {
           "title": "Пояснення до скарги",
           "description": "Була така необхідність",
-          "relatedObjection": "fbe76ae3525548ddb11afcd4321636b6",
-          "id": "4ac3125553134db1bdaecfdda04709a6",
+          "relatedObjection": "21fd7cec213743589b967e42ed0752bd",
+          "id": "a1f633c687464f6794cd9fe5d20623a3",
           "datePublished": "2023-10-10T01:00:00+03:00",
           "author": "tender_owner"
         }
@@ -582,13 +582,13 @@ Content-Type: application/json
       "documents": [
         {
           "confidentiality": "public",
-          "relatedItem": "53ba68c7dbde471bb0f2e2a445e87077",
+          "relatedItem": "293df18ec6e440398224e82c519744b2",
           "hash": "md5:00000000000000000000000000000000",
           "title": "post_document_tender.pdf",
           "format": "application/pdf",
           "url": "http://public-docs-sandbox.prozorro.gov.ua/get/1baac27bd57948acac0eb76a5c98181f?Signature=uWdKkcOwswzqeEFuBa%2B84Dji9eq2oBSVRBdmlsi0yTx5hswHVslN6qhtfn3CyKgJjB4DfVEaDuZPDC0LkV%2FKCQ%3D%3D&KeyID=a8968c46",
           "language": "uk",
-          "id": "6568f175e0e142f7809937a741f97ca7",
+          "id": "41be7999d7014b0b9e413f4a65e631a6",
           "documentOf": "post",
           "datePublished": "2023-10-10T01:00:00+03:00",
           "dateModified": "2023-10-10T01:00:00+03:00",

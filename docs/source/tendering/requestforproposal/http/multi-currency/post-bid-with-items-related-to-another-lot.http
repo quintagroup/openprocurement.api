@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/a2c51926819e43aea0de24b309bde8f9/bids HTTP/1.0
+POST /api/2.5/tenders/73862f0482bd4d22a4bf40cd491a2b20/bids HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -44,14 +44,14 @@ Host: lb-api-sandbox.prozorro.gov.ua
           "amount": 200,
           "currency": "USD"
         },
-        "relatedLot": "a1b71828e35f4f83b5bc1754af3856c1"
+        "relatedLot": "e932e2282dd44ca38478282c9b65d683"
       }
     ],
     "items": [
       {
         "quantity": 5,
         "description": "папір",
-        "id": "b8c28526683045a4b98d2f557dce20be",
+        "id": "d97b0743145b4e4d89e908039a069506",
         "unit": {
           "code": "KGM",
           "value": {

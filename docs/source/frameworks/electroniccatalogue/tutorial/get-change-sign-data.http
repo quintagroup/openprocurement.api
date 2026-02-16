@@ -1,4 +1,4 @@
-GET /api/2.5/frameworks/093bd3718cb14e2c933c209d60e76b0b/changes/f62d2c6867ac44af8c6e9e28cd65fe60?acc_token=9572f49b75ef46ed864c472ca9eff903&opt_context=true HTTP/1.0
+GET /api/2.5/frameworks/2e17a7116854417a9ce9709b87369783/changes/63565e3efe7a4a42bb26921c82f518f3?acc_token=9572f49b75ef46ed864c472ca9eff903&opt_context=true HTTP/1.0
 Authorization: Bearer broker
 Host: public-api-sandbox.prozorro.gov.ua
 
@@ -15,7 +15,7 @@ Content-Type: application/json
         "endDate": "2023-12-15T01:00:00+03:00"
       }
     },
-    "id": "f62d2c6867ac44af8c6e9e28cd65fe60",
+    "id": "63565e3efe7a4a42bb26921c82f518f3",
     "previous": {
       "qualificationPeriod": {
         "startDate": "2023-10-10T01:00:00+03:00",
@@ -45,7 +45,7 @@ Content-Type: application/json
       ],
       "documents": [
         {
-          "id": "6e3c9989ef844c53b6b202f3c5d3af28",
+          "id": "b3560558137b492bac22f5dc230ce1de",
           "datePublished": "2023-10-10T01:00:00+03:00",
           "hash": "md5:00000000000000000000000000000000",
           "title": "framework.doc",
@@ -55,7 +55,7 @@ Content-Type: application/json
           "language": "uk"
         },
         {
-          "id": "1e3e5196731a48e48ca51152eb00c4ba",
+          "id": "927ddabfb980421ca7757c6c5460f9a7",
           "datePublished": "2023-10-10T01:00:00+03:00",
           "hash": "md5:00000000000000000000000000000000",
           "title": "framework_additional_docs.doc",
@@ -65,7 +65,7 @@ Content-Type: application/json
           "language": "uk"
         },
         {
-          "id": "1e3e5196731a48e48ca51152eb00c4ba",
+          "id": "927ddabfb980421ca7757c6c5460f9a7",
           "datePublished": "2023-10-10T01:00:00+03:00",
           "hash": "md5:00000000000000000000000000000000",
           "title": "framework_additional_docs.doc",
@@ -125,7 +125,7 @@ Content-Type: application/json
               "endDate": "2023-12-15T01:00:00+03:00"
             }
           },
-          "id": "f62d2c6867ac44af8c6e9e28cd65fe60",
+          "id": "63565e3efe7a4a42bb26921c82f518f3",
           "previous": {
             "qualificationPeriod": {
               "startDate": "2023-10-10T01:00:00+03:00",
@@ -136,7 +136,7 @@ Content-Type: application/json
           "dateModified": "2023-10-26T01:00:00+03:00"
         }
       ],
-      "id": "093bd3718cb14e2c933c209d60e76b0b"
+      "id": "2e17a7116854417a9ce9709b87369783"
     }
   }
 }

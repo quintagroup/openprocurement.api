@@ -1,4 +1,4 @@
-GET /api/2.5/frameworks/89208a5c9d04455eaa4c41e2b5f0d70a/qualifications HTTP/1.0
+GET /api/2.5/frameworks/932c7023588f40f4aec26aef109f4998/qualifications HTTP/1.0
 Authorization: Bearer broker
 Host: public-api-sandbox.prozorro.gov.ua
 
@@ -11,29 +11,29 @@ Content-Type: application/json
     {
       "documents": [
         {
-          "id": "de1b17be13294eb89f5b48f6763575d7",
+          "id": "ed3c1836c7c94d9aa02adbe5d6b2ed99",
           "datePublished": "2023-10-26T01:00:00+03:00",
           "hash": "md5:00000000000000000000000000000000",
           "title": "qualification.doc",
           "format": "application/msword",
-          "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/qualifications/61da52d3fbea49129c50b9171ce98c39/documents/de1b17be13294eb89f5b48f6763575d7?download=5b3f7bd6512745f8aa676efc89dbeb46",
+          "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/qualifications/61da52d3fbea49129c50b9171ce98c39/documents/ed3c1836c7c94d9aa02adbe5d6b2ed99?download=5b3f7bd6512745f8aa676efc89dbeb46",
           "dateModified": "2023-10-26T01:00:00+03:00",
           "language": "uk"
         },
         {
           "documentType": "evaluationReports",
-          "id": "26d0ce97ca2b4c2497ef490530723f58",
+          "id": "9f87b10607744a04b926ba01aab3ba85",
           "datePublished": "2023-10-26T01:00:00+03:00",
           "hash": "md5:00000000000000000000000000000000",
           "title": "sign.p7s",
           "format": "application/pkcs7-signature",
-          "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/qualifications/61da52d3fbea49129c50b9171ce98c39/documents/26d0ce97ca2b4c2497ef490530723f58?download=c301888666eb496b836650f2f0c2ff8a",
+          "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/qualifications/61da52d3fbea49129c50b9171ce98c39/documents/9f87b10607744a04b926ba01aab3ba85?download=c301888666eb496b836650f2f0c2ff8a",
           "dateModified": "2023-10-26T01:00:00+03:00",
           "language": "uk"
         }
       ],
-      "submissionID": "3da2f72300dc4a9f882583f13279d626",
-      "frameworkID": "89208a5c9d04455eaa4c41e2b5f0d70a",
+      "submissionID": "39f4e30e72c846039972b697c874c995",
+      "frameworkID": "932c7023588f40f4aec26aef109f4998",
       "status": "unsuccessful",
       "date": "2023-10-26T01:00:00+03:00",
       "dateCreated": "2023-10-26T01:00:00+03:00",
@@ -44,18 +44,18 @@ Content-Type: application/json
       "documents": [
         {
           "documentType": "evaluationReports",
-          "id": "02d9cb13241e4e2083301a56bd1cf208",
+          "id": "5670c7a685cc4517bcb9a9215019e1e5",
           "datePublished": "2023-10-26T01:00:00+03:00",
           "hash": "md5:00000000000000000000000000000000",
           "title": "sign.p7s",
           "format": "application/pkcs7-signature",
-          "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/qualifications/78d4a13a5f274438a568fb8e618862a7/documents/02d9cb13241e4e2083301a56bd1cf208?download=ec07f6afeca649b3a960652cfabb5b92",
+          "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/qualifications/78d4a13a5f274438a568fb8e618862a7/documents/5670c7a685cc4517bcb9a9215019e1e5?download=ec07f6afeca649b3a960652cfabb5b92",
           "dateModified": "2023-10-26T01:00:00+03:00",
           "language": "uk"
         }
       ],
-      "submissionID": "aabf4e9eda30494bb3f63598bb92b86a",
-      "frameworkID": "89208a5c9d04455eaa4c41e2b5f0d70a",
+      "submissionID": "46d70854657844d8899811e773f0f410",
+      "frameworkID": "932c7023588f40f4aec26aef109f4998",
       "status": "active",
       "date": "2023-10-26T01:00:00+03:00",
       "dateCreated": "2023-10-26T01:00:00+03:00",

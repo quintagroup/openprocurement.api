@@ -1,4 +1,4 @@
-GET /api/2.5/agreements/8887db77f71c4a0496b39ac2c4eea78c/changes/4f32972b3cfd4f248814b2a88e8e21d6 HTTP/1.0
+GET /api/2.5/agreements/8887db77f71c4a0496b39ac2c4eea78c/changes/763394fc5c714348b33cea25674f6916 HTTP/1.0
 Authorization: Bearer broker
 Host: public-api-sandbox.prozorro.gov.ua
 
@@ -13,7 +13,7 @@ Content-Type: application/json
     "rationale_en": "Agreement change cause",
     "date": "2023-10-10T01:00:00+03:00",
     "rationaleType": "taxRate",
-    "id": "4f32972b3cfd4f248814b2a88e8e21d6"
+    "id": "763394fc5c714348b33cea25674f6916"
   }
 }
 

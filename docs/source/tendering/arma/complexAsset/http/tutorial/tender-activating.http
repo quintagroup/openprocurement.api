@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/d9668d8fd5d14779905c208c929e49bc?acc_token=c09bfd8bd3964ff4a95d9cb9477f7dfd HTTP/1.0
+PATCH /api/2.5/tenders/0c99535af6024017bcbdec7b4a5c49da?acc_token=c09bfd8bd3964ff4a95d9cb9477f7dfd HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -23,7 +23,7 @@ Content-Type: application/json
       {
         "confidentiality": "public",
         "documentType": "notice",
-        "id": "1e54fe5afdfd4a17999100cbf30e424e",
+        "id": "478f4d136f2449d1b9ffb7b64e323b2b",
         "datePublished": "2023-10-10T01:00:00+03:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "sign.p7s",
@@ -165,7 +165,7 @@ Content-Type: application/json
     },
     "items": [
       {
-        "id": "537866309f724e778575587e250ccf80",
+        "id": "c11a79964fb8409586e9d9ee9b32a048",
         "description": "Послуги шкільних їдалень",
         "unit": {
           "name": "кілограм",
@@ -204,7 +204,7 @@ Content-Type: application/json
         "description_en": "Services in school canteens"
       },
       {
-        "id": "faa17eff12e543a79ed9a73e87df078f",
+        "id": "deef5391f86241b0b0a89b4257997238",
         "description": "Послуги шкільних їдалень",
         "unit": {
           "name": "упаковка",
@@ -246,7 +246,7 @@ Content-Type: application/json
     "awardCriteria": "ratedCriteria",
     "noticePublicationDate": "2023-10-10T01:00:00+03:00",
     "next_check": "2023-11-08T00:00:00+02:00",
-    "id": "d9668d8fd5d14779905c208c929e49bc"
+    "id": "0c99535af6024017bcbdec7b4a5c49da"
   },
   "config": {
     "hasAuction": true,

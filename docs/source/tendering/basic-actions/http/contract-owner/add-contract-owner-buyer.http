@@ -216,7 +216,7 @@ Host: lb-api-sandbox.prozorro.gov.ua
 
 HTTP/1.0 201 Created
 Content-Type: application/json
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/016911f3f3d341618c9844a1087e857e
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/c9af88586ead48b4a27d83f9322001b0
 
 {
   "data": {
@@ -350,7 +350,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/016911f3f3d34161
     ],
     "criteria": [
       {
-        "id": "db07acca70874e4fa4f15a13ab3a6d55",
+        "id": "426449fa571346a5834b7c8ac2f8f902",
         "description": "Форма випуску",
         "source": "tenderer",
         "relatesTo": "item",
@@ -373,11 +373,11 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/016911f3f3d34161
         ],
         "requirementGroups": [
           {
-            "id": "fb060fed9e2b4705ba24218f80928774",
+            "id": "fd9f481e57f545cc914e50e2a2b0046d",
             "description": "Форма випуску",
             "requirements": [
               {
-                "id": "3d7bd9da05614ac4bb8566e268590160",
+                "id": "794bcb50495d499287d10aeb9836370a",
                 "title": "Форма випуску",
                 "dataType": "string",
                 "status": "active",
@@ -388,7 +388,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/016911f3f3d34161
                 "datePublished": "2023-10-10T01:00:00+03:00"
               },
               {
-                "id": "02cc402d17c246aab7bc883c4f91666f",
+                "id": "48ada825a8244e1c882f50d74b7366b3",
                 "title": "Доза діючої речовини",
                 "dataType": "integer",
                 "status": "active",
@@ -400,7 +400,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/016911f3f3d34161
                 "datePublished": "2023-10-10T01:00:00+03:00"
               },
               {
-                "id": "ea9f9be22eb04f8791fc97c5c55d08ef",
+                "id": "3e9eb97901a149e7854ca9bc20922d74",
                 "title": "Форма випуску 1",
                 "dataType": "string",
                 "status": "active",
@@ -510,7 +510,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/016911f3f3d34161
     },
     "dateCreated": "2023-10-10T01:00:00+03:00",
     "dateModified": "2023-10-10T01:00:00+03:00",
-    "id": "016911f3f3d341618c9844a1087e857e"
+    "id": "c9af88586ead48b4a27d83f9322001b0"
   },
   "config": {
     "hasAuction": false,

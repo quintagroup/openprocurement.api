@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/e8ac48a7259d4badb25eaebe193c8a4a/qualifications/73f63504520247fa9b86d1bd8882cd4c/requirement_responses/a8f72759a761470a9caeeb85dc16c4d3?acc_token=289610ea5a9b448e9b44db767a3ca67f HTTP/1.0
+PATCH /api/2.5/tenders/ba530b42ddf64368ba53732b713de766/qualifications/73f63504520247fa9b86d1bd8882cd4c/requirement_responses/708d926b1c76493ba891ed00052c9c6c?acc_token=289610ea5a9b448e9b44db767a3ca67f HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -16,7 +16,7 @@ Content-Type: application/json
 {
   "data": {
     "requirement": {
-      "id": "86e05c198d1c41c588f7ca7373fdd95f",
+      "id": "68a473e5eb484c8f9ea8dca07fcc2965",
       "title": "Учасник процедури закупівлі є пов'язаною особою з іншими учасниками та/або з уповноваженою особою (особами), та/або з керівником замовника"
     },
     "evidences": [
@@ -24,14 +24,14 @@ Content-Type: application/json
         "title": "Requirement response",
         "type": "document",
         "relatedDocument": {
-          "id": "8e181d86dd0a49bb86ba68aecc97b2e5",
+          "id": "40f2874474594e1390612049d7e883fb",
           "title": "name.doc"
         },
-        "id": "5a34b76b1edd474a864692e051f32498"
+        "id": "cd678867809e4a888ca003d126095d71"
       }
     ],
     "value": false,
-    "id": "a8f72759a761470a9caeeb85dc16c4d3",
+    "id": "708d926b1c76493ba891ed00052c9c6c",
     "classification": {
       "scheme": "ESPD211",
       "id": "CRITERION.EXCLUSION.MISCONDUCT.MARKET_DISTORTION"

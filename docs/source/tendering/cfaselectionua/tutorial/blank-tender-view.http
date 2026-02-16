@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/ba4365d4238e408a8c655d19220b071e HTTP/1.0
+GET /api/2.5/tenders/42d9343086154eaf83080514ecd42ff6 HTTP/1.0
 Authorization: Bearer broker
 Host: public-api-sandbox.prozorro.gov.ua
 
@@ -166,7 +166,7 @@ Content-Type: application/json
     },
     "dateCreated": "2023-10-10T01:00:00+03:00",
     "dateModified": "2023-10-10T01:00:00+03:00",
-    "id": "ba4365d4238e408a8c655d19220b071e"
+    "id": "42d9343086154eaf83080514ecd42ff6"
   },
   "config": {
     "hasAuction": true,

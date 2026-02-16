@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/977d8a4eb3e440b3acdc8a7f39b7c764?acc_token=dae7afe6e0d149468a4426e0384ca817 HTTP/1.0
+PATCH /api/2.5/tenders/20570f0f6c354a03b0ff0062f3cd1524?acc_token=dae7afe6e0d149468a4426e0384ca817 HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -182,7 +182,7 @@ Content-Type: application/json
         "title": "lot title",
         "description": "lot description",
         "status": "active",
-        "id": "4aa3fea01ec145d8bdbe302a816f8953",
+        "id": "a22bd0578dd3446fa1717fee9d688b77",
         "date": "2023-10-10T01:00:00+03:00",
         "value": {
           "currency": "UAH",
@@ -214,7 +214,7 @@ Content-Type: application/json
         "sequenceNumber": 1
       },
       {
-        "id": "a927cad96b924b708af56cf9f4fbe837",
+        "id": "983dc504fae84a94bcb812fbe54ea51f",
         "title": "deliveryOfGoods",
         "type": "financing",
         "code": "postpayment",
@@ -262,7 +262,7 @@ Content-Type: application/json
         ]
       }
     ],
-    "id": "977d8a4eb3e440b3acdc8a7f39b7c764"
+    "id": "20570f0f6c354a03b0ff0062f3cd1524"
   },
   "config": {
     "hasAuction": true,

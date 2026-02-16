@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/4b4ed03227c24f43b34f74183e3e0ca2/awards/8850d78aa8a94c148d6d245907f40d3e?acc_token=5a55c72486d8489d95277757843eee3c HTTP/1.0
+GET /api/2.5/tenders/4a2a576c85d54712935397876296f0d9/awards/8850d78aa8a94c148d6d245907f40d3e?acc_token=5a55c72486d8489d95277757843eee3c HTTP/1.0
 Authorization: Bearer broker
 Host: public-api-sandbox.prozorro.gov.ua
 
@@ -48,8 +48,8 @@ Content-Type: application/json
         }
       }
     ],
-    "bid_id": "a5bf718ab7f14f40bef4ad334f3c936a",
-    "lotID": "c94486b261084c09ac0c731b74d35c85",
+    "bid_id": "103392b1764c41fd86ea8723e67f203d",
+    "lotID": "5b0412bd862347cfb29c8de0b4736b58",
     "period": {
       "startDate": "2023-10-10T01:00:00+03:00",
       "endDate": "2023-11-08T00:00:00+02:00"
@@ -58,7 +58,7 @@ Content-Type: application/json
       {
         "description": "Обгрунтування продовження строків розгляду",
         "code": "extensionPeriod",
-        "id": "c23f1e6c8b8541679f85e57083e7e7ca",
+        "id": "7237e58915b949df9c07a98cfc4bdcd4",
         "dueDate": "2023-11-08T00:00:00+02:00",
         "date": "2023-10-10T01:00:00+03:00"
       }
@@ -73,7 +73,7 @@ Content-Type: application/json
         "url": "http://public-docs-sandbox.prozorro.gov.ua/get/9e73f25e6c244dedb63b178e39850910?Signature=BgUR7Gc5BoDndGmHyDa8gtnPb9KrDGv5MHpcJJWgl5wLcMbCUXLpoWVBt%2B%2FZSCiSD7y6YyiwBhz46%2ByzW1QKDA%3D%3D&KeyID=a8968c46",
         "documentOf": "tender",
         "language": "uk",
-        "id": "4ecaf6fd84a64ef7be6d699a0d7dfd87",
+        "id": "be8b000df60942e492f44d8ad62c78d7",
         "datePublished": "2023-10-10T01:00:00+03:00",
         "dateModified": "2023-10-10T01:00:00+03:00",
         "author": "tender_owner"

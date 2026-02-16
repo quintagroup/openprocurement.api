@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/d9668d8fd5d14779905c208c929e49bc/bids/00c99f2f37594ea98eb9def71cc4b22d?acc_token=c09bfd8bd3964ff4a95d9cb9477f7dfd HTTP/1.0
+GET /api/2.5/tenders/0c99535af6024017bcbdec7b4a5c49da/bids/ec61ff4dff6e4acc8d78e1f819212cb9?acc_token=c09bfd8bd3964ff4a95d9cb9477f7dfd HTTP/1.0
 Authorization: Bearer broker
 Host: public-api-sandbox.prozorro.gov.ua
 
@@ -33,7 +33,7 @@ Content-Type: application/json
       }
     ],
     "status": "unsuccessful",
-    "id": "00c99f2f37594ea98eb9def71cc4b22d",
+    "id": "ec61ff4dff6e4acc8d78e1f819212cb9",
     "lotValues": [
       {
         "relatedLot": "d9c1c86a51294d9f9e128b780416b344",
@@ -43,7 +43,7 @@ Content-Type: application/json
     "documents": [
       {
         "confidentiality": "public",
-        "id": "a4c6496b4d6049cfa16cf172cbf15adb",
+        "id": "1091aa8d39434f8db09f658187a89443",
         "datePublished": "2023-10-10T01:03:00+03:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "Proposal_part1.pdf",
@@ -55,7 +55,7 @@ Content-Type: application/json
       },
       {
         "confidentiality": "public",
-        "id": "bfd8f9424cd24782b75eeef08eaa3f2d",
+        "id": "ab0b2256d0914983843c3ede89e6a6f1",
         "datePublished": "2023-10-10T01:03:00+03:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "Proposal_part2.pdf",
@@ -68,7 +68,7 @@ Content-Type: application/json
       {
         "confidentiality": "public",
         "documentType": "proposal",
-        "id": "19251a5cb3174433ac06122d0815b804",
+        "id": "e1b70613e87d41799bb59736614a0155",
         "datePublished": "2023-10-10T01:03:00+03:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "sign.p7s",
@@ -82,7 +82,7 @@ Content-Type: application/json
     "eligibilityDocuments": [
       {
         "confidentiality": "public",
-        "id": "6400246f63a04a4ba5109df632b0811e",
+        "id": "0ff59b8975c84f73b22f95b7ed811c6b",
         "datePublished": "2023-10-10T01:03:00+03:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "eligibility_doc.pdf",

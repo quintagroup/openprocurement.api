@@ -7,8 +7,8 @@ Content-Type: application/json
 
 {
   "data": {
-    "frameworkID": "08238232b095420687b4e273ae56d878",
-    "submissionID": "9e7c60f18fc848a2be97320340d21981",
+    "frameworkID": "928167e4da604e73a055125a4616babe",
+    "submissionID": "21673ec1685e4d62a9540052cc59428f",
     "qualificationType": "dynamicPurchasingSystem",
     "status": "pending",
     "date": "2023-10-10T01:00:00+03:00",
@@ -20,7 +20,7 @@ Content-Type: application/json
         "format": "application/msword",
         "url": "Приховано",
         "language": "uk",
-        "id": "e38c43db64c3439699a285ec82874d24",
+        "id": "9f0693da64a646a1bbf193907cd005d8",
         "datePublished": "2023-10-10T01:00:00+03:00",
         "dateModified": "2023-10-10T01:00:00+03:00"
       }

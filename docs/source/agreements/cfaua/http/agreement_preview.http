@@ -43,7 +43,7 @@ Content-Type: application/json
         ],
         "unitPrices": [
           {
-            "relatedItem": "a0aa16102ff345948a7508d8c03bb529",
+            "relatedItem": "ce7ee9fee64b4eaa87dd010843796c9a",
             "value": {
               "currency": "UAH",
               "valueAddedTaxIncluded": true,
@@ -85,7 +85,7 @@ Content-Type: application/json
         ],
         "unitPrices": [
           {
-            "relatedItem": "a0aa16102ff345948a7508d8c03bb529",
+            "relatedItem": "ce7ee9fee64b4eaa87dd010843796c9a",
             "value": {
               "currency": "UAH",
               "valueAddedTaxIncluded": true,
@@ -127,7 +127,7 @@ Content-Type: application/json
         ],
         "unitPrices": [
           {
-            "relatedItem": "a0aa16102ff345948a7508d8c03bb529",
+            "relatedItem": "ce7ee9fee64b4eaa87dd010843796c9a",
             "value": {
               "currency": "UAH",
               "valueAddedTaxIncluded": true,
@@ -142,7 +142,7 @@ Content-Type: application/json
     ],
     "items": [
       {
-        "id": "a0aa16102ff345948a7508d8c03bb529",
+        "id": "ce7ee9fee64b4eaa87dd010843796c9a",
         "description": "футляри до державних нагород",
         "quantity": 5.0,
         "classification": {
@@ -200,12 +200,12 @@ Content-Type: application/json
         "countryName": "Україна"
       }
     },
-    "tender_id": "bcc35be92ed24536a5af9ede5e2de5e0",
+    "tender_id": "abbc9a0c6f034659b3b28397ceceaac1",
     "numberOfContracts": 3,
     "dateModified": "2023-10-10T01:00:00+03:00",
     "changes": [
       {
-        "id": "4f32972b3cfd4f248814b2a88e8e21d6",
+        "id": "763394fc5c714348b33cea25674f6916",
         "status": "pending",
         "date": "2023-10-10T01:00:00+03:00",
         "rationale": "Друга і третя поставка має бути розфасована",
@@ -213,7 +213,7 @@ Content-Type: application/json
         "rationaleType": "taxRate",
         "modifications": [
           {
-            "itemId": "a0aa16102ff345948a7508d8c03bb529",
+            "itemId": "ce7ee9fee64b4eaa87dd010843796c9a",
             "factor": 0.1605
           }
         ]
@@ -221,8 +221,8 @@ Content-Type: application/json
     ],
     "documents": [
       {
-        "relatedItem": "4f32972b3cfd4f248814b2a88e8e21d6",
-        "id": "59daf3cfcf9c441281a2a215d44bfb65",
+        "relatedItem": "763394fc5c714348b33cea25674f6916",
+        "id": "2dca769710034e8cb17e18c4431a6261",
         "datePublished": "2023-10-10T01:00:00+03:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "agreement_changes.doc",

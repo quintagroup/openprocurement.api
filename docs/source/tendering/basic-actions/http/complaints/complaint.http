@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/2a71069de9654c5ca67c8db208720fe2/complaints/57beae6aab6a4915819883d4b2105814 HTTP/1.0
+GET /api/2.5/tenders/e3ba356ffdb04f32b1864a591633a385/complaints/df7c7ebd3f064715a685f19964eecb85 HTTP/1.0
 Host: public-api-sandbox.prozorro.gov.ua
 
 
@@ -7,14 +7,14 @@ Content-Type: application/json
 
 {
   "data": {
-    "id": "57beae6aab6a4915819883d4b2105814",
+    "id": "df7c7ebd3f064715a685f19964eecb85",
     "complaintID": "UA-2023-10-10-000001-a.4",
     "date": "2023-10-10T01:00:00+03:00",
     "status": "resolved",
     "documents": [
       {
         "confidentiality": "public",
-        "id": "501ae710d5614f1fb8fecf797762fbf9",
+        "id": "ff8a8df5883b46f4a5f6b1bc871990ad",
         "datePublished": "2023-10-10T01:00:00+03:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "ComplaintResolution.pdf",
@@ -53,11 +53,11 @@ Content-Type: application/json
     "dateSubmitted": "2023-10-10T01:00:00+03:00",
     "objections": [
       {
-        "id": "deddb6f4d5504594b687f7ba975eee02",
+        "id": "4535cc9979e74546a393378b54d16556",
         "title": "My objection",
         "description": "Test objection",
         "relatesTo": "tender",
-        "relatedItem": "2a71069de9654c5ca67c8db208720fe2",
+        "relatedItem": "e3ba356ffdb04f32b1864a591633a385",
         "classification": {
           "scheme": "violation_amcu",
           "id": "corruptionDescription",
@@ -65,14 +65,14 @@ Content-Type: application/json
         },
         "requestedRemedies": [
           {
-            "id": "80585a74b7304daea188afe55d5a825e",
+            "id": "d26fa9f476a6458ba1426cce0d634e95",
             "type": "setAsideAward",
             "description": "test"
           }
         ],
         "arguments": [
           {
-            "id": "8c00fed81f5b49afa7faa5d3432b1219",
+            "id": "fce8a65501784167b15ac90dd31ba4a6",
             "description": "test argument"
           }
         ],

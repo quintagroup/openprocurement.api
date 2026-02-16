@@ -21,9 +21,9 @@ from openprocurement.api.utils import (
     request_init_plan,
     update_logging_context,
 )
-from openprocurement.api.validation import validate_json_data
 from openprocurement.api.views.base import MongodbResourceListing
 from openprocurement.planning.api.procedure.models.plan import PatchPlan, Plan, PostPlan
+from openprocurement.planning.api.procedure.models.tender import PreValidationTender
 from openprocurement.planning.api.procedure.serializers.plan import PlanSerializer
 from openprocurement.planning.api.procedure.utils import save_plan
 from openprocurement.planning.api.procedure.views.base import PlanBaseResource
@@ -159,7 +159,7 @@ class PlanTendersResource(PlanBaseResource):
 
     @json_view(
         content_type="application/json",
-        validators=(validate_json_data,),
+        validators=(validate_input_data(PreValidationTender, strict=False),),
         permission="create_tender_from_plan",
     )
     def post(self):

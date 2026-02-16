@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/2a71069de9654c5ca67c8db208720fe2/complaints/6df7d5abe3524dcfba3f705071ca1ddf HTTP/1.0
+PATCH /api/2.5/tenders/e3ba356ffdb04f32b1864a591633a385/complaints/92b6e0e14e6e487f89a03734052877b5 HTTP/1.0
 Authorization: Bearer reviewer
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -15,14 +15,14 @@ Content-Type: application/json
 
 {
   "data": {
-    "id": "6df7d5abe3524dcfba3f705071ca1ddf",
+    "id": "92b6e0e14e6e487f89a03734052877b5",
     "complaintID": "UA-2023-10-10-000001-a.2",
     "date": "2023-10-10T01:00:00+03:00",
     "status": "declined",
     "documents": [
       {
         "confidentiality": "public",
-        "id": "f1772556a53043f78f600eea868406bc",
+        "id": "51a22fb261fe4e789fc381030f959fbb",
         "datePublished": "2023-10-10T01:00:00+03:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "Complaint_Attachment.pdf",
@@ -61,11 +61,11 @@ Content-Type: application/json
     "dateSubmitted": "2023-10-10T01:00:00+03:00",
     "objections": [
       {
-        "id": "e0931d4c79b74864ba80302215758011",
+        "id": "8e00d15ba8384a5f8f94a65ada538194",
         "title": "My objection",
         "description": "Test objection",
         "relatesTo": "tender",
-        "relatedItem": "2a71069de9654c5ca67c8db208720fe2",
+        "relatedItem": "e3ba356ffdb04f32b1864a591633a385",
         "classification": {
           "scheme": "violation_amcu",
           "id": "corruptionDescription",
@@ -73,14 +73,14 @@ Content-Type: application/json
         },
         "requestedRemedies": [
           {
-            "id": "f590bada0f9c42f18d66de72bd4c9c01",
+            "id": "5c6012fe715b4a22a50cf61edc0794a5",
             "type": "setAsideAward",
             "description": "test"
           }
         ],
         "arguments": [
           {
-            "id": "7c69d72c715c4783ab9383857c0ef196",
+            "id": "aa11747c8df6417aa7e1702ba5191960",
             "description": "test argument"
           }
         ],

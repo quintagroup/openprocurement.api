@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/d919e3a12bf04f32b88a651dc10270d1/documents HTTP/1.0
+GET /api/2.5/tenders/32d3b5becccb479ea62a23dc50237f60/documents HTTP/1.0
 Authorization: Bearer broker
 Host: public-api-sandbox.prozorro.gov.ua
 
@@ -11,7 +11,7 @@ Content-Type: application/json
     {
       "confidentiality": "public",
       "documentType": "notice",
-      "id": "18548bb314d24a2a9197bd5d1de9ae34",
+      "id": "a3b60926cefd48a5a2b62b87bdbd6f6a",
       "datePublished": "2023-10-10T01:00:00+03:00",
       "hash": "md5:00000000000000000000000000000000",
       "title": "sign.p7s",
@@ -30,14 +30,14 @@ Content-Type: application/json
       "url": "http://public-docs-sandbox.prozorro.gov.ua/get/3e763c96f1c6465498df8ca076c31e21?Signature=CF7tlfOfznrF6HE67XZ1HW6ukT1kl2HLegmq5T28M2gM0ot2GeYBGN4D%2BRmgV%2BeEITAaRQ3jb6Ha7WycSW%2FGCQ%3D%3D&KeyID=a8968c46",
       "documentOf": "tender",
       "language": "uk",
-      "id": "68a7b510ebdd474d853ee17da1a3bfbc",
+      "id": "875e7429220e4da58d9a990fd6ad9083",
       "datePublished": "2023-10-10T01:00:00+03:00",
       "dateModified": "2023-10-10T01:00:00+03:00",
       "author": "tender_owner"
     },
     {
       "confidentiality": "public",
-      "id": "c86e20a4d5ff476ea713e499bdba064e",
+      "id": "34871f29cf8f463fbfc050cf5a80dac8",
       "datePublished": "2023-10-10T01:00:00+03:00",
       "hash": "md5:00000000000000000000000000000000",
       "title": "AwardCriteria.pdf",

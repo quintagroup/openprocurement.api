@@ -7,7 +7,7 @@ Host: lb-api-sandbox.prozorro.gov.ua
   "data": {
     "items": [
       {
-        "id": "179a3c6724694765b74df4ad81d52bf9",
+        "id": "7f368a9d7bf7418999079584b4ba5f34",
         "description": "Послуги шкільних їдалень",
         "quantity": 1.0,
         "additionalClassifications": [
@@ -17,7 +17,7 @@ Host: lb-api-sandbox.prozorro.gov.ua
             "description": "Послуги шкільних їдалень"
           }
         ],
-        "relatedLot": "1a0adfbe4ac4403796c2a35d1efaf96b",
+        "relatedLot": "70e731cb683c49cf8d82920b84b981f2",
         "deliveryDate": {
           "startDate": "2023-10-30T01:00:00+03:00",
           "endDate": "2023-11-10T01:00:00+03:00"

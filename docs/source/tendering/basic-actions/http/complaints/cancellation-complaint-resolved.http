@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/b3e50c95aba5434d9d21eb46e65d8f4d/cancellations/8b3cf6c0fad24bc1a5cf5fb05119836b/complaints/e64da7492d294ea194bee32ab3525f32?acc_token=bf62ef1630c74e7ea3f5eddcab62c34f HTTP/1.0
+PATCH /api/2.5/tenders/4687f36b2f3d45ae9974b4ca238948a4/cancellations/13e041023703472b8bcec84943058bc3/complaints/8cce7bd9ccb24ff2a53cd0f8d6e354be?acc_token=bf62ef1630c74e7ea3f5eddcab62c34f HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -16,14 +16,14 @@ Content-Type: application/json
 
 {
   "data": {
-    "id": "e64da7492d294ea194bee32ab3525f32",
+    "id": "8cce7bd9ccb24ff2a53cd0f8d6e354be",
     "complaintID": "UA-2023-10-10-000001-a.1",
     "date": "2023-10-10T01:00:00+03:00",
     "status": "resolved",
     "documents": [
       {
         "confidentiality": "public",
-        "id": "ea20c67ebd8e49888bf193483c65a21f",
+        "id": "7be3c7a557a643c6a8e35d4519426a50",
         "datePublished": "2023-10-10T01:00:00+03:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "Complaint_Attachment.pdf",
@@ -36,7 +36,7 @@ Content-Type: application/json
       },
       {
         "confidentiality": "public",
-        "id": "c28d44868dc3459eb5dfb21c71ea70d7",
+        "id": "d024be1af91d49139d3c3849fb81081b",
         "datePublished": "2023-10-10T01:00:00+03:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "ComplaintResolution.pdf",
@@ -75,11 +75,11 @@ Content-Type: application/json
     "dateSubmitted": "2023-10-10T01:00:00+03:00",
     "objections": [
       {
-        "id": "465a831ff91d46a3bd73247ea554bab7",
+        "id": "4a3151fe30ac40c897c6007c9cee4cf6",
         "title": "My objection",
         "description": "Test objection",
         "relatesTo": "cancellation",
-        "relatedItem": "8b3cf6c0fad24bc1a5cf5fb05119836b",
+        "relatedItem": "13e041023703472b8bcec84943058bc3",
         "classification": {
           "scheme": "violation_amcu",
           "id": "corruptionDescription",
@@ -87,14 +87,14 @@ Content-Type: application/json
         },
         "requestedRemedies": [
           {
-            "id": "3ba7dfde049a4b6dab8b5640875f8894",
+            "id": "5c0691ecac6843bab6ba947efca10f20",
             "type": "setAsideAward",
             "description": "test"
           }
         ],
         "arguments": [
           {
-            "id": "ae6beed24ac84e50bceb2b0c2f03ddb1",
+            "id": "0652f51c2d924ed9887d6a033d7e795d",
             "description": "test argument"
           }
         ],

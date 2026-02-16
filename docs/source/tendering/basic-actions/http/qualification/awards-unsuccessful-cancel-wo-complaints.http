@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/4b4ed03227c24f43b34f74183e3e0ca2/awards/7467244beb734dc286a5428eaf4609b5?acc_token=5a55c72486d8489d95277757843eee3c HTTP/1.0
+PATCH /api/2.5/tenders/4a2a576c85d54712935397876296f0d9/awards/7467244beb734dc286a5428eaf4609b5?acc_token=5a55c72486d8489d95277757843eee3c HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -12,7 +12,7 @@ Host: lb-api-sandbox.prozorro.gov.ua
 
 HTTP/1.0 200 OK
 Content-Type: application/json
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4b4ed03227c24f43b34f74183e3e0ca2/awards/bc6fb19320f74b098ce8da8fc9b38e9b
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4a2a576c85d54712935397876296f0d9/awards/bc6fb19320f74b098ce8da8fc9b38e9b
 
 {
   "data": {
@@ -56,8 +56,8 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4b4ed03227c24f43
         }
       }
     ],
-    "bid_id": "4a15bf967949413fa361b33448f58d7c",
-    "lotID": "c94486b261084c09ac0c731b74d35c85",
+    "bid_id": "3088275f136046dab34594e16227bb54",
+    "lotID": "5b0412bd862347cfb29c8de0b4736b58",
     "complaintPeriod": {
       "startDate": "2023-10-10T01:00:03+03:00",
       "endDate": "2023-10-10T01:00:03+03:00"
@@ -65,7 +65,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4b4ed03227c24f43
     "documents": [
       {
         "confidentiality": "public",
-        "id": "43afeda05c8b4b06bf3dfeb5da2d2e6e",
+        "id": "0c3bcb73a4d04a4085fa999face6b7ce",
         "datePublished": "2023-10-10T01:00:03+03:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "Cancellation_Reason.pdf",
@@ -79,7 +79,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4b4ed03227c24f43
       {
         "confidentiality": "public",
         "documentType": "notice",
-        "id": "68a15ac28cbf48f09b9dc7742f7136ec",
+        "id": "64ee89d60dbc4a49bb9e98ce30446648",
         "datePublished": "2023-10-10T01:00:03+03:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "sign.p7s",

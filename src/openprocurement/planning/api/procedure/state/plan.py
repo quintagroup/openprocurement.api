@@ -24,6 +24,7 @@ from openprocurement.api.procedure.validation import (
 )
 from openprocurement.api.utils import error_handler, raise_operation_error
 from openprocurement.planning.api.constants import (
+    CENTRAL_PROCUREMENT_IDENTIFIER_ID,
     PROCEDURES,
     PROCURING_ENTITY_STANDSTILL,
 )
@@ -296,14 +297,15 @@ class PlanState(BaseState):
     def _validate_tender_matches_plan(self, tender, plan):
         request = get_request()
         plan_identifier = plan["procuringEntity"]["identifier"]
-        tender_identifier = tender.get("procuringEntity", {}).get("identifier", {})
+        tender_identifier = tender["procuringEntity"]["identifier"]
 
-        if plan["tender"]["procurementMethodType"] == "centralizedProcurement" and plan_identifier["id"] == "01101100":
+        if (
+            plan["tender"]["procurementMethodType"] == "centralizedProcurement"
+            and plan_identifier["id"] == CENTRAL_PROCUREMENT_IDENTIFIER_ID
+        ):
             plan_identifier = plan["buyers"][0]["identifier"]
 
-        if plan_identifier["id"] != tender_identifier.get("id") or plan_identifier["scheme"] != tender_identifier.get(
-            "scheme"
-        ):
+        if plan_identifier["id"] != tender_identifier["id"] or plan_identifier["scheme"] != tender_identifier["scheme"]:
             request.errors.add(
                 "body",
                 "procuringEntity",

@@ -43,7 +43,7 @@ Host: lb-api-sandbox.prozorro.gov.ua
         "value": {
           "amount": 499
         },
-        "relatedLot": "a13cb7e45ea242fbb5c0fb54f7002611"
+        "relatedLot": "10098f084434468aa19a0bb3524d5517"
       }
     ]
   }
@@ -52,7 +52,7 @@ Host: lb-api-sandbox.prozorro.gov.ua
 
 HTTP/1.0 201 Created
 Content-Type: application/json
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/78eb313fd0774c058c130df95e66f061/bids/052d2aa3db724254aec98633d9673cf5
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/78eb313fd0774c058c130df95e66f061/bids/0aa1a62722fe4847afa9b70f7a18fbb7
 
 {
   "data": {
@@ -97,12 +97,12 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/78eb313fd0774c05
           "currency": "UAH",
           "valueAddedTaxIncluded": true
         },
-        "relatedLot": "a13cb7e45ea242fbb5c0fb54f7002611",
+        "relatedLot": "10098f084434468aa19a0bb3524d5517",
         "date": "2023-10-10T01:00:00+03:00"
       }
     ],
     "selfQualified": true,
-    "id": "052d2aa3db724254aec98633d9673cf5",
+    "id": "0aa1a62722fe4847afa9b70f7a18fbb7",
     "date": "2023-10-10T01:00:00+03:00"
   },
   "access": {

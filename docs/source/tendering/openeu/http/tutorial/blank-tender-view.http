@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/d919e3a12bf04f32b88a651dc10270d1 HTTP/1.0
+GET /api/2.5/tenders/32d3b5becccb479ea62a23dc50237f60 HTTP/1.0
 Authorization: Bearer broker
 Host: public-api-sandbox.prozorro.gov.ua
 
@@ -32,7 +32,7 @@ Content-Type: application/json
         "sequenceNumber": 1
       },
       {
-        "id": "146a8495e73d4427886ff1671420d925",
+        "id": "08146e6f696a4b1c9df20521652fe510",
         "title": "deliveryOfGoods",
         "type": "financing",
         "code": "postpayment",
@@ -85,7 +85,7 @@ Content-Type: application/json
     },
     "items": [
       {
-        "id": "adcd9912dbc146738577dbd4a4cc3ab3",
+        "id": "250cc46de56c4db09829514bd9519438",
         "description": "Послуги шкільних їдалень",
         "unit": {
           "name": "кілограм",
@@ -123,7 +123,7 @@ Content-Type: application/json
         "description_en": "Services in school canteens"
       },
       {
-        "id": "26fc93303fcc4fcb93d4f1bfcc6e86b1",
+        "id": "1b412c42470341e88f0e771e074ecf5c",
         "description": "Послуги шкільних їдалень",
         "unit": {
           "name": "упаковка",
@@ -241,7 +241,7 @@ Content-Type: application/json
     },
     "dateCreated": "2023-10-10T01:00:00+03:00",
     "dateModified": "2023-10-10T01:00:00+03:00",
-    "id": "d919e3a12bf04f32b88a651dc10270d1"
+    "id": "32d3b5becccb479ea62a23dc50237f60"
   },
   "config": {
     "hasAuction": true,

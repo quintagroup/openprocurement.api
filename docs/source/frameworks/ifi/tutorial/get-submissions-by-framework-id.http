@@ -1,4 +1,4 @@
-GET /api/2.5/frameworks/89208a5c9d04455eaa4c41e2b5f0d70a/submissions HTTP/1.0
+GET /api/2.5/frameworks/932c7023588f40f4aec26aef109f4998/submissions HTTP/1.0
 Authorization: Bearer broker
 Host: public-api-sandbox.prozorro.gov.ua
 
@@ -33,14 +33,14 @@ Content-Type: application/json
           }
         }
       ],
-      "frameworkID": "89208a5c9d04455eaa4c41e2b5f0d70a",
+      "frameworkID": "932c7023588f40f4aec26aef109f4998",
       "status": "complete",
       "dateCreated": "2023-10-26T01:00:00+03:00",
       "dateModified": "2023-10-26T01:00:00+03:00",
       "date": "2023-10-26T01:00:00+03:00",
       "qualificationID": "61da52d3fbea49129c50b9171ce98c39",
       "datePublished": "2023-10-26T01:00:00+03:00",
-      "id": "3da2f72300dc4a9f882583f13279d626"
+      "id": "39f4e30e72c846039972b697c874c995"
     },
     {
       "tenderers": [
@@ -67,20 +67,20 @@ Content-Type: application/json
           }
         }
       ],
-      "frameworkID": "89208a5c9d04455eaa4c41e2b5f0d70a",
+      "frameworkID": "932c7023588f40f4aec26aef109f4998",
       "status": "complete",
       "dateCreated": "2023-10-26T01:00:00+03:00",
       "dateModified": "2023-10-26T01:00:00+03:00",
       "date": "2023-10-26T01:00:00+03:00",
       "qualificationID": "78d4a13a5f274438a568fb8e618862a7",
       "datePublished": "2023-10-26T01:00:00+03:00",
-      "id": "aabf4e9eda30494bb3f63598bb92b86a"
+      "id": "46d70854657844d8899811e773f0f410"
     }
   ],
   "next_page": {
-    "offset": "1698271200.0.2.b271e3d1e95e6e5bef5dad019e180f38",
-    "path": "/api/2.5/submissions?offset=1698271200.0.2.b271e3d1e95e6e5bef5dad019e180f38",
-    "uri": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/submissions?offset=1698271200.0.2.b271e3d1e95e6e5bef5dad019e180f38"
+    "offset": "1698271200.0.2.b7841bf97e0f04b04aab57da684d75bf",
+    "path": "/api/2.5/submissions?offset=1698271200.0.2.b7841bf97e0f04b04aab57da684d75bf",
+    "uri": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/submissions?offset=1698271200.0.2.b7841bf97e0f04b04aab57da684d75bf"
   }
 }
 

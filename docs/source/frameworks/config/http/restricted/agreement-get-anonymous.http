@@ -8,7 +8,7 @@ Content-Type: application/json
 {
   "data": {
     "agreementID": "UA-2023-10-10-000001",
-    "frameworkID": "08238232b095420687b4e273ae56d878",
+    "frameworkID": "928167e4da604e73a055125a4616babe",
     "agreementType": "dynamicPurchasingSystem",
     "status": "active",
     "period": {
@@ -52,7 +52,7 @@ Content-Type: application/json
       {
         "id": "98ef4c690e3242c9a78962b45048318c",
         "qualificationID": "8e3a5dc35d454c998240d46d1abc2579",
-        "submissionID": "9e7c60f18fc848a2be97320340d21981",
+        "submissionID": "21673ec1685e4d62a9540052cc59428f",
         "status": "active",
         "suppliers": [
           {

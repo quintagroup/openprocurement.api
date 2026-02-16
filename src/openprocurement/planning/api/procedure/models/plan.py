@@ -40,7 +40,7 @@ from openprocurement.planning.api.procedure.models.organization import (
 )
 from openprocurement.planning.api.procedure.models.project import Project
 from openprocurement.planning.api.procedure.models.rationale import RationaleObject
-from openprocurement.planning.api.procedure.models.tender import Tender
+from openprocurement.planning.api.procedure.models.tender import PlanTender
 from openprocurement.planning.api.utils import generate_plan_id
 from openprocurement.tender.belowthreshold.constants import BELOW_THRESHOLD
 from openprocurement.tender.core.procedure.validation import validate_ccce_ua
@@ -64,7 +64,7 @@ class PostPlan(Model):
 
     status = StringType(choices=["draft", "scheduled", "cancelled", "complete"], default="scheduled")
     procuringEntity = ModelType(ProcuringEntity, required=True)
-    tender = ModelType(Tender, required=True)
+    tender = ModelType(PlanTender, required=True)
     budget = ModelType(Budget)
     classification = ModelType(CPVClassification, required=True)
     additionalClassifications = ListType(ModelType(AdditionalClassification, required=True))
@@ -94,7 +94,7 @@ class PostPlan(Model):
 class PatchPlan(Model):
     status = StringType(choices=["draft", "scheduled", "cancelled", "complete"])
     procuringEntity = ModelType(ProcuringEntity)
-    tender = ModelType(Tender)
+    tender = ModelType(PlanTender)
     budget = ModelType(Budget)
     classification = ModelType(CPVClassification)
     additionalClassifications = ListType(ModelType(AdditionalClassification, required=True))
@@ -117,7 +117,7 @@ class Plan(Model):
 
     status = StringType(choices=["draft", "scheduled", "cancelled", "complete"])
     procuringEntity = ModelType(ProcuringEntity, required=True)
-    tender = ModelType(Tender, required=True)
+    tender = ModelType(PlanTender, required=True)
     budget = ModelType(Budget)
     classification = ModelType(CPVClassification, required=True)
     additionalClassifications = ListType(ModelType(AdditionalClassification))

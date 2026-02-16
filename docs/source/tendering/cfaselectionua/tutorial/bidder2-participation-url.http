@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/fba2e58fd313460b90eae28673490d56/bids/1cef8a54b7d74e3fb673e591f97d61f7?acc_token=690d827a0aad4d4ba676a22beea0957d HTTP/1.0
+GET /api/2.5/tenders/b4bcd8f9ee82480fb413c261d6cea972/bids/951dd3334aa14810b4653410311d30df?acc_token=690d827a0aad4d4ba676a22beea0957d HTTP/1.0
 Authorization: Bearer broker
 Host: public-api-sandbox.prozorro.gov.ua
 
@@ -23,7 +23,7 @@ Content-Type: application/json
           "currency": "UAH",
           "valueAddedTaxIncluded": true
         },
-        "participationUrl": "http://auction-sandbox.prozorro.gov.ua/tenders/fba2e58fd313460b90eae28673490d56_66bd7aa82b7d403cb3626390997acbaf?key_for_bid=1cef8a54b7d74e3fb673e591f97d61f7"
+        "participationUrl": "http://auction-sandbox.prozorro.gov.ua/tenders/b4bcd8f9ee82480fb413c261d6cea972_66bd7aa82b7d403cb3626390997acbaf?key_for_bid=951dd3334aa14810b4653410311d30df"
       }
     ],
     "tenderers": [
@@ -49,12 +49,12 @@ Content-Type: application/json
       }
     ],
     "status": "active",
-    "id": "1cef8a54b7d74e3fb673e591f97d61f7",
+    "id": "951dd3334aa14810b4653410311d30df",
     "date": "2023-10-10T01:01:00+03:00",
     "documents": [
       {
         "confidentiality": "public",
-        "id": "724457e06a9b49baa45d01e19f4f4009",
+        "id": "425e7d104b924133ab450921f6bee101",
         "datePublished": "2023-10-10T01:01:00+03:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "Proposal_part1.pdf",
@@ -66,7 +66,7 @@ Content-Type: application/json
       },
       {
         "confidentiality": "public",
-        "id": "d464562e89a14d58afece38925ec6ed9",
+        "id": "fb786e9012cb4ffea7db872ec055164f",
         "datePublished": "2023-10-10T01:01:00+03:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "Proposal_part2.pdf",
@@ -79,7 +79,7 @@ Content-Type: application/json
       {
         "confidentiality": "public",
         "documentType": "proposal",
-        "id": "89e92be6dec14639817394bdd30edae0",
+        "id": "c446b7244daf476ab324254cd5c4185c",
         "datePublished": "2023-10-10T01:01:00+03:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "sign.p7s",

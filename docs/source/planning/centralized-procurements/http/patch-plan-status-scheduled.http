@@ -1,4 +1,4 @@
-PATCH /api/2.5/plans/ab4cc76a884247e68847a2e64d0a50a0?acc_token=30368ad474d5471da86098c510f4193f HTTP/1.0
+PATCH /api/2.5/plans/d1b27c777c30402190752796d48859fd?acc_token=30368ad474d5471da86098c510f4193f HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -17,7 +17,7 @@ Content-Type: application/json
   "data": {
     "status": "scheduled",
     "procuringEntity": {
-      "id": "f26d3064993d4dd084e534c149d5eeb4",
+      "id": "3fbac75a53fb4fdf8c2b82d0eb40cb1a",
       "name": "ЦЗО №1",
       "identifier": {
         "scheme": "UA-EDR",
@@ -56,7 +56,7 @@ Content-Type: application/json
       },
       "breakdown": [
         {
-          "id": "6749e573439c48eeb3fa8d3405c90512",
+          "id": "50451e145eca493ba909f068366c12fb",
           "title": "other",
           "description": "Breakdown other description.",
           "value": {
@@ -81,7 +81,7 @@ Content-Type: application/json
     "planID": "UA-P-2023-10-10-000001-a",
     "items": [
       {
-        "id": "35a4f77ae5ef49fda453f4c6af40b9be",
+        "id": "8b29f68017114e1ba09189d310bf43e2",
         "classification": {
           "description": "Mustard seeds",
           "scheme": "ДК021",
@@ -114,7 +114,7 @@ Content-Type: application/json
     ],
     "buyers": [
       {
-        "id": "ebe134f989f9478692cc1e9534ced2df",
+        "id": "0cdabf6f342346d28b95f719574e1d02",
         "name": "ДУС",
         "identifier": {
           "scheme": "UA-EDR",
@@ -151,7 +151,7 @@ Content-Type: application/json
     "dateCreated": "2023-10-10T01:00:00+03:00",
     "dateModified": "2023-10-10T01:00:01+03:00",
     "datePublished": "2023-10-10T01:00:00+03:00",
-    "id": "ab4cc76a884247e68847a2e64d0a50a0"
+    "id": "d1b27c777c30402190752796d48859fd"
   }
 }
 

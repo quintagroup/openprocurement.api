@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/137bba901398466a9aa1880da2ade9a6?acc_token=76e7037e0a9a445f8bfe44a967308c41 HTTP/1.0
+PATCH /api/2.5/tenders/513a5729b98b4078a5e0c1ffb39e3c9a?acc_token=76e7037e0a9a445f8bfe44a967308c41 HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -33,7 +33,7 @@ Host: lb-api-sandbox.prozorro.gov.ua
             "description": "папір і картон гофровані, паперова й картонна тара"
           }
         ],
-        "relatedLot": "880b8274983b40cfa8455e8e3d82bb70"
+        "relatedLot": "31ec05e9aa3b44eeae2a94279b1e3040"
       }
     ]
   }
@@ -160,7 +160,7 @@ Content-Type: application/json
         "title": "lot title",
         "description": "lot description",
         "status": "active",
-        "id": "880b8274983b40cfa8455e8e3d82bb70",
+        "id": "31ec05e9aa3b44eeae2a94279b1e3040",
         "date": "2023-10-10T01:00:00+03:00",
         "value": {
           "currency": "UAH",
@@ -192,7 +192,7 @@ Content-Type: application/json
         "sequenceNumber": 1
       },
       {
-        "id": "4b7d2866ae0e4de7b1ccffded4f891fc",
+        "id": "dae3f9b68e6b48dbbe95bed92af203ca",
         "title": "deliveryOfGoods",
         "type": "financing",
         "code": "postpayment",
@@ -238,10 +238,10 @@ Content-Type: application/json
             "description": "папір і картон гофровані, паперова й картонна тара"
           }
         ],
-        "relatedLot": "880b8274983b40cfa8455e8e3d82bb70"
+        "relatedLot": "31ec05e9aa3b44eeae2a94279b1e3040"
       }
     ],
-    "id": "137bba901398466a9aa1880da2ade9a6"
+    "id": "513a5729b98b4078a5e0c1ffb39e3c9a"
   },
   "config": {
     "hasAuction": true,

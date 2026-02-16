@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/0122f7569ef34718a69b5de8643cccfd/bids HTTP/1.0
+POST /api/2.5/tenders/16ed9c73a8f34ed89787edcf423f4267/bids HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -41,11 +41,11 @@ Host: lb-api-sandbox.prozorro.gov.ua
     ],
     "lotValues": [
       {
-        "relatedLot": "176e6033e7af4efc95f6a5c290a3311d"
+        "relatedLot": "d1f58c0ba35f44a9aa2176f9213056b9"
       },
       {
         "subcontractingDetails": "ДКП «Укр Прінт», Україна",
-        "relatedLot": "cdab28eeafd5467e935a8a62fb9d0f21"
+        "relatedLot": "ab754f91fa1a4efdb9b978d10a93e1b3"
       }
     ]
   }
@@ -54,7 +54,7 @@ Host: lb-api-sandbox.prozorro.gov.ua
 
 HTTP/1.0 201 Created
 Content-Type: application/json
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/0122f7569ef34718a69b5de8643cccfd/bids/110e51882d0f47e5a0c6168c89e9595a
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/16ed9c73a8f34ed89787edcf423f4267/bids/95f91577d82e445b9aff9338e0d5c97a
 
 {
   "data": {
@@ -92,12 +92,12 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/0122f7569ef34718
     ],
     "lotValues": [
       {
-        "relatedLot": "176e6033e7af4efc95f6a5c290a3311d",
+        "relatedLot": "d1f58c0ba35f44a9aa2176f9213056b9",
         "status": "pending",
         "date": "2023-10-10T01:00:00+03:00"
       },
       {
-        "relatedLot": "cdab28eeafd5467e935a8a62fb9d0f21",
+        "relatedLot": "ab754f91fa1a4efdb9b978d10a93e1b3",
         "subcontractingDetails": "ДКП «Укр Прінт», Україна",
         "status": "pending",
         "date": "2023-10-10T01:00:00+03:00"
@@ -105,7 +105,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/0122f7569ef34718
     ],
     "selfQualified": true,
     "status": "draft",
-    "id": "110e51882d0f47e5a0c6168c89e9595a",
+    "id": "95f91577d82e445b9aff9338e0d5c97a",
     "date": "2023-10-10T01:00:00+03:00"
   },
   "access": {

@@ -173,7 +173,7 @@ Content-Type: application/json
       }
     ],
     "owner": "broker",
-    "tender_id": "b86d98f551fa49dfa9004373a996b627",
+    "tender_id": "e24cf829a87b40059a5c4389cfbeb831",
     "contractTemplateName": "00000000.0002.01",
     "contractChangeRationaleTypes": {
       "durationExtension": {
@@ -280,10 +280,10 @@ Content-Type: application/json
         "hash": "md5:00000000000000000000000000000000",
         "title": "sign.p7s",
         "format": "application/pkcs7-signature",
-        "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/contracts/38891909c9274c02b0bdca60fa5d2260/documents/7f7d3898f20743798bf86ef67bf260d6?download=9dc6bfe4683b4e63a799bbe366ba9376",
+        "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/contracts/38891909c9274c02b0bdca60fa5d2260/documents/b8d838fb26e4454ebf9e4b5df33de6ee?download=9dc6bfe4683b4e63a799bbe366ba9376",
         "documentOf": "contract",
         "documentType": "contractSignature",
-        "id": "7f7d3898f20743798bf86ef67bf260d6",
+        "id": "b8d838fb26e4454ebf9e4b5df33de6ee",
         "datePublished": "2023-10-10T01:00:00+03:00",
         "dateModified": "2023-10-10T01:00:00+03:00",
         "author": "supplier"
@@ -293,10 +293,10 @@ Content-Type: application/json
         "hash": "md5:00000000000000000000000000000000",
         "title": "sign.p7s",
         "format": "application/pkcs7-signature",
-        "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/contracts/38891909c9274c02b0bdca60fa5d2260/documents/22ad6fee7d0042aaa9a1d88e22bf9d67?download=9dc6bfe4683b4e63a799bbe366ba9376",
+        "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/contracts/38891909c9274c02b0bdca60fa5d2260/documents/9a6fe646da8549b7a1643a0cbab5c11f?download=9dc6bfe4683b4e63a799bbe366ba9376",
         "documentOf": "contract",
         "documentType": "contractSignature",
-        "id": "22ad6fee7d0042aaa9a1d88e22bf9d67",
+        "id": "9a6fe646da8549b7a1643a0cbab5c11f",
         "datePublished": "2023-10-10T01:00:00+03:00",
         "dateModified": "2023-10-10T01:00:00+03:00",
         "author": "supplier"
@@ -306,10 +306,10 @@ Content-Type: application/json
         "hash": "md5:00000000000000000000000000000000",
         "title": "sign.p7s",
         "format": "application/pkcs7-signature",
-        "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/contracts/38891909c9274c02b0bdca60fa5d2260/documents/c681b342eb664c3ab671f50a68860c14?download=9dc6bfe4683b4e63a799bbe366ba9376",
+        "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/contracts/38891909c9274c02b0bdca60fa5d2260/documents/096f7c212afd44abb11d1202a624966a?download=9dc6bfe4683b4e63a799bbe366ba9376",
         "documentOf": "contract",
         "documentType": "contractSignature",
-        "id": "c681b342eb664c3ab671f50a68860c14",
+        "id": "096f7c212afd44abb11d1202a624966a",
         "datePublished": "2023-10-10T01:00:00+03:00",
         "dateModified": "2023-10-10T01:00:00+03:00",
         "author": "buyer"
