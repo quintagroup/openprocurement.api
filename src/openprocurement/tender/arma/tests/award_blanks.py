@@ -497,6 +497,11 @@ def patch_tender_lot_award_unsuccessful(self):
     self.assertEqual(response.content_type, "application/json")
     self.assertEqual(len(response.json["data"]), 4)
 
+    response = self.app.get(
+        "/tenders/{}".format(self.tender_id),
+    )
+    self.assertIn("next_check", response.json["data"])
+
 
 # Tender2LotAwardResourceTest
 

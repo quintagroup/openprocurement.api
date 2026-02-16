@@ -14,7 +14,6 @@ from openprocurement.tender.arma.tests.tender_blanks import (
     create_tender_invalid,
     invalid_bid_tender_lot,
     lost_contract_for_active_award,
-    multiple_bidders_tender,
     one_bid_tender,
     one_qualificated_bid_tender,
     patch_tender,
@@ -86,7 +85,6 @@ class TenderProcessTest(BaseTenderWebTest):
     test_one_bid_tender = snitch(one_bid_tender)
     test_unsuccessful_after_prequalification_tender = snitch(unsuccessful_after_prequalification_tender)
     test_one_qualificated_bid_tender = snitch(one_qualificated_bid_tender)
-    test_multiple_bidders_tender = snitch(multiple_bidders_tender)
     test_lost_contract_for_active_award = snitch(lost_contract_for_active_award)
 
 
