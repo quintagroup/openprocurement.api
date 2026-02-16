@@ -94,7 +94,7 @@ Content-Type: application/json
         "title": "Лот №1",
         "description": "Опис Лот №1",
         "status": "active",
-        "id": "a13cb7e45ea242fbb5c0fb54f7002611",
+        "id": "10098f084434468aa19a0bb3524d5517",
         "date": "2023-10-10T01:00:00+03:00",
         "value": {
           "currency": "UAH",
@@ -163,10 +163,10 @@ Content-Type: application/json
       "endDate": "2023-11-06T00:00:00+02:00"
     },
     "procurementMethodType": "competitiveDialogueEU.stage2",
-    "dialogueID": "6ef2a6a9c4ff4cf5bbb1d85a4fcc1df5",
+    "dialogueID": "6047696fd611421ebb95a23904c7d234",
     "items": [
       {
-        "id": "8b33a5402bfd45f5ac231333088ebbe2",
+        "id": "a5fc00cd288946f5a835cfe3f612bf73",
         "description": "Послуги шкільних їдалень",
         "quantity": 1.0,
         "additionalClassifications": [
@@ -176,7 +176,7 @@ Content-Type: application/json
             "description": "Послуги шкільних їдалень"
           }
         ],
-        "relatedLot": "a13cb7e45ea242fbb5c0fb54f7002611",
+        "relatedLot": "10098f084434468aa19a0bb3524d5517",
         "deliveryDate": {
           "startDate": "2023-10-30T00:00:00+02:00",
           "endDate": "2023-11-29T00:00:00+02:00"
@@ -205,7 +205,7 @@ Content-Type: application/json
         }
       },
       {
-        "id": "b45b751b68374e5f935bd9842cbe7693",
+        "id": "ae7f8fba51254242b200e4b8a602f0ea",
         "description": "Послуги шкільних їдалень",
         "quantity": 1.0,
         "additionalClassifications": [
@@ -215,7 +215,7 @@ Content-Type: application/json
             "description": "Послуги шкільних їдалень"
           }
         ],
-        "relatedLot": "a13cb7e45ea242fbb5c0fb54f7002611",
+        "relatedLot": "10098f084434468aa19a0bb3524d5517",
         "deliveryDate": {
           "startDate": "2023-10-30T00:00:00+02:00",
           "endDate": "2023-11-29T00:00:00+02:00"
@@ -255,7 +255,7 @@ Content-Type: application/json
         "name": "ДКП «Школяр»",
         "lots": [
           {
-            "id": "a13cb7e45ea242fbb5c0fb54f7002611"
+            "id": "10098f084434468aa19a0bb3524d5517"
           }
         ]
       },
@@ -269,7 +269,7 @@ Content-Type: application/json
         "name": "ДКП «Книга»",
         "lots": [
           {
-            "id": "a13cb7e45ea242fbb5c0fb54f7002611"
+            "id": "10098f084434468aa19a0bb3524d5517"
           }
         ]
       },
@@ -282,7 +282,7 @@ Content-Type: application/json
         "name": "«Снігур»",
         "lots": [
           {
-            "id": "a13cb7e45ea242fbb5c0fb54f7002611"
+            "id": "10098f084434468aa19a0bb3524d5517"
           }
         ]
       }

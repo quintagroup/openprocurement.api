@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/4a3291de67c44ca298a872ca8c9c0485/bids/efa54ab538e14be9b43ded50b821455f?acc_token=4da99b9899a34292a6c75627a95f3d93 HTTP/1.0
+PATCH /api/2.5/tenders/b25aeafd54e1487bb077be93668f3c21/bids/5abe81cd14f742cb8d4cf0903585d320?acc_token=4da99b9899a34292a6c75627a95f3d93 HTTP/1.0
 Authorization: Bearer token
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -20,7 +20,7 @@ Content-Type: application/json
       "location": "body",
       "name": "requirementResponses",
       "description": [
-        "Responses are required for all criteria with source tenderer/winner, failed for criteria c7f3ee55b3274686bf3122450b0096e8, 35682801e12040e5aab5f9253c3d1268"
+        "Responses are required for all criteria with source tenderer/winner, failed for criteria 5e56cca60a76459aa950b90ce710bf81, 9eb943198e6d4be2885ab4f3ebf2f6ec"
       ]
     }
   ]

@@ -13,13 +13,13 @@ Host: lb-api-sandbox.prozorro.gov.ua
 
 HTTP/1.0 201 Created
 Content-Type: application/json
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/78eb313fd0774c058c130df95e66f061/cancellations/777e07b021eb4c9db2aee20d104dda7d
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/78eb313fd0774c058c130df95e66f061/cancellations/b5cc65239e79482d87d224c0dd4945d9
 
 {
   "data": {
     "reasonType": "noDemand",
     "reason": "cancellation reason",
-    "id": "777e07b021eb4c9db2aee20d104dda7d",
+    "id": "b5cc65239e79482d87d224c0dd4945d9",
     "date": "2023-10-10T01:05:01+03:00",
     "cancellationOf": "tender",
     "status": "draft"

@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/4b4ed03227c24f43b34f74183e3e0ca2/awards/22538da636d84b5b88ad4598942e3823/complaints?acc_token=3634b8e20194444080f3e3f609d4c167 HTTP/1.0
+POST /api/2.5/tenders/4a2a576c85d54712935397876296f0d9/awards/22538da636d84b5b88ad4598942e3823/complaints?acc_token=3634b8e20194444080f3e3f609d4c167 HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -61,7 +61,7 @@ Host: lb-api-sandbox.prozorro.gov.ua
 
 HTTP/1.0 201 Created
 Content-Type: application/json
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4b4ed03227c24f43b34f74183e3e0ca2/awards/22538da636d84b5b88ad4598942e3823/complaints/39df58db552846e58d5e16996582b329
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4a2a576c85d54712935397876296f0d9/awards/22538da636d84b5b88ad4598942e3823/complaints/10aeed2903274f948f849677e2828230
 
 {
   "data": {
@@ -92,7 +92,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4b4ed03227c24f43
     "type": "complaint",
     "objections": [
       {
-        "id": "7b2198d26c724f3bad6317a7c68572a0",
+        "id": "16ae02dd50d040a182311ed7fd350743",
         "title": "My objection",
         "description": "Test objection",
         "relatedItem": "8850d78aa8a94c148d6d245907f40d3e",
@@ -103,14 +103,14 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4b4ed03227c24f43
         },
         "requestedRemedies": [
           {
-            "id": "5791e81deae241a4a8165f81295e4dca",
+            "id": "be5f83775ae94f5e8fe512321b57db74",
             "type": "setAsideAward",
             "description": "test"
           }
         ],
         "arguments": [
           {
-            "id": "be70abde69b2426ea4e2f9dda93d6a87",
+            "id": "73bd8e8f40974b7f95e9809654ec187c",
             "description": "test argument"
           }
         ],
@@ -118,11 +118,11 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4b4ed03227c24f43
         "relatesTo": "award"
       }
     ],
-    "id": "39df58db552846e58d5e16996582b329",
+    "id": "10aeed2903274f948f849677e2828230",
     "date": "2023-10-10T01:00:03+03:00",
-    "bid_id": "4a15bf967949413fa361b33448f58d7c",
+    "bid_id": "3088275f136046dab34594e16227bb54",
     "complaintID": "UA-2023-10-10-000001-a.11",
-    "relatedLot": "c94486b261084c09ac0c731b74d35c85",
+    "relatedLot": "5b0412bd862347cfb29c8de0b4736b58",
     "value": {
       "amount": 3000,
       "currency": "UAH"

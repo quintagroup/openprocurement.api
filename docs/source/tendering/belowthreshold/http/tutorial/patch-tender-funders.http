@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/f135bade563d49fc9233e1f1d37fdcf0?acc_token=dc92946b9e4b4ea583fcb7d1136d6cc8 HTTP/1.0
+PATCH /api/2.5/tenders/fa2e9cbf88314cb6ae4f240dacbb041f?acc_token=dc92946b9e4b4ea583fcb7d1136d6cc8 HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -72,7 +72,7 @@ Content-Type: application/json
       {
         "confidentiality": "public",
         "documentType": "notice",
-        "id": "11f074cdd7974562be5529038ab2d5ce",
+        "id": "b4de033f25694a918858177ebb83f878",
         "datePublished": "2023-10-10T01:00:00+03:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "sign.p7s",
@@ -191,7 +191,7 @@ Content-Type: application/json
         "title": "lot title",
         "description": "lot description",
         "status": "active",
-        "id": "d6fba8716672449f87efa3a5781c7760",
+        "id": "16b57ad88e0c4726ae34f727f1b9ba14",
         "date": "2023-10-10T01:00:00+03:00",
         "value": {
           "currency": "UAH",
@@ -223,7 +223,7 @@ Content-Type: application/json
         "sequenceNumber": 1
       },
       {
-        "id": "8834d7b932264a4c803719c6ac65e6c6",
+        "id": "1c35490444494fc183dc83cf812a6938",
         "title": "deliveryOfGoods",
         "type": "financing",
         "code": "postpayment",
@@ -269,10 +269,10 @@ Content-Type: application/json
             "description": "папір і картон гофровані, паперова й картонна тара"
           }
         ],
-        "relatedLot": "d6fba8716672449f87efa3a5781c7760"
+        "relatedLot": "16b57ad88e0c4726ae34f727f1b9ba14"
       }
     ],
-    "id": "f135bade563d49fc9233e1f1d37fdcf0"
+    "id": "fa2e9cbf88314cb6ae4f240dacbb041f"
   },
   "config": {
     "hasAuction": true,

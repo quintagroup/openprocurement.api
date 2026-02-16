@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/d9668d8fd5d14779905c208c929e49bc/bids?acc_token=c09bfd8bd3964ff4a95d9cb9477f7dfd HTTP/1.0
+GET /api/2.5/tenders/0c99535af6024017bcbdec7b4a5c49da/bids?acc_token=c09bfd8bd3964ff4a95d9cb9477f7dfd HTTP/1.0
 Authorization: Bearer broker
 Host: public-api-sandbox.prozorro.gov.ua
 
@@ -34,7 +34,7 @@ Content-Type: application/json
         }
       ],
       "status": "active",
-      "id": "53778cd7fba344d9ab95e564fbd16ed3",
+      "id": "9d1348ad3820464db3213aaf48a1f51b",
       "lotValues": [
         {
           "relatedLot": "d9c1c86a51294d9f9e128b780416b344",
@@ -45,7 +45,7 @@ Content-Type: application/json
         {
           "confidentiality": "public",
           "documentType": "proposal",
-          "id": "dbeb22543f584f0aae825088850a0348",
+          "id": "d92cdc351e6646409151f57e545482ce",
           "datePublished": "2023-10-10T01:00:00+03:00",
           "hash": "md5:00000000000000000000000000000000",
           "title": "Proposal.p7s",
@@ -58,12 +58,12 @@ Content-Type: application/json
         {
           "confidentiality": "buyerOnly",
           "confidentialityRationale": "Only our company sells badgers with pink hair.",
-          "id": "87eb0e8f4b06422f8a1aaeafeb93503e",
+          "id": "fac93d0286504617aedc1b56fc7a636f",
           "datePublished": "2023-10-10T01:00:00+03:00",
           "hash": "md5:00000000000000000000000000000000",
           "title": "Proposal_top_secrets.pdf",
           "format": "application/pdf",
-          "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/tenders/d9668d8fd5d14779905c208c929e49bc/bids/53778cd7fba344d9ab95e564fbd16ed3/documents/87eb0e8f4b06422f8a1aaeafeb93503e?download=68a6b3e65371402492995faa5acc2582",
+          "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/tenders/0c99535af6024017bcbdec7b4a5c49da/bids/9d1348ad3820464db3213aaf48a1f51b/documents/fac93d0286504617aedc1b56fc7a636f?download=68a6b3e65371402492995faa5acc2582",
           "documentOf": "tender",
           "dateModified": "2023-10-10T01:00:00+03:00",
           "language": "uk"
@@ -71,7 +71,7 @@ Content-Type: application/json
         {
           "confidentiality": "public",
           "documentType": "proposal",
-          "id": "dbeb22543f584f0aae825088850a0348",
+          "id": "d92cdc351e6646409151f57e545482ce",
           "datePublished": "2023-10-10T01:01:00+03:00",
           "hash": "md5:00000000000000000000000000000000",
           "title": "sign.p7s",
@@ -84,7 +84,7 @@ Content-Type: application/json
         {
           "confidentiality": "public",
           "documentType": "proposal",
-          "id": "dbeb22543f584f0aae825088850a0348",
+          "id": "d92cdc351e6646409151f57e545482ce",
           "datePublished": "2023-10-10T01:03:00+03:00",
           "hash": "md5:00000000000000000000000000000000",
           "title": "sign.p7s",
@@ -98,7 +98,7 @@ Content-Type: application/json
       "eligibilityDocuments": [
         {
           "confidentiality": "public",
-          "id": "02012fddb60246e0aef90001a741d282",
+          "id": "9365d1dc1e784d3eaaa8fdaa6d3a8384",
           "datePublished": "2023-10-10T01:00:00+03:00",
           "hash": "md5:00000000000000000000000000000000",
           "title": "eligibility_doc.pdf",
@@ -136,7 +136,7 @@ Content-Type: application/json
         }
       ],
       "status": "active",
-      "id": "d460530aeea940e187f1c8e88da5e225",
+      "id": "df99d252198c4688997da7d2968f57f3",
       "lotValues": [
         {
           "relatedLot": "d9c1c86a51294d9f9e128b780416b344",
@@ -147,7 +147,7 @@ Content-Type: application/json
         {
           "confidentiality": "public",
           "documentType": "proposal",
-          "id": "290791a1fda247828554e65e014a6d12",
+          "id": "5fc617aa6d3b4586b9b2464182f824d1",
           "datePublished": "2023-10-10T01:03:00+03:00",
           "hash": "md5:00000000000000000000000000000000",
           "title": "sign.p7s",
@@ -185,7 +185,7 @@ Content-Type: application/json
         }
       ],
       "status": "unsuccessful",
-      "id": "00c99f2f37594ea98eb9def71cc4b22d",
+      "id": "ec61ff4dff6e4acc8d78e1f819212cb9",
       "lotValues": [
         {
           "relatedLot": "d9c1c86a51294d9f9e128b780416b344",
@@ -195,7 +195,7 @@ Content-Type: application/json
       "documents": [
         {
           "confidentiality": "public",
-          "id": "a4c6496b4d6049cfa16cf172cbf15adb",
+          "id": "1091aa8d39434f8db09f658187a89443",
           "datePublished": "2023-10-10T01:03:00+03:00",
           "hash": "md5:00000000000000000000000000000000",
           "title": "Proposal_part1.pdf",
@@ -207,7 +207,7 @@ Content-Type: application/json
         },
         {
           "confidentiality": "public",
-          "id": "bfd8f9424cd24782b75eeef08eaa3f2d",
+          "id": "ab0b2256d0914983843c3ede89e6a6f1",
           "datePublished": "2023-10-10T01:03:00+03:00",
           "hash": "md5:00000000000000000000000000000000",
           "title": "Proposal_part2.pdf",
@@ -220,7 +220,7 @@ Content-Type: application/json
         {
           "confidentiality": "public",
           "documentType": "proposal",
-          "id": "19251a5cb3174433ac06122d0815b804",
+          "id": "e1b70613e87d41799bb59736614a0155",
           "datePublished": "2023-10-10T01:03:00+03:00",
           "hash": "md5:00000000000000000000000000000000",
           "title": "sign.p7s",
@@ -234,7 +234,7 @@ Content-Type: application/json
       "eligibilityDocuments": [
         {
           "confidentiality": "public",
-          "id": "6400246f63a04a4ba5109df632b0811e",
+          "id": "0ff59b8975c84f73b22f95b7ed811c6b",
           "datePublished": "2023-10-10T01:03:00+03:00",
           "hash": "md5:00000000000000000000000000000000",
           "title": "eligibility_doc.pdf",

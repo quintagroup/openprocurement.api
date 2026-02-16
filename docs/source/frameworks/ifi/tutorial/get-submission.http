@@ -1,4 +1,4 @@
-GET /api/2.5/submissions/995d8a97b6c24a0cbe9ed82fe2cd8e8b HTTP/1.0
+GET /api/2.5/submissions/9c1ec0cf104142db84d35398c609cd4b HTTP/1.0
 Authorization: Bearer broker
 Host: public-api-sandbox.prozorro.gov.ua
 
@@ -32,7 +32,7 @@ Content-Type: application/json
         }
       }
     ],
-    "frameworkID": "89208a5c9d04455eaa4c41e2b5f0d70a",
+    "frameworkID": "932c7023588f40f4aec26aef109f4998",
     "status": "draft",
     "submissionType": "internationalFinancialInstitutions",
     "owner": "broker",
@@ -46,7 +46,7 @@ Content-Type: application/json
         "url": "http://public-docs-sandbox.prozorro.gov.ua/get/07db5aa1fd3447f095c5729879cbba50?Signature=NH9XIEgn09VgF1sfuu%2F20ArTAa1mluQh4JRbQwpiui6Zq6KxFlKHN1FWCghmFuRDNHiNvaNLVmZ2UnVgIroZBA%3D%3D&KeyID=a8968c46",
         "language": "uk",
         "confidentiality": "public",
-        "id": "8ee0bc18cff7439586d611936ba513a5",
+        "id": "3c54826fd7094702be0dda50a229e372",
         "datePublished": "2023-10-26T01:00:00+03:00",
         "dateModified": "2023-10-26T01:00:00+03:00"
       },
@@ -58,12 +58,12 @@ Content-Type: application/json
         "language": "uk",
         "confidentialityRationale": "Дуже конфіденційний файл, треба приховати",
         "confidentiality": "buyerOnly",
-        "id": "0892dd79961a4b7e876f5542ed89ad17",
+        "id": "a4316bb364aa4dc293ec34b88166e417",
         "datePublished": "2023-10-26T01:00:00+03:00",
         "dateModified": "2023-10-26T01:00:00+03:00"
       }
     ],
-    "id": "995d8a97b6c24a0cbe9ed82fe2cd8e8b"
+    "id": "9c1ec0cf104142db84d35398c609cd4b"
   },
   "config": {
     "restricted": false

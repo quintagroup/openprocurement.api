@@ -207,13 +207,13 @@ Host: lb-api-sandbox.prozorro.gov.ua
 
 HTTP/1.0 201 Created
 Content-Type: application/json
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/plans/b8b612ed1b6d471fb2c7f2f17f4a1de2
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/plans/5e6819d2385c4c6a8a7877b87488074c
 
 {
   "data": {
     "status": "scheduled",
     "procuringEntity": {
-      "id": "23a3993c00024903a223bb8731cf6b27",
+      "id": "634ca17a96ee43b49a273a81ee1730fa",
       "name": "ДУС",
       "identifier": {
         "scheme": "UA-EDR",
@@ -260,7 +260,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/plans/b8b612ed1b6d471fb2
       },
       "breakdown": [
         {
-          "id": "bc8d4b769c074f5090eb0dd4ddf8a560",
+          "id": "79ab7a5b3d174eebb9db7f95a1d9db02",
           "title": "other",
           "description": "Breakdown other description.",
           "value": {
@@ -284,7 +284,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/plans/b8b612ed1b6d471fb2
     ],
     "items": [
       {
-        "id": "9bf2b0efa4df4e83b8ef02ed100bf82d",
+        "id": "6e9e9fdc76034547ae8e5fd0fe3c2e37",
         "classification": {
           "description": "Mustard seeds",
           "scheme": "ДК021",
@@ -316,7 +316,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/plans/b8b612ed1b6d471fb2
         "description": "Насіння гірчиці"
       },
       {
-        "id": "7a6fa944f5aa42eda95703b4bd8b9846",
+        "id": "fc0a16bffbcb46aabba00fa2de5262eb",
         "classification": {
           "description": "Sunflower seeds",
           "scheme": "ДК021",
@@ -348,7 +348,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/plans/b8b612ed1b6d471fb2
         "description": "Насіння соняшнику"
       },
       {
-        "id": "e980a7462b5c4f7ebaf27f12e7984f6a",
+        "id": "b23ab41b6d7a4d12b2bf88f3e935372b",
         "classification": {
           "description": "Cotton seeds",
           "scheme": "ДК021",
@@ -382,7 +382,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/plans/b8b612ed1b6d471fb2
     ],
     "buyers": [
       {
-        "id": "9bedf063cb764e6184eb55c9f18056cb",
+        "id": "79de7466f3374c8690d63b572715a112",
         "name": "ДУС",
         "identifier": {
           "scheme": "UA-EDR",
@@ -420,7 +420,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/plans/b8b612ed1b6d471fb2
     "datePublished": "2023-10-10T01:00:00+03:00",
     "dateCreated": "2023-10-10T01:00:00+03:00",
     "dateModified": "2023-10-10T01:00:00+03:00",
-    "id": "b8b612ed1b6d471fb2c7f2f17f4a1de2"
+    "id": "5e6819d2385c4c6a8a7877b87488074c"
   },
   "access": {
     "token": "f45f0273c2ea4d52bde81c4f30b09376",

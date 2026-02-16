@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/137bba901398466a9aa1880da2ade9a6/awards/d7753a57912a4547ac35509b690cd6d3?acc_token=76e7037e0a9a445f8bfe44a967308c41 HTTP/1.0
+PATCH /api/2.5/tenders/513a5729b98b4078a5e0c1ffb39e3c9a/awards/d7753a57912a4547ac35509b690cd6d3?acc_token=76e7037e0a9a445f8bfe44a967308c41 HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -56,8 +56,8 @@ Content-Type: application/json
         }
       }
     ],
-    "bid_id": "4848c58b14904cea882f5531633ec019",
-    "lotID": "880b8274983b40cfa8455e8e3d82bb70",
+    "bid_id": "eda8b77c847a4109b458fe197906eeaf",
+    "lotID": "31ec05e9aa3b44eeae2a94279b1e3040",
     "period": {
       "startDate": "2023-10-16T01:15:06+03:00",
       "endDate": "2023-10-24T00:00:00+03:00"

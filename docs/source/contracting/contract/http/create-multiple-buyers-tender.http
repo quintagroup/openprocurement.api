@@ -265,7 +265,7 @@ Host: lb-api-sandbox.prozorro.gov.ua
 
 HTTP/1.0 201 Created
 Content-Type: application/json
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/493cc77e367e48e9b931dcc640be6399
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/aec95489636a475a8d27f28efdf755af
 
 {
   "data": {
@@ -380,7 +380,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/493cc77e367e48e9
         "sequenceNumber": 1
       },
       {
-        "id": "726b0d1e63f942f69f5c05a55228dffa",
+        "id": "836bb3abe13842b78ab84dd261843269",
         "title": "deliveryOfGoods",
         "type": "financing",
         "code": "postpayment",
@@ -400,7 +400,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/493cc77e367e48e9
     },
     "items": [
       {
-        "id": "19cd4e67d5d74d72b02bbe74396528b4",
+        "id": "7f4d7abd9ed043b8a43235190fb4cc09",
         "description": "телевізори",
         "unit": {
           "name": "кг",
@@ -438,7 +438,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/493cc77e367e48e9
         "relatedBuyer": "11111111111111111111111111111111"
       },
       {
-        "id": "772f78cfff9a4b819afe5600198aa064",
+        "id": "90a09024487e463c92878fea25654c47",
         "description": "портфелі",
         "unit": {
           "name": "кг",
@@ -476,7 +476,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/493cc77e367e48e9
         "relatedBuyer": "22222222222222222222222222222222"
       },
       {
-        "id": "a002ecdf57284cda954a229f1e80d6b0",
+        "id": "bf3ccdfdf3f64295b17dd0710fa2b1dd",
         "description": "портфелі",
         "unit": {
           "name": "кг",
@@ -581,7 +581,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/493cc77e367e48e9
     },
     "dateCreated": "2023-10-10T01:00:00+03:00",
     "dateModified": "2023-10-10T01:00:00+03:00",
-    "id": "493cc77e367e48e9b931dcc640be6399"
+    "id": "aec95489636a475a8d27f28efdf755af"
   },
   "config": {
     "hasAuction": true,

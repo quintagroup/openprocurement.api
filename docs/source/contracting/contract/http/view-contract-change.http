@@ -1,4 +1,4 @@
-GET /api/2.5/contracts/78fd8d7877d74b0dbc9c605462545e1c/changes/68c208e991674fcfb5853d81817fd6e9 HTTP/1.0
+GET /api/2.5/contracts/78fd8d7877d74b0dbc9c605462545e1c/changes/eb794cf51a174e5ab8caa0dd717624a5 HTTP/1.0
 Authorization: Bearer broker
 Host: public-api-sandbox.prozorro.gov.ua
 
@@ -14,7 +14,7 @@ Content-Type: application/json
       "volumeCuts",
       "priceReductionWithoutQuantity"
     ],
-    "id": "68c208e991674fcfb5853d81817fd6e9",
+    "id": "eb794cf51a174e5ab8caa0dd717624a5",
     "status": "pending",
     "date": "2023-10-10T01:00:00+03:00"
   }

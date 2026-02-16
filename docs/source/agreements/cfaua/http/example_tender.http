@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/bcc35be92ed24536a5af9ede5e2de5e0 HTTP/1.0
+GET /api/2.5/tenders/abbc9a0c6f034659b3b28397ceceaac1 HTTP/1.0
 Authorization: Bearer broker
 Host: public-api-sandbox.prozorro.gov.ua
 
@@ -60,7 +60,7 @@ Content-Type: application/json
     "maxAwardsCount": 4,
     "items": [
       {
-        "id": "a0aa16102ff345948a7508d8c03bb529",
+        "id": "ce7ee9fee64b4eaa87dd010843796c9a",
         "description": "футляри до державних нагород",
         "unit": {
           "name": "item",
@@ -511,7 +511,7 @@ Content-Type: application/json
         "id": "8887db77f71c4a0496b39ac2c4eea78c",
         "items": [
           {
-            "id": "a0aa16102ff345948a7508d8c03bb529",
+            "id": "ce7ee9fee64b4eaa87dd010843796c9a",
             "description": "футляри до державних нагород",
             "unit": {
               "name": "item",
@@ -580,7 +580,7 @@ Content-Type: application/json
             "date": "2023-10-10T01:00:00+03:00",
             "unitPrices": [
               {
-                "relatedItem": "a0aa16102ff345948a7508d8c03bb529",
+                "relatedItem": "ce7ee9fee64b4eaa87dd010843796c9a",
                 "value": {
                   "currency": "UAH",
                   "valueAddedTaxIncluded": true,
@@ -622,7 +622,7 @@ Content-Type: application/json
             "date": "2023-10-10T01:00:00+03:00",
             "unitPrices": [
               {
-                "relatedItem": "a0aa16102ff345948a7508d8c03bb529",
+                "relatedItem": "ce7ee9fee64b4eaa87dd010843796c9a",
                 "value": {
                   "currency": "UAH",
                   "valueAddedTaxIncluded": true,
@@ -664,7 +664,7 @@ Content-Type: application/json
             "date": "2023-10-10T01:00:00+03:00",
             "unitPrices": [
               {
-                "relatedItem": "a0aa16102ff345948a7508d8c03bb529",
+                "relatedItem": "ce7ee9fee64b4eaa87dd010843796c9a",
                 "value": {
                   "currency": "UAH",
                   "valueAddedTaxIncluded": true,
@@ -678,7 +678,7 @@ Content-Type: application/json
         "status": "active"
       }
     ],
-    "id": "bcc35be92ed24536a5af9ede5e2de5e0"
+    "id": "abbc9a0c6f034659b3b28397ceceaac1"
   },
   "config": {
     "hasAuction": true,

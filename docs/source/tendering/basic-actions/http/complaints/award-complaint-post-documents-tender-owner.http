@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/4b4ed03227c24f43b34f74183e3e0ca2/awards/b2df0a3f487a401987b1cdf1170a93be/complaints/1739ae89d2cb4ef4b8c6c4db5ffc33ed/documents?acc_token=5a55c72486d8489d95277757843eee3c HTTP/1.0
+POST /api/2.5/tenders/4a2a576c85d54712935397876296f0d9/awards/b2df0a3f487a401987b1cdf1170a93be/complaints/e864aaff4baf438c9ceae52d7a88e8b5/documents?acc_token=5a55c72486d8489d95277757843eee3c HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -10,25 +10,25 @@ Host: lb-api-sandbox.prozorro.gov.ua
     "hash": "md5:00000000000000000000000000000000",
     "format": "application/pdf",
     "documentOf": "post",
-    "relatedItem": "2b40f4fd5f284473afad74cc7104b353"
+    "relatedItem": "2d8557339bbb4afeb3cc32388e47cd46"
   }
 }
 
 
 HTTP/1.0 201 Created
 Content-Type: application/json
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4b4ed03227c24f43b34f74183e3e0ca2/awards/b2df0a3f487a401987b1cdf1170a93be/complaints/1739ae89d2cb4ef4b8c6c4db5ffc33ed/documents/24d39ac9027d464aa8b71ca0d6085cb9
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4a2a576c85d54712935397876296f0d9/awards/b2df0a3f487a401987b1cdf1170a93be/complaints/e864aaff4baf438c9ceae52d7a88e8b5/documents/c266deed222b4eea8b3ca90a7160ddf2
 
 {
   "data": {
     "confidentiality": "public",
-    "relatedItem": "2b40f4fd5f284473afad74cc7104b353",
+    "relatedItem": "2d8557339bbb4afeb3cc32388e47cd46",
     "hash": "md5:00000000000000000000000000000000",
     "title": "post_document_tender.pdf",
     "format": "application/pdf",
     "url": "http://public-docs-sandbox.prozorro.gov.ua/get/7bceb3dcd0654ff78f3e340dcf560acd?Signature=ZXdIawKdRrq527SGraC6tfZnTHzMZJXce0DpWtcC0QrM8NpOiry9pITDrxvYGoUtgPn93228qwZcC9qy3O06Bg%3D%3D&KeyID=a8968c46",
     "language": "uk",
-    "id": "24d39ac9027d464aa8b71ca0d6085cb9",
+    "id": "c266deed222b4eea8b3ca90a7160ddf2",
     "documentOf": "post",
     "datePublished": "2023-10-10T01:00:03+03:00",
     "dateModified": "2023-10-10T01:00:03+03:00",

@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/4a3291de67c44ca298a872ca8c9c0485/bids/efa54ab538e14be9b43ded50b821455f?acc_token=4da99b9899a34292a6c75627a95f3d93 HTTP/1.0
+PATCH /api/2.5/tenders/b25aeafd54e1487bb077be93668f3c21/bids/5abe81cd14f742cb8d4cf0903585d320?acc_token=4da99b9899a34292a6c75627a95f3d93 HTTP/1.0
 Authorization: Bearer token
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -8,13 +8,13 @@ Host: lb-api-sandbox.prozorro.gov.ua
     "requirementResponses": [
       {
         "requirement": {
-          "id": "563124eafd7a483da4fa9dc6c4eca0b8"
+          "id": "74b1c241611b4b08b23cd74e4f392ec9"
         },
         "evidences": [
           {
             "title": "Requirement response",
             "relatedDocument": {
-              "id": "ed166e26753444678ed95a3ebd151434",
+              "id": "b4d31b1e52b24a019beb89f0a43f9c9a",
               "title": "name.doc"
             },
             "type": "document"
@@ -35,7 +35,7 @@ Content-Type: application/json
     "requirementResponses": [
       {
         "requirement": {
-          "id": "563124eafd7a483da4fa9dc6c4eca0b8",
+          "id": "74b1c241611b4b08b23cd74e4f392ec9",
           "title": "Учасник процедури закупівлі протягом останніх трьох років не притягувався до відповідальності за порушення у вигляді вчинення антиконкурентних узгоджених дій, що стосуються спотворення результатів торгів, аукціонів, конкурсів, тендерів"
         },
         "evidences": [
@@ -43,14 +43,14 @@ Content-Type: application/json
             "title": "Requirement response",
             "type": "document",
             "relatedDocument": {
-              "id": "ed166e26753444678ed95a3ebd151434",
+              "id": "b4d31b1e52b24a019beb89f0a43f9c9a",
               "title": "name.doc"
             },
-            "id": "6babb8263c0b401da89c2b52e1e5bdab"
+            "id": "8996acc2e6ef486584df65346cc39805"
           }
         ],
         "value": true,
-        "id": "2ab444a95b2a483b8f2ac680c7986322",
+        "id": "059a6d3eeace47d79d48256454561181",
         "classification": {
           "scheme": "ESPD211",
           "id": "CRITERION.EXCLUSION.CONVICTIONS.FRAUD"
@@ -91,7 +91,7 @@ Content-Type: application/json
     ],
     "status": "draft",
     "subcontractingDetails": "ДКП «Орфей», Україна",
-    "id": "efa54ab538e14be9b43ded50b821455f",
+    "id": "5abe81cd14f742cb8d4cf0903585d320",
     "date": "2023-10-10T01:00:00+03:00",
     "lotValues": [
       {
@@ -100,7 +100,7 @@ Content-Type: application/json
           "currency": "UAH",
           "valueAddedTaxIncluded": true
         },
-        "relatedLot": "251405ab88ff4e62806566f189709a65",
+        "relatedLot": "1d0c518aa10648b596d5bb3ed6731476",
         "status": "pending",
         "date": "2023-10-10T01:00:00+03:00"
       }
@@ -108,7 +108,7 @@ Content-Type: application/json
     "documents": [
       {
         "confidentiality": "public",
-        "id": "ed166e26753444678ed95a3ebd151434",
+        "id": "b4d31b1e52b24a019beb89f0a43f9c9a",
         "datePublished": "2023-10-10T01:00:00+03:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "name.doc",

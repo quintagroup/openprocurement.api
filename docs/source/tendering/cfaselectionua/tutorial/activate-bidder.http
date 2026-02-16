@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/fba2e58fd313460b90eae28673490d56/bids/7e4765a562fe427b8271819b8051ea57?acc_token=24dc8c334efb4aa79e2a32a07d493143 HTTP/1.0
+PATCH /api/2.5/tenders/b4bcd8f9ee82480fb413c261d6cea972/bids/657003e35de54e92b62b7411d988d0a9?acc_token=24dc8c334efb4aa79e2a32a07d493143 HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -50,13 +50,13 @@ Content-Type: application/json
       }
     ],
     "status": "pending",
-    "id": "7e4765a562fe427b8271819b8051ea57",
+    "id": "657003e35de54e92b62b7411d988d0a9",
     "date": "2023-10-10T01:00:00+03:00",
     "documents": [
       {
         "confidentiality": "public",
         "documentType": "proposal",
-        "id": "f9a3894c17ab449f8192d62a5e36867d",
+        "id": "e044f75804f8499b930234974905263e",
         "datePublished": "2023-10-10T01:00:00+03:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "Proposal.p7s",

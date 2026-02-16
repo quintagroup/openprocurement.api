@@ -9,7 +9,7 @@ Content-Type: application/json
 {
   "data": [
     {
-      "id": "4f32972b3cfd4f248814b2a88e8e21d6",
+      "id": "763394fc5c714348b33cea25674f6916",
       "status": "active",
       "date": "2023-10-10T01:00:00+03:00",
       "rationale": "Друга і третя поставка має бути розфасована",
@@ -18,7 +18,7 @@ Content-Type: application/json
       "rationaleType": "taxRate",
       "modifications": [
         {
-          "itemId": "a0aa16102ff345948a7508d8c03bb529",
+          "itemId": "ce7ee9fee64b4eaa87dd010843796c9a",
           "factor": 0.1605
         }
       ]

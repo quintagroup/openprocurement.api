@@ -166,7 +166,7 @@ Content-Type: application/json
       }
     ],
     "owner": "broker",
-    "tender_id": "19e4c71b4b4b4595a5bb125c6c5e2df7",
+    "tender_id": "f2a340122e754b528c3f516d8e34de7a",
     "contractTemplateName": "00000000.0002.01",
     "contractChangeRationaleTypes": {
       "durationExtension": {

@@ -45,7 +45,7 @@ Host: lb-api-sandbox.prozorro.gov.ua
         "value": {
           "amount": 500
         },
-        "relatedLot": "176e6033e7af4efc95f6a5c290a3311d"
+        "relatedLot": "d1f58c0ba35f44a9aa2176f9213056b9"
       }
     ]
   }
@@ -54,7 +54,7 @@ Host: lb-api-sandbox.prozorro.gov.ua
 
 HTTP/1.0 201 Created
 Content-Type: application/json
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/3824b10919174a2c9806fcb9c3b680c1/bids/7fec345ba2914e28bd28e7dd15100c66
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/3824b10919174a2c9806fcb9c3b680c1/bids/7245888520724e91a7d4959da5ca033c
 
 {
   "data": {
@@ -99,13 +99,13 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/3824b10919174a2c
           "currency": "UAH",
           "valueAddedTaxIncluded": true
         },
-        "relatedLot": "176e6033e7af4efc95f6a5c290a3311d",
+        "relatedLot": "d1f58c0ba35f44a9aa2176f9213056b9",
         "subcontractingDetails": "ДКП «Орфей», Україна",
         "date": "2023-10-10T01:01:00+03:00"
       }
     ],
     "selfQualified": true,
-    "id": "7fec345ba2914e28bd28e7dd15100c66",
+    "id": "7245888520724e91a7d4959da5ca033c",
     "date": "2023-10-10T01:01:00+03:00"
   },
   "access": {

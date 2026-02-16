@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/fba2e58fd313460b90eae28673490d56/awards HTTP/1.0
+GET /api/2.5/tenders/b4bcd8f9ee82480fb413c261d6cea972/awards HTTP/1.0
 Authorization: Bearer broker
 Host: public-api-sandbox.prozorro.gov.ua
 
@@ -44,7 +44,7 @@ Content-Type: application/json
           "scale": "micro"
         }
       ],
-      "bid_id": "1cef8a54b7d74e3fb673e591f97d61f7",
+      "bid_id": "951dd3334aa14810b4653410311d30df",
       "lotID": "66bd7aa82b7d403cb3626390997acbaf",
       "period": {
         "startDate": "2023-10-10T01:01:00+03:00",

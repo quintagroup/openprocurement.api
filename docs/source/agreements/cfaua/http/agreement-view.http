@@ -42,7 +42,7 @@ Content-Type: application/json
         ],
         "unitPrices": [
           {
-            "relatedItem": "a0aa16102ff345948a7508d8c03bb529",
+            "relatedItem": "ce7ee9fee64b4eaa87dd010843796c9a",
             "value": {
               "currency": "UAH",
               "valueAddedTaxIncluded": true,
@@ -84,7 +84,7 @@ Content-Type: application/json
         ],
         "unitPrices": [
           {
-            "relatedItem": "a0aa16102ff345948a7508d8c03bb529",
+            "relatedItem": "ce7ee9fee64b4eaa87dd010843796c9a",
             "value": {
               "currency": "UAH",
               "valueAddedTaxIncluded": true,
@@ -126,7 +126,7 @@ Content-Type: application/json
         ],
         "unitPrices": [
           {
-            "relatedItem": "a0aa16102ff345948a7508d8c03bb529",
+            "relatedItem": "ce7ee9fee64b4eaa87dd010843796c9a",
             "value": {
               "currency": "UAH",
               "valueAddedTaxIncluded": true,
@@ -141,7 +141,7 @@ Content-Type: application/json
     ],
     "items": [
       {
-        "id": "a0aa16102ff345948a7508d8c03bb529",
+        "id": "ce7ee9fee64b4eaa87dd010843796c9a",
         "description": "футляри до державних нагород",
         "quantity": 5.0,
         "classification": {
@@ -199,7 +199,7 @@ Content-Type: application/json
         "countryName": "Україна"
       }
     },
-    "tender_id": "bcc35be92ed24536a5af9ede5e2de5e0",
+    "tender_id": "abbc9a0c6f034659b3b28397ceceaac1",
     "numberOfContracts": 3,
     "dateModified": "2023-10-10T01:00:00+03:00",
     "id": "8887db77f71c4a0496b39ac2c4eea78c"

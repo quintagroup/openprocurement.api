@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/4b4ed03227c24f43b34f74183e3e0ca2/awards/22538da636d84b5b88ad4598942e3823?acc_token=5a55c72486d8489d95277757843eee3c HTTP/1.0
+PATCH /api/2.5/tenders/4a2a576c85d54712935397876296f0d9/awards/22538da636d84b5b88ad4598942e3823?acc_token=5a55c72486d8489d95277757843eee3c HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -12,7 +12,7 @@ Host: lb-api-sandbox.prozorro.gov.ua
 
 HTTP/1.0 200 OK
 Content-Type: application/json
-Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4b4ed03227c24f43b34f74183e3e0ca2/awards/7467244beb734dc286a5428eaf4609b5
+Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4a2a576c85d54712935397876296f0d9/awards/7467244beb734dc286a5428eaf4609b5
 
 {
   "data": {
@@ -56,8 +56,8 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4b4ed03227c24f43
         }
       }
     ],
-    "bid_id": "4a15bf967949413fa361b33448f58d7c",
-    "lotID": "c94486b261084c09ac0c731b74d35c85",
+    "bid_id": "3088275f136046dab34594e16227bb54",
+    "lotID": "5b0412bd862347cfb29c8de0b4736b58",
     "complaintPeriod": {
       "startDate": "2023-10-10T01:00:03+03:00",
       "endDate": "2023-10-10T01:00:03+03:00"
@@ -66,7 +66,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4b4ed03227c24f43
       {
         "confidentiality": "public",
         "documentType": "notice",
-        "id": "7ff6db97ff8c494e82e7f9b6b3d05195",
+        "id": "b5345c82222b443a91dfb2a471654fe3",
         "datePublished": "2023-10-10T01:00:03+03:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "sign.p7s",
@@ -112,7 +112,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4b4ed03227c24f43
         "type": "complaint",
         "objections": [
           {
-            "id": "7b2198d26c724f3bad6317a7c68572a0",
+            "id": "16ae02dd50d040a182311ed7fd350743",
             "title": "My objection",
             "description": "Test objection",
             "relatedItem": "8850d78aa8a94c148d6d245907f40d3e",
@@ -123,14 +123,14 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4b4ed03227c24f43
             },
             "requestedRemedies": [
               {
-                "id": "5791e81deae241a4a8165f81295e4dca",
+                "id": "be5f83775ae94f5e8fe512321b57db74",
                 "type": "setAsideAward",
                 "description": "test"
               }
             ],
             "arguments": [
               {
-                "id": "be70abde69b2426ea4e2f9dda93d6a87",
+                "id": "73bd8e8f40974b7f95e9809654ec187c",
                 "description": "test argument"
               }
             ],
@@ -138,24 +138,24 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4b4ed03227c24f43
             "relatesTo": "award"
           }
         ],
-        "id": "39df58db552846e58d5e16996582b329",
+        "id": "10aeed2903274f948f849677e2828230",
         "date": "2023-10-10T01:00:03+03:00",
-        "bid_id": "4a15bf967949413fa361b33448f58d7c",
+        "bid_id": "3088275f136046dab34594e16227bb54",
         "complaintID": "UA-2023-10-10-000001-a.11",
-        "relatedLot": "c94486b261084c09ac0c731b74d35c85",
+        "relatedLot": "5b0412bd862347cfb29c8de0b4736b58",
         "value": {
           "amount": 3000,
           "currency": "UAH"
         }
       },
       {
-        "id": "5ad9b454c79346d898b47701c6bbf71c",
+        "id": "6f59138349ed44bb82f5d16eb7d6a392",
         "complaintID": "UA-2023-10-10-000001-a.12",
         "date": "2023-10-10T01:00:03+03:00",
         "status": "mistaken",
         "type": "complaint",
-        "relatedLot": "c94486b261084c09ac0c731b74d35c85",
-        "bid_id": "4a15bf967949413fa361b33448f58d7c",
+        "relatedLot": "5b0412bd862347cfb29c8de0b4736b58",
+        "bid_id": "3088275f136046dab34594e16227bb54",
         "author": {
           "name": "ДКП «Школяр»",
           "address": {
@@ -181,7 +181,7 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4b4ed03227c24f43
         "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.",
         "objections": [
           {
-            "id": "d12b653b91b440769afaef7ea503c851",
+            "id": "7a0b91d5d01b4d41ba71e028291eebd2",
             "title": "My objection",
             "description": "Test objection",
             "relatesTo": "award",
@@ -193,14 +193,14 @@ Location: http://lb-api-sandbox.prozorro.gov.ua/api/2.5/tenders/4b4ed03227c24f43
             },
             "requestedRemedies": [
               {
-                "id": "15dacd2b0d264bec8e04372645c9c038",
+                "id": "d101125843b94d0686dd2c04614ec7de",
                 "type": "setAsideAward",
                 "description": "test"
               }
             ],
             "arguments": [
               {
-                "id": "835d37bcbcc84a168e08c326969b47a8",
+                "id": "b68b1f80520d4ece99cb04807fa7a96e",
                 "description": "test argument"
               }
             ],

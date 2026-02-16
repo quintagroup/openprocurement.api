@@ -10,7 +10,7 @@ Content-Type: application/json
   "data": [
     {
       "confidentiality": "public",
-      "id": "b4f19ca568224409866b1f00feaa8cd7",
+      "id": "434095e42ea546f0994b6d0eedf9ed76",
       "hash": "md5:00000000000000000000000000000000",
       "title": "contract_first_document.doc",
       "format": "application/msword",
@@ -21,7 +21,7 @@ Content-Type: application/json
     },
     {
       "confidentiality": "public",
-      "id": "f70a81f193c94c91ba26c27b13349e9d",
+      "id": "4c26e5cbbc3247deaa337a70dcc5dbdc",
       "hash": "md5:00000000000000000000000000000000",
       "title": "contract_second_document.doc",
       "format": "application/msword",
@@ -32,8 +32,8 @@ Content-Type: application/json
     },
     {
       "confidentiality": "public",
-      "relatedItem": "68c208e991674fcfb5853d81817fd6e9",
-      "id": "bd7168ca198e414a8c27f8511d95e9d3",
+      "relatedItem": "eb794cf51a174e5ab8caa0dd717624a5",
+      "id": "8287e847137047e982ef13a48b3d8807",
       "hash": "md5:00000000000000000000000000000000",
       "title": "contract_changes.doc",
       "format": "application/msword",
@@ -49,7 +49,7 @@ Content-Type: application/json
       "format": "application/pdf",
       "url": "http://public-docs-sandbox.prozorro.gov.ua/get/d2dfb81496b645a9ad5080512e3c40f4?Signature=IHNzhEfMRmx22zABcPM6Zp4H1R396AMEglrbLvpoS12nE5caPCSmtg15%2FdPJH%2FM9EZpiVS9BwsAgvvPDKSl7CA%3D%3D&KeyID=a8968c46",
       "documentOf": "contract",
-      "id": "6a8a54759fce4d3fa3d2bec918423646",
+      "id": "2fbed46a899e494894f6224492348ac6",
       "datePublished": "2023-10-10T01:00:00+03:00",
       "dateModified": "2023-10-10T01:00:00+03:00"
     }

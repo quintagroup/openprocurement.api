@@ -1,4 +1,4 @@
-GET /api/2.5/frameworks/093bd3718cb14e2c933c209d60e76b0b/submissions HTTP/1.0
+GET /api/2.5/frameworks/2e17a7116854417a9ce9709b87369783/submissions HTTP/1.0
 Authorization: Bearer broker
 Host: public-api-sandbox.prozorro.gov.ua
 
@@ -33,14 +33,14 @@ Content-Type: application/json
           }
         }
       ],
-      "frameworkID": "093bd3718cb14e2c933c209d60e76b0b",
+      "frameworkID": "2e17a7116854417a9ce9709b87369783",
       "status": "complete",
       "dateCreated": "2023-10-26T01:00:00+03:00",
       "dateModified": "2023-10-26T01:00:00+03:00",
       "date": "2023-10-26T01:00:00+03:00",
       "qualificationID": "6fce332a98dc49939a6a6f0dc2fa33c6",
       "datePublished": "2023-10-26T01:00:00+03:00",
-      "id": "5e1269d73d184f65bf1f889a1abc9974"
+      "id": "3b382cf2e93241ecbc760c66c18bcfd6"
     },
     {
       "tenderers": [
@@ -67,20 +67,20 @@ Content-Type: application/json
           }
         }
       ],
-      "frameworkID": "093bd3718cb14e2c933c209d60e76b0b",
+      "frameworkID": "2e17a7116854417a9ce9709b87369783",
       "status": "complete",
       "dateCreated": "2023-10-26T01:00:00+03:00",
       "dateModified": "2023-10-26T01:00:00+03:00",
       "date": "2023-10-26T01:00:00+03:00",
       "qualificationID": "2efd8f11d2914763ab331e36e358d306",
       "datePublished": "2023-10-26T01:00:00+03:00",
-      "id": "4693711d52b14347b47af79c501fbd5f"
+      "id": "df5dc7536f7d45ff992315d32ec972a0"
     }
   ],
   "next_page": {
-    "offset": "1698271200.0.2.77849486e99a7d26f925d70f9827fef8",
-    "path": "/api/2.5/submissions?offset=1698271200.0.2.77849486e99a7d26f925d70f9827fef8",
-    "uri": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/submissions?offset=1698271200.0.2.77849486e99a7d26f925d70f9827fef8"
+    "offset": "1698271200.0.2.a2e1c3162dc61529ff0cf45f734d4d45",
+    "path": "/api/2.5/submissions?offset=1698271200.0.2.a2e1c3162dc61529ff0cf45f734d4d45",
+    "uri": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/submissions?offset=1698271200.0.2.a2e1c3162dc61529ff0cf45f734d4d45"
   }
 }
 

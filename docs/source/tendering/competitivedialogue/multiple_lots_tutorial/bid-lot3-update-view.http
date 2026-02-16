@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/0122f7569ef34718a69b5de8643cccfd/bids/8f1f20c9676f4c51b1e41855982f5629?acc_token=c962dec9949240f9aa7733143f3c8165 HTTP/1.0
+PATCH /api/2.5/tenders/16ed9c73a8f34ed89787edcf423f4267/bids/fbcde53fd1f94b558c1111bc3303f29c?acc_token=c962dec9949240f9aa7733143f3c8165 HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -8,10 +8,10 @@ Host: lb-api-sandbox.prozorro.gov.ua
     "lotValues": [
       {
         "subcontractingDetails": "ДКП «Укр Прінт», Україна",
-        "relatedLot": "cdab28eeafd5467e935a8a62fb9d0f21"
+        "relatedLot": "ab754f91fa1a4efdb9b978d10a93e1b3"
       },
       {
-        "relatedLot": "176e6033e7af4efc95f6a5c290a3311d"
+        "relatedLot": "d1f58c0ba35f44a9aa2176f9213056b9"
       }
     ],
     "status": "pending"
@@ -24,7 +24,7 @@ Content-Type: application/json
 
 {
   "data": {
-    "id": "8f1f20c9676f4c51b1e41855982f5629",
+    "id": "fbcde53fd1f94b558c1111bc3303f29c",
     "date": "2023-10-10T01:01:00+03:00",
     "submissionDate": "2023-10-10T01:01:00+03:00",
     "tenderers": [
@@ -60,13 +60,13 @@ Content-Type: application/json
     ],
     "lotValues": [
       {
-        "relatedLot": "cdab28eeafd5467e935a8a62fb9d0f21",
+        "relatedLot": "ab754f91fa1a4efdb9b978d10a93e1b3",
         "subcontractingDetails": "ДКП «Укр Прінт», Україна",
         "status": "pending",
         "date": "2023-10-10T01:01:00+03:00"
       },
       {
-        "relatedLot": "176e6033e7af4efc95f6a5c290a3311d",
+        "relatedLot": "d1f58c0ba35f44a9aa2176f9213056b9",
         "status": "pending",
         "date": "2023-10-10T01:01:00+03:00"
       }
@@ -75,7 +75,7 @@ Content-Type: application/json
       {
         "confidentiality": "public",
         "documentType": "proposal",
-        "id": "92b1918ea2394d55a2d73f9d123e22ed",
+        "id": "fa97d12c407545ef8ffc2e4921539b6f",
         "datePublished": "2023-10-10T01:00:00+03:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "sign.p7s",
@@ -89,7 +89,7 @@ Content-Type: application/json
       {
         "confidentiality": "public",
         "documentType": "proposal",
-        "id": "92b1918ea2394d55a2d73f9d123e22ed",
+        "id": "fa97d12c407545ef8ffc2e4921539b6f",
         "datePublished": "2023-10-10T01:01:00+03:00",
         "hash": "md5:00000000000000000000000000000000",
         "title": "sign.p7s",

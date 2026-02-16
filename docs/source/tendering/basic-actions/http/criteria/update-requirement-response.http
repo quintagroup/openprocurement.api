@@ -1,4 +1,4 @@
-PATCH /api/2.5/tenders/4a3291de67c44ca298a872ca8c9c0485/bids/efa54ab538e14be9b43ded50b821455f/requirement_responses/9215176a81564915a183060da34e4e90?acc_token=4da99b9899a34292a6c75627a95f3d93 HTTP/1.0
+PATCH /api/2.5/tenders/b25aeafd54e1487bb077be93668f3c21/bids/5abe81cd14f742cb8d4cf0903585d320/requirement_responses/d397dabf99c54c5aafecc6ebaa9716c5?acc_token=4da99b9899a34292a6c75627a95f3d93 HTTP/1.0
 Authorization: Bearer token
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -16,7 +16,7 @@ Content-Type: application/json
 {
   "data": {
     "requirement": {
-      "id": "563124eafd7a483da4fa9dc6c4eca0b8",
+      "id": "74b1c241611b4b08b23cd74e4f392ec9",
       "title": "Учасник процедури закупівлі протягом останніх трьох років не притягувався до відповідальності за порушення у вигляді вчинення антиконкурентних узгоджених дій, що стосуються спотворення результатів торгів, аукціонів, конкурсів, тендерів"
     },
     "evidences": [
@@ -24,14 +24,14 @@ Content-Type: application/json
         "title": "Requirement response",
         "type": "document",
         "relatedDocument": {
-          "id": "ed166e26753444678ed95a3ebd151434",
+          "id": "b4d31b1e52b24a019beb89f0a43f9c9a",
           "title": "name.doc"
         },
-        "id": "12931c53d8dd4d15bb703281db04c36a"
+        "id": "6040a904824240aab8a0dd72e62ce313"
       }
     ],
     "value": false,
-    "id": "9215176a81564915a183060da34e4e90",
+    "id": "d397dabf99c54c5aafecc6ebaa9716c5",
     "classification": {
       "scheme": "ESPD211",
       "id": "CRITERION.EXCLUSION.CONVICTIONS.FRAUD"

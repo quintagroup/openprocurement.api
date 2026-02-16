@@ -170,7 +170,7 @@ Host: lb-api-sandbox.prozorro.gov.ua
       }
     ],
     "owner": "broker",
-    "tender_id": "b86d98f551fa49dfa9004373a996b627",
+    "tender_id": "e24cf829a87b40059a5c4389cfbeb831",
     "contractTemplateName": "00000000.0002.01",
     "contractChangeRationaleTypes": {
       "durationExtension": {

@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/b3e50c95aba5434d9d21eb46e65d8f4d/cancellations/8b3cf6c0fad24bc1a5cf5fb05119836b/complaints HTTP/1.0
+GET /api/2.5/tenders/4687f36b2f3d45ae9974b4ca238948a4/cancellations/13e041023703472b8bcec84943058bc3/complaints HTTP/1.0
 Host: public-api-sandbox.prozorro.gov.ua
 
 
@@ -8,14 +8,14 @@ Content-Type: application/json
 {
   "data": [
     {
-      "id": "e64da7492d294ea194bee32ab3525f32",
+      "id": "8cce7bd9ccb24ff2a53cd0f8d6e354be",
       "complaintID": "UA-2023-10-10-000001-a.1",
       "date": "2023-10-10T01:00:00+03:00",
       "status": "resolved",
       "documents": [
         {
           "confidentiality": "public",
-          "id": "ea20c67ebd8e49888bf193483c65a21f",
+          "id": "7be3c7a557a643c6a8e35d4519426a50",
           "datePublished": "2023-10-10T01:00:00+03:00",
           "hash": "md5:00000000000000000000000000000000",
           "title": "Complaint_Attachment.pdf",
@@ -28,7 +28,7 @@ Content-Type: application/json
         },
         {
           "confidentiality": "public",
-          "id": "c28d44868dc3459eb5dfb21c71ea70d7",
+          "id": "d024be1af91d49139d3c3849fb81081b",
           "datePublished": "2023-10-10T01:00:00+03:00",
           "hash": "md5:00000000000000000000000000000000",
           "title": "ComplaintResolution.pdf",
@@ -67,11 +67,11 @@ Content-Type: application/json
       "dateSubmitted": "2023-10-10T01:00:00+03:00",
       "objections": [
         {
-          "id": "465a831ff91d46a3bd73247ea554bab7",
+          "id": "4a3151fe30ac40c897c6007c9cee4cf6",
           "title": "My objection",
           "description": "Test objection",
           "relatesTo": "cancellation",
-          "relatedItem": "8b3cf6c0fad24bc1a5cf5fb05119836b",
+          "relatedItem": "13e041023703472b8bcec84943058bc3",
           "classification": {
             "scheme": "violation_amcu",
             "id": "corruptionDescription",
@@ -79,14 +79,14 @@ Content-Type: application/json
           },
           "requestedRemedies": [
             {
-              "id": "3ba7dfde049a4b6dab8b5640875f8894",
+              "id": "5c0691ecac6843bab6ba947efca10f20",
               "type": "setAsideAward",
               "description": "test"
             }
           ],
           "arguments": [
             {
-              "id": "ae6beed24ac84e50bceb2b0c2f03ddb1",
+              "id": "0652f51c2d924ed9887d6a033d7e795d",
               "description": "test argument"
             }
           ],
@@ -106,7 +106,7 @@ Content-Type: application/json
       "tendererActionDate": "2023-10-10T01:00:00+03:00"
     },
     {
-      "id": "d65e9f2d911d4cfcb8aec6e3c37c42b9",
+      "id": "09267aa1e7ef496bba2cd3f114945742",
       "complaintID": "UA-2023-10-10-000001-a.2",
       "date": "2023-10-10T01:00:00+03:00",
       "status": "declined",
@@ -137,11 +137,11 @@ Content-Type: application/json
       "dateSubmitted": "2023-10-10T01:00:00+03:00",
       "objections": [
         {
-          "id": "287b8665779949929ff7ae2b3f00d7ca",
+          "id": "3f14f005f79445298c699b229618f7fc",
           "title": "My objection",
           "description": "Test objection",
           "relatesTo": "cancellation",
-          "relatedItem": "8b3cf6c0fad24bc1a5cf5fb05119836b",
+          "relatedItem": "13e041023703472b8bcec84943058bc3",
           "classification": {
             "scheme": "violation_amcu",
             "id": "corruptionDescription",
@@ -149,14 +149,14 @@ Content-Type: application/json
           },
           "requestedRemedies": [
             {
-              "id": "274f0deaa2a34b5e8360567b37ddc0bc",
+              "id": "3a75d20653df4dfe9bcf47d7f70f9e4b",
               "type": "setAsideAward",
               "description": "test"
             }
           ],
           "arguments": [
             {
-              "id": "8c6756949b6b4dfaa6828f7770916aa6",
+              "id": "f1e872d67bc44713a879d4bb23b113b3",
               "description": "test argument"
             }
           ],
@@ -174,7 +174,7 @@ Content-Type: application/json
       "dateDecision": "2023-10-10T01:00:00+03:00"
     },
     {
-      "id": "0972251759564683adc0d7cfd4d3ed84",
+      "id": "5afe3cf697ab41a18765fa6a5006a8b4",
       "complaintID": "UA-2023-10-10-000001-a.3",
       "date": "2023-10-10T01:00:00+03:00",
       "status": "invalid",
@@ -205,11 +205,11 @@ Content-Type: application/json
       "dateSubmitted": "2023-10-10T01:00:00+03:00",
       "objections": [
         {
-          "id": "9c182d41690a4f3593e530b512cf1e24",
+          "id": "b16efdde272c4d8e8276894a8ef6c672",
           "title": "My objection",
           "description": "Test objection",
           "relatesTo": "cancellation",
-          "relatedItem": "8b3cf6c0fad24bc1a5cf5fb05119836b",
+          "relatedItem": "13e041023703472b8bcec84943058bc3",
           "classification": {
             "scheme": "violation_amcu",
             "id": "corruptionDescription",
@@ -217,14 +217,14 @@ Content-Type: application/json
           },
           "requestedRemedies": [
             {
-              "id": "4532a79d2e684663ab61efad99408a16",
+              "id": "80f2ffef92f343288dde208bed90aa36",
               "type": "setAsideAward",
               "description": "test"
             }
           ],
           "arguments": [
             {
-              "id": "5119e1839c6947358c0b5d58a81aa413",
+              "id": "5d52854fff7a431abe353b742ead114d",
               "description": "test argument"
             }
           ],
@@ -241,7 +241,7 @@ Content-Type: application/json
       "acceptance": false
     },
     {
-      "id": "587bb9dac05e4c5ea443474e6fec8ac7",
+      "id": "6e6fec2da28e40878baadea14b0a8dba",
       "complaintID": "UA-2023-10-10-000001-a.4",
       "date": "2023-10-10T01:00:00+03:00",
       "status": "stopped",
@@ -272,11 +272,11 @@ Content-Type: application/json
       "dateSubmitted": "2023-10-10T01:00:00+03:00",
       "objections": [
         {
-          "id": "653d6534d08b4b3da062a3369ae767e4",
+          "id": "ab75619340ea473c9a198ac36c6ae85c",
           "title": "My objection",
           "description": "Test objection",
           "relatesTo": "cancellation",
-          "relatedItem": "8b3cf6c0fad24bc1a5cf5fb05119836b",
+          "relatedItem": "13e041023703472b8bcec84943058bc3",
           "classification": {
             "scheme": "violation_amcu",
             "id": "corruptionDescription",
@@ -284,14 +284,14 @@ Content-Type: application/json
           },
           "requestedRemedies": [
             {
-              "id": "6ef0be58db574552af1cef1a8c167744",
+              "id": "270c80db687947e8b60538016185cead",
               "type": "setAsideAward",
               "description": "test"
             }
           ],
           "arguments": [
             {
-              "id": "d7b3f2db6f7440cc928a0f8b9404eff5",
+              "id": "f5640f5e84504eb18508a5b676f4350d",
               "description": "test argument"
             }
           ],
@@ -312,7 +312,7 @@ Content-Type: application/json
       "dateCanceled": "2023-10-10T01:00:00+03:00"
     },
     {
-      "id": "b2304f13ea2e423687684af6319d7c7b",
+      "id": "cfc68577df1349a9bae6534a820dc43d",
       "complaintID": "UA-2023-10-10-000001-a.5",
       "date": "2023-10-10T01:00:00+03:00",
       "status": "stopped",
@@ -343,11 +343,11 @@ Content-Type: application/json
       "dateSubmitted": "2023-10-10T01:00:00+03:00",
       "objections": [
         {
-          "id": "e95d35d0814a46e3ab42991bf8e374a3",
+          "id": "ddd491af5dde4ff5ac3829c18d740c79",
           "title": "My objection",
           "description": "Test objection",
           "relatesTo": "cancellation",
-          "relatedItem": "8b3cf6c0fad24bc1a5cf5fb05119836b",
+          "relatedItem": "13e041023703472b8bcec84943058bc3",
           "classification": {
             "scheme": "violation_amcu",
             "id": "corruptionDescription",
@@ -355,14 +355,14 @@ Content-Type: application/json
           },
           "requestedRemedies": [
             {
-              "id": "06ee99416fbf404e81bd4e52b8cfda6d",
+              "id": "dc1b25a1d0eb402f8cf3030325467dbd",
               "type": "setAsideAward",
               "description": "test"
             }
           ],
           "arguments": [
             {
-              "id": "532834cf800f48d5b6012f2d3a6d5b94",
+              "id": "e2eb5b3a3607473a9c48a350bfc6a642",
               "description": "test argument"
             }
           ],
@@ -383,8 +383,8 @@ Content-Type: application/json
         {
           "title": "Пояснення до скарги",
           "description": "Була така необхідність",
-          "relatedObjection": "e95d35d0814a46e3ab42991bf8e374a3",
-          "id": "ca38da2c7f064fc9b9c8fb2b68674b3e",
+          "relatedObjection": "ddd491af5dde4ff5ac3829c18d740c79",
+          "id": "670d73a82d1c4a018ea453efd6e43481",
           "datePublished": "2023-10-10T01:00:00+03:00",
           "author": "complaint_owner"
         }

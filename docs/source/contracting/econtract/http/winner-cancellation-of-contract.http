@@ -173,7 +173,7 @@ Content-Type: application/json
       }
     ],
     "owner": "broker",
-    "tender_id": "b86d98f551fa49dfa9004373a996b627",
+    "tender_id": "e24cf829a87b40059a5c4389cfbeb831",
     "contractTemplateName": "00000000.0002.01",
     "contractChangeRationaleTypes": {
       "durationExtension": {
@@ -284,7 +284,7 @@ Content-Type: application/json
       {
         "reason": "want to quid",
         "reasonType": "signingRefusal",
-        "id": "3380e0835b714c2d8c6a852fbef4187e",
+        "id": "b4dcb2e57e4244709d03e2d8f5a246a0",
         "dateCreated": "2023-10-10T01:00:00+03:00",
         "status": "pending",
         "author": "supplier"

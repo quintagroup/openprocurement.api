@@ -23,7 +23,7 @@ Content-Type: application/json
     "dateCreated": "2023-10-10T01:00:00+03:00",
     "items": [
       {
-        "id": "19cd4e67d5d74d72b02bbe74396528b4",
+        "id": "7f4d7abd9ed043b8a43235190fb4cc09",
         "description": "телевізори",
         "quantity": 5.0,
         "classification": {
@@ -61,7 +61,7 @@ Content-Type: application/json
         "relatedBuyer": "11111111111111111111111111111111"
       }
     ],
-    "tender_id": "493cc77e367e48e9b931dcc640be6399",
+    "tender_id": "aec95489636a475a8d27f28efdf755af",
     "owner": "broker",
     "status": "cancelled",
     "buyer": {
@@ -194,7 +194,7 @@ Content-Type: application/json
         "status": "scheduled"
       },
       {
-        "id": "726b0d1e63f942f69f5c05a55228dffa",
+        "id": "836bb3abe13842b78ab84dd261843269",
         "title": "deliveryOfGoods",
         "type": "financing",
         "code": "postpayment",

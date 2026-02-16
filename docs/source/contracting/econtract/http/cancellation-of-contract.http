@@ -173,7 +173,7 @@ Content-Type: application/json
       }
     ],
     "owner": "broker",
-    "tender_id": "b86d98f551fa49dfa9004373a996b627",
+    "tender_id": "e24cf829a87b40059a5c4389cfbeb831",
     "contractTemplateName": "00000000.0002.01",
     "contractChangeRationaleTypes": {
       "durationExtension": {
@@ -280,10 +280,10 @@ Content-Type: application/json
         "hash": "md5:00000000000000000000000000000000",
         "title": "sign.p7s",
         "format": "application/pkcs7-signature",
-        "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/contracts/37d2cea7a3564774858ad5c8681f57b1/documents/8e9a0dd828594b84a952bd293bf939a4?download=9dc6bfe4683b4e63a799bbe366ba9376",
+        "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/contracts/37d2cea7a3564774858ad5c8681f57b1/documents/0722714a00d140e3b8fad17803b89f80?download=9dc6bfe4683b4e63a799bbe366ba9376",
         "documentOf": "contract",
         "documentType": "contractSignature",
-        "id": "8e9a0dd828594b84a952bd293bf939a4",
+        "id": "0722714a00d140e3b8fad17803b89f80",
         "datePublished": "2023-10-10T01:00:00+03:00",
         "dateModified": "2023-10-10T01:00:00+03:00",
         "author": "buyer"
@@ -301,7 +301,7 @@ Content-Type: application/json
       {
         "reason": "want to change signerInfo",
         "reasonType": "requiresChanges",
-        "id": "c58f0f2f3df849e6bbe4ad1f4ca04144",
+        "id": "9e88bf1f60e64823a471bfbfc6e23433",
         "dateCreated": "2023-10-10T01:00:00+03:00",
         "status": "pending",
         "author": "supplier"

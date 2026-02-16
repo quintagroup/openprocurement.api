@@ -1,4 +1,4 @@
-GET /api/2.5/tenders/19e4c71b4b4b4595a5bb125c6c5e2df7 HTTP/1.0
+GET /api/2.5/tenders/f2a340122e754b528c3f516d8e34de7a HTTP/1.0
 Authorization: Bearer broker
 Host: public-api-sandbox.prozorro.gov.ua
 
@@ -137,7 +137,7 @@ Content-Type: application/json
     ],
     "criteria": [
       {
-        "id": "605d6f36cba14950899281036bbcfef1",
+        "id": "e63a594273684cf8a1ea433bcf847879",
         "description": "Форма випуску",
         "source": "tenderer",
         "relatesTo": "item",
@@ -160,11 +160,11 @@ Content-Type: application/json
         ],
         "requirementGroups": [
           {
-            "id": "979cdf512e0b4899ba29043c24949c05",
+            "id": "75c6a9869664476d85230d9031e488c1",
             "description": "Форма випуску",
             "requirements": [
               {
-                "id": "bb9de124c05a44f881f07b4ed442ae7c",
+                "id": "fc02f36a9cd84dbcbd30eefb8c505493",
                 "title": "Форма випуску",
                 "dataType": "string",
                 "status": "active",
@@ -175,7 +175,7 @@ Content-Type: application/json
                 "datePublished": "2023-10-10T01:00:00+03:00"
               },
               {
-                "id": "0a66cb3354964fe4a6e1eb5e028f2196",
+                "id": "d78e77dcf94746f7a05676259be5e721",
                 "title": "Доза діючої речовини",
                 "dataType": "integer",
                 "status": "active",
@@ -187,7 +187,7 @@ Content-Type: application/json
                 "datePublished": "2023-10-10T01:00:00+03:00"
               },
               {
-                "id": "88359f2bf06f4fd9bfa9b8f70bb9b227",
+                "id": "74ebd0c7845b4c499df49341d5c313b0",
                 "title": "Форма випуску 1",
                 "dataType": "string",
                 "status": "active",
@@ -302,7 +302,7 @@ Content-Type: application/json
     },
     "bids": [
       {
-        "id": "5e818bcf21be4d18a84f29d3c85326f7",
+        "id": "4fad3f089b0e45e2bf3084042d4995ba",
         "date": "2023-10-10T01:00:00+03:00",
         "tenderers": [
           {
@@ -342,13 +342,13 @@ Content-Type: application/json
         "requirementResponses": [
           {
             "requirement": {
-              "id": "bb9de124c05a44f881f07b4ed442ae7c",
+              "id": "fc02f36a9cd84dbcbd30eefb8c505493",
               "title": "Форма випуску"
             },
             "values": [
               "Розчин для інфузій"
             ],
-            "id": "eb529a29bf9f40afb4cbb6eac3a05909",
+            "id": "436a7d18ebeb4f0698e4ef994a9f257e",
             "classification": {
               "scheme": "ESPD211",
               "id": "CRITERION.OTHER.SUBJECT_OF_PROCUREMENT.TECHNICAL_FEATURES"
@@ -356,11 +356,11 @@ Content-Type: application/json
           },
           {
             "requirement": {
-              "id": "0a66cb3354964fe4a6e1eb5e028f2196",
+              "id": "d78e77dcf94746f7a05676259be5e721",
               "title": "Доза діючої речовини"
             },
             "value": 5,
-            "id": "9fbee8839d1443ce8c411170f3ff8e64",
+            "id": "7655a0eebcb84b47873b83d61bb79e83",
             "unit": {
               "code": "KGM",
               "name": "кілограми"
@@ -372,14 +372,14 @@ Content-Type: application/json
           },
           {
             "requirement": {
-              "id": "88359f2bf06f4fd9bfa9b8f70bb9b227",
+              "id": "74ebd0c7845b4c499df49341d5c313b0",
               "title": "Форма випуску 1"
             },
             "values": [
               "Відповідь1",
               "Відповідь2"
             ],
-            "id": "2057cf7fb70d4373a9ffb2f2b469d640",
+            "id": "c55bd29bc47d4293b8d5ed07d8bc37b3",
             "classification": {
               "scheme": "ESPD211",
               "id": "CRITERION.OTHER.SUBJECT_OF_PROCUREMENT.TECHNICAL_FEATURES"
@@ -468,12 +468,12 @@ Content-Type: application/json
             }
           }
         ],
-        "bid_id": "5e818bcf21be4d18a84f29d3c85326f7",
+        "bid_id": "4fad3f089b0e45e2bf3084042d4995ba",
         "documents": [
           {
             "confidentiality": "public",
             "documentType": "notice",
-            "id": "1c04209a75564f6c9800996eff78af44",
+            "id": "89a52f9b67d64f839607fda7214df3c4",
             "datePublished": "2023-10-10T01:00:00+03:00",
             "hash": "md5:00000000000000000000000000000000",
             "title": "sign.p7s",
@@ -526,7 +526,7 @@ Content-Type: application/json
             }
           }
         ],
-        "bid_id": "5e818bcf21be4d18a84f29d3c85326f7",
+        "bid_id": "4fad3f089b0e45e2bf3084042d4995ba",
         "period": {
           "startDate": "2023-10-10T01:00:00+03:00",
           "endDate": "2023-10-13T00:00:00+03:00"
@@ -552,7 +552,7 @@ Content-Type: application/json
         }
       }
     ],
-    "id": "19e4c71b4b4b4595a5bb125c6c5e2df7"
+    "id": "f2a340122e754b528c3f516d8e34de7a"
   },
   "config": {
     "hasAuction": false,

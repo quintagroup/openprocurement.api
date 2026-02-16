@@ -1,4 +1,4 @@
-POST /api/2.5/tenders/b1b9e2275509420b8a3759c55a76d2cc/complaints HTTP/1.0
+POST /api/2.5/tenders/08491ba95a5c4fa6b21a91707d1dca31/complaints HTTP/1.0
 Authorization: Bearer broker
 Content-Type: application/json
 Host: lb-api-sandbox.prozorro.gov.ua
@@ -35,7 +35,7 @@ Host: lb-api-sandbox.prozorro.gov.ua
         "title": "My objection",
         "description": "Test objection",
         "relatesTo": "tender",
-        "relatedItem": "b1b9e2275509420b8a3759c55a76d2cc",
+        "relatedItem": "08491ba95a5c4fa6b21a91707d1dca31",
         "classification": {
           "scheme": "violation_amcu",
           "id": "corruptionDescription",

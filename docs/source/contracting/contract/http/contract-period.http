@@ -123,7 +123,7 @@ Content-Type: application/json
         }
       }
     ],
-    "tender_id": "19e4c71b4b4b4595a5bb125c6c5e2df7",
+    "tender_id": "f2a340122e754b528c3f516d8e34de7a",
     "owner": "broker",
     "status": "pending",
     "period": {

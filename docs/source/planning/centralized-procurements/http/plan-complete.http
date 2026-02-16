@@ -1,4 +1,4 @@
-GET /api/2.5/plans/ab4cc76a884247e68847a2e64d0a50a0 HTTP/1.0
+GET /api/2.5/plans/d1b27c777c30402190752796d48859fd HTTP/1.0
 Authorization: Bearer broker
 Host: public-api-sandbox.prozorro.gov.ua
 
@@ -10,7 +10,7 @@ Content-Type: application/json
   "data": {
     "status": "complete",
     "procuringEntity": {
-      "id": "f26d3064993d4dd084e534c149d5eeb4",
+      "id": "3fbac75a53fb4fdf8c2b82d0eb40cb1a",
       "name": "ЦЗО №1",
       "identifier": {
         "scheme": "UA-EDR",
@@ -49,7 +49,7 @@ Content-Type: application/json
       },
       "breakdown": [
         {
-          "id": "6749e573439c48eeb3fa8d3405c90512",
+          "id": "50451e145eca493ba909f068366c12fb",
           "title": "other",
           "description": "Breakdown other description.",
           "value": {
@@ -74,7 +74,7 @@ Content-Type: application/json
     "planID": "UA-P-2023-10-10-000001-a",
     "items": [
       {
-        "id": "35a4f77ae5ef49fda453f4c6af40b9be",
+        "id": "8b29f68017114e1ba09189d310bf43e2",
         "classification": {
           "description": "Mustard seeds",
           "scheme": "ДК021",
@@ -107,7 +107,7 @@ Content-Type: application/json
     ],
     "buyers": [
       {
-        "id": "ebe134f989f9478692cc1e9534ced2df",
+        "id": "0cdabf6f342346d28b95f719574e1d02",
         "name": "ДУС",
         "identifier": {
           "scheme": "UA-EDR",
@@ -146,14 +146,14 @@ Content-Type: application/json
     "datePublished": "2023-10-10T01:00:00+03:00",
     "milestones": [
       {
-        "id": "38af1af8923e4f2ab7bdda3b7d94c002",
+        "id": "04b31c34c6764aaa84b70277d97cf712",
         "status": "met",
         "title": "Підготовка до проведення процедури",
         "description": "Доповнений опис відповіді",
         "type": "approval",
         "dueDate": "2023-10-10T01:00:07+03:00",
         "author": {
-          "id": "5eb3a24a09454272a717b820d4209dbf",
+          "id": "17b0a4f99ca24834b22e585424fbea1f",
           "name": "ЦЗО №1",
           "identifier": {
             "scheme": "UA-EDR",
@@ -177,17 +177,17 @@ Content-Type: application/json
             "hash": "md5:00000000000000000000000000000000",
             "title": "Notice.pdf",
             "format": "application/pdf",
-            "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/plans/ab4cc76a884247e68847a2e64d0a50a0/milestones/38af1af8923e4f2ab7bdda3b7d94c002/documents/c8a16e2a836041288c00158ec2f1f50d?download=e02eb47c177f4e078fd10eb781a99616",
+            "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/plans/d1b27c777c30402190752796d48859fd/milestones/04b31c34c6764aaa84b70277d97cf712/documents/4449109ab1d84e9da384fde7591208c1?download=e02eb47c177f4e078fd10eb781a99616",
             "language": "uk",
-            "id": "c8a16e2a836041288c00158ec2f1f50d",
+            "id": "4449109ab1d84e9da384fde7591208c1",
             "datePublished": "2023-10-10T01:00:10+03:00",
             "dateModified": "2023-10-10T01:00:10+03:00"
           }
         ]
       }
     ],
-    "tender_id": "420fdea4c7d7481687b0e10f8e0d2704",
-    "id": "ab4cc76a884247e68847a2e64d0a50a0"
+    "tender_id": "13ccc4a94b884c8c8abe24e6299e865e",
+    "id": "d1b27c777c30402190752796d48859fd"
   }
 }
 

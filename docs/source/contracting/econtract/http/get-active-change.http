@@ -1,4 +1,4 @@
-GET /api/2.5/contracts/38891909c9274c02b0bdca60fa5d2260/changes/68db49ecd6ef439a81feaec69cd6ab07?acc_token=095f224d5ed54436b623b406684b80f1 HTTP/1.0
+GET /api/2.5/contracts/38891909c9274c02b0bdca60fa5d2260/changes/a0a23a4028a6428fa088098d0d137d71?acc_token=095f224d5ed54436b623b406684b80f1 HTTP/1.0
 Authorization: Bearer broker6
 Host: public-api-sandbox.prozorro.gov.ua
 
@@ -21,7 +21,7 @@ Content-Type: application/json
         "amountNet": 490.0
       }
     },
-    "id": "68db49ecd6ef439a81feaec69cd6ab07",
+    "id": "a0a23a4028a6428fa088098d0d137d71",
     "status": "active",
     "date": "2023-10-10T01:00:00+03:00",
     "author": "supplier",
@@ -31,7 +31,7 @@ Content-Type: application/json
         "hash": "md5:00000000000000000000000000000000",
         "title": "contract_change.pdf",
         "format": "application/pdf",
-        "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/contracts/38891909c9274c02b0bdca60fa5d2260/changes/68db49ecd6ef439a81feaec69cd6ab07/documents/88962047c28144d99916ae75c9a2a38a?download=33830e473a1348d6a5a7e4eb3379672d",
+        "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/contracts/38891909c9274c02b0bdca60fa5d2260/changes/a0a23a4028a6428fa088098d0d137d71/documents/88962047c28144d99916ae75c9a2a38a?download=33830e473a1348d6a5a7e4eb3379672d",
         "documentOf": "change",
         "id": "88962047c28144d99916ae75c9a2a38a",
         "datePublished": "2023-10-10T01:00:00+03:00",
@@ -43,10 +43,10 @@ Content-Type: application/json
         "title": "sign.p7s",
         "format": "application/pkcs7-signature",
         "hash": "md5:00000000000000000000000000000000",
-        "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/contracts/38891909c9274c02b0bdca60fa5d2260/changes/68db49ecd6ef439a81feaec69cd6ab07/documents/dbfd77f646e24646b486c9993d548773?download=9dc6bfe4683b4e63a799bbe366ba9376",
+        "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/contracts/38891909c9274c02b0bdca60fa5d2260/changes/a0a23a4028a6428fa088098d0d137d71/documents/647c84c6617a4d14b7b1a5f7aa17a79d?download=9dc6bfe4683b4e63a799bbe366ba9376",
         "documentOf": "change",
         "documentType": "contractSignature",
-        "id": "dbfd77f646e24646b486c9993d548773",
+        "id": "647c84c6617a4d14b7b1a5f7aa17a79d",
         "datePublished": "2023-10-10T01:00:00+03:00",
         "dateModified": "2023-10-10T01:00:00+03:00",
         "author": "supplier"
@@ -56,10 +56,10 @@ Content-Type: application/json
         "title": "sign.p7s",
         "format": "application/pkcs7-signature",
         "hash": "md5:00000000000000000000000000000000",
-        "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/contracts/38891909c9274c02b0bdca60fa5d2260/changes/68db49ecd6ef439a81feaec69cd6ab07/documents/cecedebd3506431087503ddfee41b51e?download=9dc6bfe4683b4e63a799bbe366ba9376",
+        "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/contracts/38891909c9274c02b0bdca60fa5d2260/changes/a0a23a4028a6428fa088098d0d137d71/documents/215698f490f544de97d8a8644e03094a?download=9dc6bfe4683b4e63a799bbe366ba9376",
         "documentOf": "change",
         "documentType": "contractSignature",
-        "id": "cecedebd3506431087503ddfee41b51e",
+        "id": "215698f490f544de97d8a8644e03094a",
         "datePublished": "2023-10-10T01:00:00+03:00",
         "dateModified": "2023-10-10T01:00:00+03:00",
         "author": "supplier"
@@ -69,10 +69,10 @@ Content-Type: application/json
         "title": "sign.p7s",
         "format": "application/pkcs7-signature",
         "hash": "md5:00000000000000000000000000000000",
-        "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/contracts/38891909c9274c02b0bdca60fa5d2260/changes/68db49ecd6ef439a81feaec69cd6ab07/documents/9b79978730be436cad409cd1c628b519?download=9dc6bfe4683b4e63a799bbe366ba9376",
+        "url": "http://public-api-sandbox.prozorro.gov.ua/api/2.5/contracts/38891909c9274c02b0bdca60fa5d2260/changes/a0a23a4028a6428fa088098d0d137d71/documents/4790f9f49c7b411092bac790f15b00ea?download=9dc6bfe4683b4e63a799bbe366ba9376",
         "documentOf": "change",
         "documentType": "contractSignature",
-        "id": "9b79978730be436cad409cd1c628b519",
+        "id": "4790f9f49c7b411092bac790f15b00ea",
         "datePublished": "2023-10-10T01:00:00+03:00",
         "dateModified": "2023-10-10T01:00:00+03:00",
         "author": "buyer"

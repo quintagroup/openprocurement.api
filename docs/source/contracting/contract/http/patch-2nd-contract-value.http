@@ -26,7 +26,7 @@ Content-Type: application/json
     "dateCreated": "2023-10-10T01:00:00+03:00",
     "items": [
       {
-        "id": "8e022f41db5141c28550be76bbbd600a",
+        "id": "24116e2d04d54836b7915292bc0aaecd",
         "description": "портфелі",
         "quantity": 5.0,
         "classification": {
@@ -64,7 +64,7 @@ Content-Type: application/json
         "relatedBuyer": "22222222222222222222222222222222"
       },
       {
-        "id": "32a3cfc4a06d4962b4c998c340e399c5",
+        "id": "08b71213150947bb873b39f0fd29af3c",
         "description": "портфелі",
         "quantity": 5.0,
         "classification": {
@@ -102,7 +102,7 @@ Content-Type: application/json
         "relatedBuyer": "22222222222222222222222222222222"
       }
     ],
-    "tender_id": "19e9963bdfcc4808a9b31fd3ef480e61",
+    "tender_id": "1e348b7fcc2c4e208c3acb538a30a9bb",
     "owner": "broker",
     "status": "pending",
     "buyer": {
@@ -235,7 +235,7 @@ Content-Type: application/json
         "status": "scheduled"
       },
       {
-        "id": "a4a461ee8b6445abb8a2258a363e5732",
+        "id": "c3e7c0d63d144dda8332573314462e0b",
         "title": "deliveryOfGoods",
         "type": "financing",
         "code": "postpayment",
