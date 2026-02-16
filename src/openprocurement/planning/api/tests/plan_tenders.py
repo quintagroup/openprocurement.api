@@ -93,20 +93,39 @@ def test_plan_tenders_404(app):
 
 
 def test_plan_tender_ref(app, plan):
-    data = (
-        '{"data":{"procurementMethodType":"belowThreshold","procuringEntity":{"identifier":'
-        '{"scheme":"UA-EDR","id":"111983","legalName":"asd"}}}}'
+    test_tender_data = {
+        "procurementMethodType": "belowThreshold",
+        "procuringEntity": {
+            "name": "asd",
+            "identifier": {
+                "scheme": "UA-EDR",
+                "id": "111983",
+                "legalName": "asd",
+            },
+        },
+    }
+    response = app.post_json(
+        "/plans/{}/tenders".format(plan["data"]["id"]),
+        {"data": test_tender_data},
+        headers={"Content-Type": "application/json"},
+        status=422,
     )
-    response = app.post(
-        "/plans/{}/tenders".format(plan["data"]["id"]), data, headers={"Content-Type": "application/json"}, status=422
-    )
-    assert {"location": "body", "name": "title", "description": ["This field is required."]} in response.json["errors"]
+    assert {
+        "location": "body",
+        "name": "title",
+        "description": ["This field is required."],
+    } in response.json["errors"]
 
 
 def test_plan_tenders_empty_data(app, plan):
     app.authorization = ("Basic", ("broker", "broker"))
-    response = app.post_json("/plans/{}/tenders".format(plan["data"]["id"]), {"data": {}}, status=403)
-    assert response.json["errors"][0]["name"] == "procurementMethodType"
+    response = app.post_json(
+        "/plans/{}/tenders".format(plan["data"]["id"]),
+        {"data": {}},
+        status=422,
+    )
+    assert response.json["errors"][0]["name"] == "procuringEntity"
+    assert response.json["errors"][0]["description"][0] == "This field is required."
 
 
 test_below_tender_data = deepcopy(test_tender_below_data)

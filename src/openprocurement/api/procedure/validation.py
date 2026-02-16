@@ -27,19 +27,20 @@ from openprocurement.tender.core.procedure.documents import (
 )
 
 
-def validate_input_data(input_model, allow_bulk=False, filters=None, none_means_remove=False):
+def validate_input_data(input_model, allow_bulk=False, filters=None, none_means_remove=False, strict=True):
     """
     :param input_model: a model to validate data against
     :param allow_bulk: if True, request.validated["data"] will be a list of valid inputs
     :param filters: list of filter function that applied on valid data
     :param none_means_remove: null values passed cause deleting saved values at those keys
+    :param strict: if True, unknown fields will raise an error
     :return:
     """
 
     def validate(request, **_):
-        request.validated["json_data"] = json_data = validate_json_data(request, allow_bulk=allow_bulk)
-        # now you can use context.get_json_data() in model validators to access the whole passed object
-        # instead of .__parent__.__parent__. Though it may not be valid
+        json_data = validate_json_data(request, allow_bulk=allow_bulk)
+        request.validated["json_data"] = json_data
+
         if not isinstance(json_data, list):
             json_data = [json_data]
 
@@ -55,7 +56,7 @@ def validate_input_data(input_model, allow_bulk=False, filters=None, none_means_
                 for k, v in input_data.items():
                     if v is None or isinstance(v, list) and len(v) == 0:
                         result[k] = v
-            valid_data = validate_data(request, input_model, input_data)
+            valid_data = validate_data(request, input_model, input_data, strict=strict)
             if valid_data is not None:
                 result.update(valid_data)
             data.append(result)
@@ -68,15 +69,15 @@ def validate_input_data(input_model, allow_bulk=False, filters=None, none_means_
     return validate
 
 
-def validate_data(request, model, data, to_patch=False, collect_errors=False):
+def validate_data(request, model, data, strict=True):
     with handle_data_exceptions(request):
-        instance = model(data)
+        instance = model(data, strict=strict)
         instance.validate()
         data = instance.serialize()
     return data
 
 
-def validate_data_model(input_model):
+def validate_data_model(input_model, strict=True):
     """
     Simple way to validate data in request.validated["data"] against a provided model
     the result is put back in request.validated["data"]
@@ -86,7 +87,7 @@ def validate_data_model(input_model):
 
     def validate(request, **_):
         data = request.validated["data"]
-        data = validate_data(request, input_model, data)
+        data = validate_data(request, input_model, data, strict=strict)
         request.validated["data"] = data
         return data
 
