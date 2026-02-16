@@ -20,7 +20,6 @@ from openprocurement.historical.core.constants import (
 
 class Root:
     __name__ = None
-    __parent__ = None
     __acl__ = [
         (Allow, "g:brokers", "view_historical"),
         (Allow, "g:Administrator", "view_historical"),

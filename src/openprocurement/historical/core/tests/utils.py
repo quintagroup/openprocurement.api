@@ -13,7 +13,6 @@ with open(os.path.join(here, "data.json")) as in_json:
 
 
 class Doc(dict):
-    __parent__ = None
     doc_type = "mock"
     hash = (uuid4().hex,)
     id = test_data_with_revisions["id"]
