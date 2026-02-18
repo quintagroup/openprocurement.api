@@ -1,3 +1,4 @@
+import logging
 import random
 from datetime import datetime, timedelta
 from logging import getLogger
@@ -14,7 +15,11 @@ from openprocurement.api.constants import (
     WORKING_DAYS,
 )
 from openprocurement.api.context import get_request, get_request_now
-from openprocurement.api.utils import calculate_date, context_unpack
+from openprocurement.api.utils import (
+    calculate_date,
+    context_unpack,
+    raise_operation_error,
+)
 from openprocurement.tender.core.procedure.utils import (
     calc_auction_replan_time,
     dt_from_iso,
@@ -263,3 +268,40 @@ class ShouldStartAfterMixing:
             )
         )
         return TZ.localize(auction_start).isoformat()
+
+    def validate_bids_participation_url(self, before, after):
+        """
+        For lot auction: ensure either all active bids' active lot values for this lot
+        have participationUrl set, or none do. Prevents some participants of the same
+        lot from getting the link while others do not.
+        """
+        request = get_request()
+        for lot in after.get("lots", []):
+            lot_id = lot.get("id")
+            bids_with_url = []
+            bids_without_url = []
+            for bid in after.get("bids", []):
+                if bid.get("status", "active") != "active":
+                    continue
+                for lv in bid.get("lotValues", []):
+                    if lv.get("relatedLot") != lot_id:
+                        continue
+                    if lv.get("status", "active") != "active":
+                        continue
+                    if lv.get("participationUrl"):
+                        bids_with_url.append(bid.get("id"))
+                    else:
+                        bids_without_url.append(bid.get("id"))
+                    break
+
+            if bids_with_url and bids_without_url:
+                raise_operation_error(
+                    request,
+                    "All bids must receive participationUrl, or none must.",
+                    status=422,
+                    name="bids",
+                    level=logging.ERROR,
+                )
+
+    def on_auction_patch(self, before, after):
+        self.validate_bids_participation_url(before, after)

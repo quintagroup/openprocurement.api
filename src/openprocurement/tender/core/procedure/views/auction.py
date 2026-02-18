@@ -86,6 +86,7 @@ class TenderAuctionResource(TenderBaseResource):
         updated = apply_data_patch(tender, data)
         if updated:
             tender = self.request.validated["tender"] = updated
+            self.state.on_auction_patch(tender_src, tender)
             self.state.on_patch(tender_src, tender)
 
         # save tender

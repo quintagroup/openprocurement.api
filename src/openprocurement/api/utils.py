@@ -1,3 +1,4 @@
+import logging
 from base64 import b64encode
 from contextlib import contextmanager
 from copy import deepcopy
@@ -313,7 +314,7 @@ def generate_docservice_url(request, doc_id, temporary=True, prefix=None):
     )
 
 
-def error_handler(request, request_params=True):
+def error_handler(request, request_params=True, level=logging.INFO):
     errors = request.errors
     params = {"ERROR_STATUS": errors.status}
     if request_params:
@@ -330,21 +331,22 @@ def error_handler(request, request_params=True):
             if isinstance(value, bytes):
                 item[key] = value.decode("utf-8")
 
-    LOGGER.info(
+    LOGGER.log(
+        level,
         'Error on processing request "{}"'.format(dumps(errors, indent=4)),
         extra=context_unpack(request, {"MESSAGE_ID": "error_handler"}, params),
     )
     return json_error(request)
 
 
-def raise_operation_error(request, message, status=403, location="body", name="data"):
+def raise_operation_error(request, message, status=403, location="body", name="data", level=logging.INFO):
     """
     This function mostly used in views validators to add access errors and
     raise exceptions if requested operation is forbidden.
     """
     request.errors.add(location, name, message)
     request.errors.status = status
-    raise error_handler(request)
+    raise error_handler(request, level=level)
 
 
 def update_file_content_type(request):  # XXX TODO
