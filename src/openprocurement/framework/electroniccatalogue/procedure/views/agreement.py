@@ -6,6 +6,7 @@ from openprocurement.api.procedure.validation import (
 )
 from openprocurement.api.utils import json_view
 from openprocurement.framework.core.procedure.validation import (
+    unless_administrator_or_chronograph,
     validate_agreement_framework,
     validate_agreement_operation_not_in_allowed_status,
 )
@@ -33,7 +34,7 @@ class ElectronicCatalogueAgreementResource(AgreementsResource):
             validate_input_data_from_resolved_model(),
             validate_patch_data(Agreement, item_name="agreement"),
             validate_agreement_framework,
-            validate_agreement_operation_not_in_allowed_status,
+            unless_administrator_or_chronograph(validate_agreement_operation_not_in_allowed_status),
         ),
         permission="edit_agreement",
     )
