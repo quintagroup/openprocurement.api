@@ -1645,11 +1645,29 @@ class BaseTenderDetailsMixing:
     def set_contract_change_rationale_types(self, data):
         if tender_created_before(CONTRACT_CHANGE_RATIONALE_TYPES_SET_FROM):
             return
-        procurement_method_type = data.get("procurementMethodType")
-        if procurement_method_type in TENDERS_CONTRACT_CHANGE_BASED_ON_DECREE_1178:
-            data["contractChangeRationaleTypes"] = RATIONALE_TYPES_DECREE_1178
+
+        cause_details = data.get("causeDetails", {})
+        cause_scheme = cause_details.get("scheme")
+
+        if cause_scheme:
+            if cause_scheme == "DECREE1178":
+                data["contractChangeRationaleTypes"] = RATIONALE_TYPES_DECREE_1178
+            elif cause_scheme == "LAW922":
+                data["contractChangeRationaleTypes"] = RATIONALE_TYPES_LAW_922
+            else:
+                raise_operation_error(
+                    self.request,
+                    f"Unknown causeDetails.scheme value: {cause_scheme}",
+                    status=422,
+                    location="body",
+                    name="causeDetails.scheme",
+                )
         else:
-            data["contractChangeRationaleTypes"] = RATIONALE_TYPES_LAW_922
+            procurement_method_type = data.get("procurementMethodType")
+            if procurement_method_type in TENDERS_CONTRACT_CHANGE_BASED_ON_DECREE_1178:
+                data["contractChangeRationaleTypes"] = RATIONALE_TYPES_DECREE_1178
+            else:
+                data["contractChangeRationaleTypes"] = RATIONALE_TYPES_LAW_922
 
 
 class TenderDetailsMixing(TenderConfigMixin, BaseTenderDetailsMixing):
