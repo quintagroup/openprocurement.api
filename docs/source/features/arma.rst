@@ -98,7 +98,7 @@ https://github.com/ProzorroUKR/standards/blob/master/organizations/kind_procurem
 .. code-block:: json
 
    [
-     "authority",
+     "authority"
    ]
 
 Адаптація функціоналу
@@ -157,21 +157,51 @@ https://github.com/ProzorroUKR/standards/blob/master/organizations/kind_procurem
 - ``tender.status=active.awarded`` >> дозволити додавати ``award.documents``
 - ``contract.status=pending/active`` >> дозволити додавати ``contract.documents``
 
-Нова структура поля value
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Розробка нової структури поля value
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Реалізувати нову структуру ``value`` oщо буде використана в полях (якщо тендер має відповідний ``procurementMethodType``)
+1 фаза:
 
-- ``tender.value``
-- ``tender.bids[].value``
-- ``tender.awards[].value``
-- ``contract.value``
+- тендерінг
+- подання пропозицій
+- деактивація аукціону (``hasAuction`` = false)
+
+2 фаза:
+
+- аукціон (``hasAuction`` = true)
+
+3 фаза:
+
+- контрактінг
+
+4 фаза:
+
+- вартість активу
+- білінг
+
+----
+
+Адаптація полів системи для процедури АРМА:
+
+- ``tender.value`` - delete
+- ``tender.minimalStep`` - delete
+- ``tender.guarantee`` - leave as is
+- ``tender.lots[].value`` - new structure
+- ``tender.lots[].minimalStep`` - new structure
+- ``tender.lots[].guarantee`` - leave as is
+- ``tender.bids[].value`` - leave as is
+- ``tender.bids[].lotsValues[].value`` - new structure
+- ``tender.bids[].items[].unit.value`` - leave as is
+- ``tender.items[].unit.value`` - leave as is
+- ``tender.awards[].value`` - new structure
+- ``tender.awards[].items[].value`` - leave as is
+- ``contract.value`` - new structure
 
 Структура
 """""""""
 
-- Інша назва поля по аналогії з esco
-- Прибрати поля currency/valueAddedTaxIncluded
+- Інша назва поля по аналогії з esco.
+- Прибрати поля ``currency``, ``valueAddedTaxIncluded``.
 
 .. code-block:: json
 
@@ -184,22 +214,27 @@ https://github.com/ProzorroUKR/standards/blob/master/organizations/kind_procurem
 Валідації
 """""""""
 
-Валідації для ``tender.value`` (відповідно і для ``tender.lots[].value``):
+1. Валідації для ``tender.lots[].value``:
 
-- ``tender.value.amountPercentage`` >= 0
-- ``tender.value.amountPercentage`` <= 100
+- ``tender.lots[].value.amountPercentage`` >= 0
+- ``tender.lots[].value.amountPercentage`` <= 100
 
-Валідації для ``tender.bids[].value`` (відповідно і для ``tender.bids[].lotValues[].value``):
+2. Валідації для ``tender.lots[].minimalStep``:
 
-- ``tender.bids[].value.amountPercentage`` >= 0
-- ``tender.bids[].value.amountPercentage`` <= ``tender.value.amountPercentage``
+- ``tender.lots[].minimalStep.amountPercentage`` >= 0
+- ``tender.lots[].minimalStep.amountPercentage`` <= ``tender.lots[].value.amountPercentage``
 
-Валідації для ``contract.value``:
+3. Валідації для ``tender.bids[].lotValues[].value``:
+
+- ``tender.bids[].lotValues[].value.amountPercentage`` >= 0
+- ``tender.bids[].lotValues[].value.amountPercentage`` <= ``tender.lots[].value.amountPercentage`` (``tender.lots[].value.amountPercentage`` - верхній поріг в ставках)
+
+4. Валідації для ``contract.value``:
 
 - ``contract.value.amountPercentage`` >= 0
 - ``contract.value.amountPercentage`` <= ``tender.awards[].value.amountPercentage``
 
-Перевірити/адаптувати всі інші валідації що використовували поля:
+5. Перевірити/адаптувати всі інші валідації що використовували поля:
 
 - ``value.amount``
 - ``value.amountNet``
@@ -209,7 +244,7 @@ https://github.com/ProzorroUKR/standards/blob/master/organizations/kind_procurem
 Авардінг
 """"""""
 
-Реалізувати визначення переможної пропозиції за полем ``tender.awards.value.amountPercentage``
+Реалізувати визначення переможної пропозиції за полем ``tender.awards[].value.amountPercentage``
 
 .. code-block:: python
 
@@ -244,9 +279,9 @@ https://github.com/ProzorroUKR/standards/blob/master/organizations/kind_procurem
 
    {
        "weightedValue": {
-           "amountPercentage": 30.5б
-           "addition": 100.0,
-           "denominator": 0.5
+           "amountPercentage": 30.5,
+           "addition": 0.0,
+           "denominator": 1
        }
    }
 
@@ -260,7 +295,7 @@ https://github.com/ProzorroUKR/standards/blob/master/organizations/kind_procurem
 
 ЦБД розуміючи що запит від модуля аукціону у відповіді переформатовує всі value. Використовуючи поле currency для позначення відсотків.
 
-Наприклад
+Наприклад (``weightedValue`` теж переводити)
 
 .. code-block:: json
 
