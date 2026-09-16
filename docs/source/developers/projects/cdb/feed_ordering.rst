@@ -77,43 +77,80 @@ Offset кодує значення поля ``public_modified`` останньо
 Рішення: Watermark delay
 -------------------------
 
-Фід не видає об'єкти, ``public_modified`` яких молодший за ``N`` секунд від поточного часу MongoDB.
-За цей час усі паралельні транзакції зі схожими timestamps встигають закомітитись і стати видимими.
+Фід не видає об'єкти, ``public_modified`` яких молодший за ``N`` секунд від **cluster time** MongoDB.
+За цей час усі паралельні транзакції зі схожими timestamps встигають закомітитись.
+Додатково читання виконується **causally after** цього cluster time, тож репліка, яка відстає,
+чекає, доки застосує всі записи до cutoff, а не відповідає зі застарілого snapshot-у.
 
-Ключовий момент: watermark рахується за допомогою ``$$NOW`` **самої MongoDB**, а не ``time.time()`` на API сервері.
-Це виключає проблему розсинхронізації годинників між API сервером і MongoDB.
+Чому не годинник
+~~~~~~~~~~~~~~~~
 
-**Реалізація в** ``src/openprocurement/api/database.py``, метод ``list()``:
+Перша версія watermark порівнювала ``public_modified`` з ``$$NOW`` ноди, що обслуговує читання.
+Це прибирало розсинхронізацію годинників між API та MongoDB, але не враховувало, що **дані**, які бачить читач,
+можуть бути старшими за «зараз»:
+
+- API читає з ``READ_PREFERENCE=SECONDARY_PREFERRED`` та ``READ_CONCERN=majority``;
+- під час масових оновлень (хронограф на початку години переписує сотні тендерів) secondary
+  і majority commit point відстають від primary на секунди;
+- ``$$NOW`` на secondary при цьому актуальний, тобто cutoff проходив повз записи, які ще не приїхали на репліку.
+
+Затримка реплікації **додається** до вікна «``$$NOW`` → видимий читачу», яке має покривати watermark.
+Саме так у фіді зникали записи, зроблені о 09:00:03 та 00:00:17, хоча ``FEED_WATERMARK_SECONDS=1``.
+
+Реалізація
+~~~~~~~~~~
+
+``src/openprocurement/api/database.py``, методи ``list()``, ``get_feed_watermark()``:
 
 .. code-block:: python
 
    FEED_WATERMARK_SECONDS = int(os.environ.get("FEED_WATERMARK_SECONDS", "1"))
+   FEED_WATERMARK_MAX_TIME_MS = int(os.environ.get("FEED_WATERMARK_MAX_TIME_MS", "10000"))
+
+   def get_feed_watermark(self, session=None):
+       now = int(time.time())
+       cluster_time = self.get_cluster_time(session)   # $clusterTime, відомий драйверу
+       if cluster_time is None:                        # standalone: реплікації немає
+           return now - FEED_WATERMARK_SECONDS
+       seconds = min(cluster_time.time, now)
+       if session is not None:
+           session.advance_operation_time(Timestamp(seconds, 0))   # afterClusterTime
+       return seconds - FEED_WATERMARK_SECONDS
 
    def list(self, collection, fields, ..., descending=False, offset_value=None, ...):
        ...
-       if offset_value:
-           suffix = "e" if inclusive_filter else ""
-           operator = "$lt" if descending else "$gt"
-           filters[offset_field] = {operator + suffix: offset_value}
-
        if offset_field == "public_modified" and FEED_WATERMARK_SECONDS > 0 and (not descending or not offset_value):
-           filters["$expr"] = {
-               "$lte": [
-                   f"${offset_field}",
-                   {
-                       "$subtract": [
-                           {"$divide": [{"$toLong": "$$NOW"}, 1000]},
-                           FEED_WATERMARK_SECONDS,
-                       ]
-                   },
-               ]
-           }
+           watermark = self.get_feed_watermark(session)
+           filters.setdefault(offset_field, {})["$lte"] = watermark
+           find_kwargs["max_time_ms"] = FEED_WATERMARK_MAX_TIME_MS
        ...
+
+Як це працює:
+
+1. **Cluster time** — логічний годинник MongoDB, з якого беруться ``ts`` записів oplog.
+   Драйвер отримує його з кожної відповіді сервера (``$clusterTime`` gossip); якщо процес ще нічого
+   не виконував, робиться ``ping``. Cutoff = ``cluster_time.time - FEED_WATERMARK_SECONDS`` (цілі секунди).
+   Годинник API або репліки на cutoff не впливає; cluster time лише обмежується зверху годинником API,
+   щоб логічний годинник, який «втік» уперед, не скорочував watermark.
+2. **Causal read.** Сесія запиту створюється з ``causal_consistency=True``
+   (``DBSessionCookieMiddleware``). ``advance_operation_time(Timestamp(seconds, 0))`` змушує драйвер
+   додати до читання ``readConcern.afterClusterTime``. Нода (secondary або majority snapshot на primary)
+   блокує запит, доки не застосує всі записи oplog з ``ts < Timestamp(seconds, 0)``, тобто все, що
+   закомітилось до цієї секунди. Гарантія: кожен запис із ``public_modified <= cutoff``, який закомітився
+   протягом ``FEED_WATERMARK_SECONDS`` після свого ``$$NOW``, видимий цьому читанню, незалежно від
+   відставання репліки.
+3. ``afterClusterTime`` не може бути більшим за cluster time ноди (MongoDB повертає помилку
+   ``readConcern afterClusterTime value must not be greater than the current clusterTime``), тому
+   він завжди береться з cluster time, який клієнт уже бачив, а не з годинника.
+4. ``maxTimeMS`` (``FEED_WATERMARK_MAX_TIME_MS``) обмежує очікування, якщо репліка відстала занадто
+   сильно: клієнт отримає помилку і повторить запит замість того, щоб отримати «дірку» у фіді.
+5. Замість ``$expr`` із ``$$NOW`` фільтр став звичайним діапазоном по ``public_modified``, який
+   використовує індекс.
 
 Watermark застосовується у двох випадках:
 
 - **Forward feed** (без ``descending``) — завжди. Не дає crawler-у просунути offset
-  за записи, що ще не закомітились.
+  за записи, що ще не закомітились або ще не реплікувались.
 - **Descending без offset** (перша сторінка) — щоб offset першої сторінки,
   який клієнт використовує як точку розвороту для forward sync, був достатньо старим.
   Всі паралельні записи, чий ``$$NOW`` менший за цей offset, встигають закомітитись
@@ -124,21 +161,19 @@ Watermark застосовується у двох випадках:
 
 .. note::
 
-   Значення ``FEED_WATERMARK_SECONDS`` має бути більшим за максимально можливу затримку між стартом і комітом операції запису.
-   Рекомендоване значення: **1 секунда**.
-
-   ``$$NOW`` фіксується вже на стороні MongoDB — мережева затримка між API сервером і MongoDB на race window не впливає.
-   Реальний race window визначається лише MongoDB-internal затримками:
-
-   - lock contention на стороні MongoDB
-   - replication latency до secondary-реплік (majority write concern)
+   Значення ``FEED_WATERMARK_SECONDS`` має бути більшим за максимально можливу затримку між
+   ``$$NOW`` операції запису та її комітом **на primary** (тривалість транзакції: наприклад,
+   у хронографі між ``save_tender`` і комітом ще створюються контракти).
+   Відставання реплік і majority commit point у це значення закладати **не потрібно** — його покриває
+   causal read. Рекомендоване значення: **1 секунда**; фактична затримка фіду становить від 1 до 2 секунд
+   плюс свіжість cluster time, відомого процесу API.
 
    За результатами навантажувального тесту максимальна затримка між ``$$NOW`` і комітом склала **37 мс**.
-   1 секунда дає ~27-кратний запас відносно реально спостережуваного максимуму.
    Значущі перевищення можливі лише під час MongoDB election (failover), коли writes можуть затримуватись на секунди —
    але в такому сценарії клієнти і так отримують помилки з'єднання.
 
-   Значення можна перевизначити через змінну середовища ``FEED_WATERMARK_SECONDS``.
+   Значення можна перевизначити через змінні середовища ``FEED_WATERMARK_SECONDS`` і ``FEED_WATERMARK_MAX_TIME_MS``.
+   ``FEED_WATERMARK_SECONDS=0`` вимикає механізм повністю (так роблять тести).
 
 Альтернатива: Change Streams як pull feed
 -----------------------------------------

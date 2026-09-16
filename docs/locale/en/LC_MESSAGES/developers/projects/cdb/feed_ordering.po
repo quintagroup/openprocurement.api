@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openprocurement.api 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-23 12:01+0300\n"
+"POT-Creation-Date: 2026-09-16 10:24+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -82,19 +82,55 @@ msgstr ""
 msgid "Рішення: Watermark delay"
 msgstr ""
 
-msgid "Фід не видає об'єкти, ``public_modified`` яких молодший за ``N`` секунд від поточного часу MongoDB. За цей час усі паралельні транзакції зі схожими timestamps встигають закомітитись і стати видимими."
+msgid "Фід не видає об'єкти, ``public_modified`` яких молодший за ``N`` секунд від **cluster time** MongoDB. За цей час усі паралельні транзакції зі схожими timestamps встигають закомітитись. Додатково читання виконується **causally after** цього cluster time, тож репліка, яка відстає, чекає, доки застосує всі записи до cutoff, а не відповідає зі застарілого snapshot-у."
 msgstr ""
 
-msgid "Ключовий момент: watermark рахується за допомогою ``$$NOW`` **самої MongoDB**, а не ``time.time()`` на API сервері. Це виключає проблему розсинхронізації годинників між API сервером і MongoDB."
+msgid "Чому не годинник"
 msgstr ""
 
-msgid "**Реалізація в** ``src/openprocurement/api/database.py``, метод ``list()``:"
+msgid "Перша версія watermark порівнювала ``public_modified`` з ``$$NOW`` ноди, що обслуговує читання. Це прибирало розсинхронізацію годинників між API та MongoDB, але не враховувало, що **дані**, які бачить читач, можуть бути старшими за «зараз»:"
+msgstr ""
+
+msgid "API читає з ``READ_PREFERENCE=SECONDARY_PREFERRED`` та ``READ_CONCERN=majority``;"
+msgstr ""
+
+msgid "під час масових оновлень (хронограф на початку години переписує сотні тендерів) secondary і majority commit point відстають від primary на секунди;"
+msgstr ""
+
+msgid "``$$NOW`` на secondary при цьому актуальний, тобто cutoff проходив повз записи, які ще не приїхали на репліку."
+msgstr ""
+
+msgid "Затримка реплікації **додається** до вікна «``$$NOW`` → видимий читачу», яке має покривати watermark. Саме так у фіді зникали записи, зроблені о 09:00:03 та 00:00:17, хоча ``FEED_WATERMARK_SECONDS=1``."
+msgstr ""
+
+msgid "Реалізація"
+msgstr ""
+
+msgid "``src/openprocurement/api/database.py``, методи ``list()``, ``get_feed_watermark()``:"
+msgstr ""
+
+msgid "Як це працює:"
+msgstr ""
+
+msgid "**Cluster time** — логічний годинник MongoDB, з якого беруться ``ts`` записів oplog. Драйвер отримує його з кожної відповіді сервера (``$clusterTime`` gossip); якщо процес ще нічого не виконував, робиться ``ping``. Cutoff = ``cluster_time.time - FEED_WATERMARK_SECONDS`` (цілі секунди). Годинник API або репліки на cutoff не впливає; cluster time лише обмежується зверху годинником API, щоб логічний годинник, який «втік» уперед, не скорочував watermark."
+msgstr ""
+
+msgid "**Causal read.** Сесія запиту створюється з ``causal_consistency=True`` (``DBSessionCookieMiddleware``). ``advance_operation_time(Timestamp(seconds, 0))`` змушує драйвер додати до читання ``readConcern.afterClusterTime``. Нода (secondary або majority snapshot на primary) блокує запит, доки не застосує всі записи oplog з ``ts < Timestamp(seconds, 0)``, тобто все, що закомітилось до цієї секунди. Гарантія: кожен запис із ``public_modified <= cutoff``, який закомітився протягом ``FEED_WATERMARK_SECONDS`` після свого ``$$NOW``, видимий цьому читанню, незалежно від відставання репліки."
+msgstr ""
+
+msgid "``afterClusterTime`` не може бути більшим за cluster time ноди (MongoDB повертає помилку ``readConcern afterClusterTime value must not be greater than the current clusterTime``), тому він завжди береться з cluster time, який клієнт уже бачив, а не з годинника."
+msgstr ""
+
+msgid "``maxTimeMS`` (``FEED_WATERMARK_MAX_TIME_MS``) обмежує очікування, якщо репліка відстала занадто сильно: клієнт отримає помилку і повторить запит замість того, щоб отримати «дірку» у фіді."
+msgstr ""
+
+msgid "Замість ``$expr`` із ``$$NOW`` фільтр став звичайним діапазоном по ``public_modified``, який використовує індекс."
 msgstr ""
 
 msgid "Watermark застосовується у двох випадках:"
 msgstr ""
 
-msgid "**Forward feed** (без ``descending``) — завжди. Не дає crawler-у просунути offset за записи, що ще не закомітились."
+msgid "**Forward feed** (без ``descending``) — завжди. Не дає crawler-у просунути offset за записи, що ще не закомітились або ще не реплікувались."
 msgstr ""
 
 msgid "**Descending без offset** (перша сторінка) — щоб offset першої сторінки, який клієнт використовує як точку розвороту для forward sync, був достатньо старим. Всі паралельні записи, чий ``$$NOW`` менший за цей offset, встигають закомітитись за час watermark. Без цього backward→forward sync може назавжди пропустити записи, що були in-flight під час початкового descending-читання."
@@ -103,22 +139,13 @@ msgstr ""
 msgid "**Descending з offset** — watermark **не застосовується**. Клієнт пагінує по історичних даних, там race condition неможливий."
 msgstr ""
 
-msgid "Значення ``FEED_WATERMARK_SECONDS`` має бути більшим за максимально можливу затримку між стартом і комітом операції запису. Рекомендоване значення: **1 секунда**."
+msgid "Значення ``FEED_WATERMARK_SECONDS`` має бути більшим за максимально можливу затримку між ``$$NOW`` операції запису та її комітом **на primary** (тривалість транзакції: наприклад, у хронографі між ``save_tender`` і комітом ще створюються контракти). Відставання реплік і majority commit point у це значення закладати **не потрібно** — його покриває causal read. Рекомендоване значення: **1 секунда**; фактична затримка фіду становить від 1 до 2 секунд плюс свіжість cluster time, відомого процесу API."
 msgstr ""
 
-msgid "``$$NOW`` фіксується вже на стороні MongoDB — мережева затримка між API сервером і MongoDB на race window не впливає. Реальний race window визначається лише MongoDB-internal затримками:"
+msgid "За результатами навантажувального тесту максимальна затримка між ``$$NOW`` і комітом склала **37 мс**. Значущі перевищення можливі лише під час MongoDB election (failover), коли writes можуть затримуватись на секунди — але в такому сценарії клієнти і так отримують помилки з'єднання."
 msgstr ""
 
-msgid "lock contention на стороні MongoDB"
-msgstr ""
-
-msgid "replication latency до secondary-реплік (majority write concern)"
-msgstr ""
-
-msgid "За результатами навантажувального тесту максимальна затримка між ``$$NOW`` і комітом склала **37 мс**. 1 секунда дає ~27-кратний запас відносно реально спостережуваного максимуму. Значущі перевищення можливі лише під час MongoDB election (failover), коли writes можуть затримуватись на секунди — але в такому сценарії клієнти і так отримують помилки з'єднання."
-msgstr ""
-
-msgid "Значення можна перевизначити через змінну середовища ``FEED_WATERMARK_SECONDS``."
+msgid "Значення можна перевизначити через змінні середовища ``FEED_WATERMARK_SECONDS`` і ``FEED_WATERMARK_MAX_TIME_MS``. ``FEED_WATERMARK_SECONDS=0`` вимикає механізм повністю (так роблять тести)."
 msgstr ""
 
 msgid "Альтернатива: Change Streams як pull feed"
@@ -264,4 +291,34 @@ msgstr ""
 
 msgid "**Приклад зафіксованої аномалії:**"
 msgstr ""
+
+#~ msgid "Фід не видає об'єкти, ``public_modified`` яких молодший за ``N`` секунд від поточного часу MongoDB. За цей час усі паралельні транзакції зі схожими timestamps встигають закомітитись і стати видимими."
+#~ msgstr ""
+
+#~ msgid "Ключовий момент: watermark рахується за допомогою ``$$NOW`` **самої MongoDB**, а не ``time.time()`` на API сервері. Це виключає проблему розсинхронізації годинників між API сервером і MongoDB."
+#~ msgstr ""
+
+#~ msgid "**Реалізація в** ``src/openprocurement/api/database.py``, метод ``list()``:"
+#~ msgstr ""
+
+#~ msgid "**Forward feed** (без ``descending``) — завжди. Не дає crawler-у просунути offset за записи, що ще не закомітились."
+#~ msgstr ""
+
+#~ msgid "Значення ``FEED_WATERMARK_SECONDS`` має бути більшим за максимально можливу затримку між стартом і комітом операції запису. Рекомендоване значення: **1 секунда**."
+#~ msgstr ""
+
+#~ msgid "``$$NOW`` фіксується вже на стороні MongoDB — мережева затримка між API сервером і MongoDB на race window не впливає. Реальний race window визначається лише MongoDB-internal затримками:"
+#~ msgstr ""
+
+#~ msgid "lock contention на стороні MongoDB"
+#~ msgstr ""
+
+#~ msgid "replication latency до secondary-реплік (majority write concern)"
+#~ msgstr ""
+
+#~ msgid "За результатами навантажувального тесту максимальна затримка між ``$$NOW`` і комітом склала **37 мс**. 1 секунда дає ~27-кратний запас відносно реально спостережуваного максимуму. Значущі перевищення можливі лише під час MongoDB election (failover), коли writes можуть затримуватись на секунди — але в такому сценарії клієнти і так отримують помилки з'єднання."
+#~ msgstr ""
+
+#~ msgid "Значення можна перевизначити через змінну середовища ``FEED_WATERMARK_SECONDS``."
+#~ msgstr ""
 

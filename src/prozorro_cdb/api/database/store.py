@@ -1,4 +1,5 @@
 import os
+import time
 from contextlib import asynccontextmanager
 from contextvars import ContextVar, Token
 from decimal import Decimal
@@ -8,6 +9,7 @@ from uuid import uuid4
 
 from bson.codec_options import CodecOptions, TypeCodec, TypeRegistry
 from bson.decimal128 import Decimal128
+from bson.timestamp import Timestamp
 from pydantic import BaseModel
 from pymongo import ASCENDING, DESCENDING, AsyncMongoClient, IndexModel, ReadPreference, ReturnDocument
 from pymongo.asynchronous.client_session import AsyncClientSession
@@ -54,13 +56,21 @@ type_registry = TypeRegistry(
 codec_options = CodecOptions(type_registry=type_registry)
 
 
-# How many seconds behind "now" the forward feed lags.
-# Prevents race conditions where $$NOW is captured at operation start,
-# not at commit time — concurrent writes can commit out-of-order and
-# permanently disappear from the feed for crawlers.
-# Uses MongoDB's own $$NOW to avoid clock drift between API and DB servers.
+# How many seconds behind the MongoDB cluster time the feed lags.
+# Prevents race conditions where $$NOW (public_modified) is captured at
+# operation start, not at commit time — concurrent writes can commit
+# out-of-order and permanently disappear from the feed for crawlers.
+# Must be greater than the maximum "$$NOW -> commit" delay of a write.
+# The cutoff is computed from the cluster time (the clock of oplog timestamps),
+# so neither the API server clock nor the replica clock is involved, and
+# the feed read waits for the replica to catch up to that cluster time
+# (see MongodbStore.get_feed_watermark).
 # See: docs/source/developers/projects/cdb/feed_ordering.rst
 FEED_WATERMARK_SECONDS = int(os.environ.get("FEED_WATERMARK_SECONDS", "1"))
+
+# Upper bound for how long a feed read may block waiting for the replica
+# (or the majority snapshot) to catch up to the watermark cluster time.
+FEED_WATERMARK_MAX_TIME_MS = int(os.environ.get("FEED_WATERMARK_MAX_TIME_MS", "10000"))
 
 
 def get_public_modified():
@@ -193,9 +203,11 @@ class MongodbStore:
             operator = "$lt" if descending else "$gt"
             filters[offset_field] = {operator + suffix: offset_value}
 
+        session = get_db_session_async()
+        find_kwargs = {}
         if offset_field == "public_modified" and FEED_WATERMARK_SECONDS > 0 and (not descending or not offset_value):
-            # Watermark: exclude records newer than FEED_WATERMARK_SECONDS.
-            # $$NOW is evaluated by MongoDB itself — no cross-server clock drift.
+            # Watermark: exclude records newer than FEED_WATERMARK_SECONDS
+            # and make the read wait for the replica to catch up (see get_feed_watermark).
             # Skipped when FEED_WATERMARK_SECONDS=0 (e.g. in tests via monkeypatch).
             #
             # Applied to:
@@ -208,28 +220,64 @@ class MongodbStore:
             #     that were in-flight during the initial descending read.
             #   - descending WITH offset: skipped — paginating through historical data,
             #     no race condition possible for already-committed old records.
-            filters["$expr"] = {
-                "$lte": [
-                    f"${offset_field}",
-                    {
-                        "$subtract": [
-                            {"$divide": [{"$toLong": "$$NOW"}, 1000]},
-                            FEED_WATERMARK_SECONDS,
-                        ]
-                    },
-                ]
-            }
+            watermark = await self.get_feed_watermark(session)
+            filters.setdefault(offset_field, {})["$lte"] = watermark
+            find_kwargs["max_time_ms"] = FEED_WATERMARK_MAX_TIME_MS
 
         results = await collection.find(
             filter=filters,
             projection={f: 1 for f in fields},
             limit=limit,
             sort=((offset_field, DESCENDING if descending else ASCENDING),),
-            session=get_db_session_async(),
+            session=session,
+            **find_kwargs,
         ).to_list(None)
         for e in results:
             self.rename_id(e)
         return results
+
+    async def get_cluster_time(self, session=None):
+        """
+        The newest MongoDB cluster time this process knows about ($clusterTime gossip):
+        the logical clock the oplog timestamps are taken from.
+        Falls back to a `ping` when nothing has been executed yet.
+        Returns None for deployments without a logical clock (standalone server).
+        """
+        cluster_time = self.connection._topology.max_cluster_time()  # pylint: disable=protected-access
+        if cluster_time is None:
+            await self.database.command("ping", session=session)
+            cluster_time = self.connection._topology.max_cluster_time()  # pylint: disable=protected-access
+        if cluster_time:
+            return cluster_time["clusterTime"]
+        return None
+
+    async def get_feed_watermark(self, session=None):
+        """
+        Returns the feed cutoff (unix seconds, int):
+        only records with public_modified <= cutoff are exposed by the feed.
+
+        The cutoff is derived from the MongoDB cluster time (the clock oplog timestamps
+        come from), not from the wall clock of the API server or of the replica that
+        serves the read. On top of that, the causally consistent session is asked to read
+        after Timestamp(cluster_time_seconds, 0): a lagging secondary (or a lagging majority
+        snapshot) then blocks until it has applied every write committed before that second,
+        instead of answering from a stale snapshot. So the watermark stays a guarantee no
+        matter how far behind the replica is: every write with public_modified <= cutoff
+        that committed within FEED_WATERMARK_SECONDS is visible to this read.
+
+        The cluster time is clamped by the API clock, so that a logical clock running ahead
+        of the wall clock can't shrink the watermark.
+        """
+        now = int(time.time())
+        cluster_time = await self.get_cluster_time(session)
+        if cluster_time is None:  # standalone: no replication, no lag
+            return now - FEED_WATERMARK_SECONDS
+        seconds = min(cluster_time.time, now)
+        if session is not None:
+            # afterClusterTime must not be greater than the cluster time of the node,
+            # so it is always taken from a cluster time already seen by this client.
+            session.advance_operation_time(Timestamp(seconds, 0))
+        return seconds - FEED_WATERMARK_SECONDS
 
     async def save_data(self, collection, data, insert=False, modified=True):
         uid = data.pop("id" if "id" in data else "_id")
